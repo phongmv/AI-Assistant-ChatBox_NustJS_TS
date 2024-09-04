@@ -1,4 +1,5 @@
 import {useState} from "#app";
+import type {IMessage} from "~/interfaces/IMessage";
 
 export const useIsChatting = () => useState("isChatting", () => false)
-export const useMessages = () => useState("messages", () => [])
+export const useMessages = () => useState<IMessage[]>("messages", () => [])

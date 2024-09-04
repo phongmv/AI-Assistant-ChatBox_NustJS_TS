@@ -26,9 +26,35 @@
   </form>
 </template>
 <script setup lang="ts">
-const newMessage = ref("")
+import {marked} from "marked";
+import dompurify from "Dompurify"
 
-function handleSubmit(){
-  newMessage.value = ''
+
+const newMessage = ref("")
+const messages = useMessages()
+const {customerInitials} = useCustomer()
+
+async function handleSubmit(){
+  messages.value.push({
+    name: customerInitials.value,
+    message: newMessage.value,
+    isHana: false,
+    timestamp: new Date().toLocaleString([],  {
+      timeStyle: "short"
+    })
+  })
+
+  newMessage.value = ""
+
+  const parsedMessage = await marked.parse(dompurify.sanitize("Hello **World**!"))
+
+  messages.value.push({
+    name: "Hana",
+    message: parsedMessage,
+    isHana: true,
+    timestamp: new Date().toLocaleString([],  {
+      timeStyle: "short"
+    })
+  })
 }
 </script>
