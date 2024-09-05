@@ -101,4 +101,20 @@ export const gitCommands: IGitCommands = {
         command: "git filter-branch --tree-filter '[command]' HEAD",
         description: "Run a command on every commit in the current branch's history.",
     },
+    "push": {
+        command: "git push [remote] [branch]",
+        description: "Push commits to a remote repository.",
+    },
+    "pull": {
+        command: "git pull [remote] [branch]",
+        description: "Fetch and integrate changes from a remote repository into the current branch.",
+    },
+    "push -f": {
+        command: "git push -f [remote] [branch]",
+        description: "Force push commits to a remote repository, overwriting remote changes.",
+    },
+    "pull origin": {
+        command: "git pull origin [branch]",
+        description: "Fetch and integrate changes from the remote 'origin' repository into the current branch.",
+    }
 };
