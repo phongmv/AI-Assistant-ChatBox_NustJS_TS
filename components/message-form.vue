@@ -61,6 +61,7 @@ onMounted(  () => {
 import stringSimilarity from 'string-similarity';
 
 function findBestMatch(question: string): string | null {
+  const threshold = 0.49; // 50% similarity threshold
   const { training_data } = questions.value;
 
   // Normalize the input question
@@ -76,7 +77,7 @@ function findBestMatch(question: string): string | null {
     // Calculate similarity
     const similarity = stringSimilarity.compareTwoStrings(normalizedQuestion, normalizedDataQuestion);
 
-    if (similarity > highestSimilarity) {
+    if (similarity > highestSimilarity && similarity >= threshold) {
       highestSimilarity = similarity;
       bestMatch = data;
     }
