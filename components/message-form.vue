@@ -1,6 +1,7 @@
 <template>
   <form @submit.prevent="handleSubmit" class="relative">
             <textarea
+                maxlength="200"
                 v-model.trim="newMessage"
                 @keypress.enter.prevent="handleSubmit"
                 class="transition p-4 w-full text-sm border border-slate-300/60 shadow-sm placeholder:text-slate-400/90 focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus:border-primary focus:border-opacity-40 pr-16 rounded-xl resize-none"
@@ -78,7 +79,7 @@ async function getFakeAiResponse(keySearching: string): Promise<string> {
     ).join('<hr class="my-4"/>');
   }
 
-  return '<p class="text-sm text-wrap">Oops! Please try searching for something else. It\'s better if you use <strong>specific keywords</strong>. I’m so sorry 😭!</p>'
+  return '<p class="text-sm text-wrap">Oops! Please try searching for something else. It\'s better if you use <strong>specific git command name</strong>. I’m so sorry 😭!</p>'
 }
 
 

@@ -50,8 +50,8 @@
             class="w-3/4 flex flex-col gap-2 border px-4 pt-3 pb-4 rounded-xl bg-slate-50/80 border-slate-200/80"
         >
           <!-- Message Content -->
-          <div v-if="mes.isHana" v-html="mes.message"></div>
-          <div class="text-sm" v-else>
+          <div class="text-sm break-words overflow-auto" v-if="mes.isHana" v-html="mes.message"></div>
+          <div class="text-sm break-words overflow-auto" v-else>
             {{ mes.message }}
           </div>
           <!-- Time -->
