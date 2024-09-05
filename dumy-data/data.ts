@@ -571,6 +571,11 @@ export const questions = {
             "answer": "I am a software engineer."
         },
         {
+            "question": "Who are you",
+            "answer": "I am a software engineer.My nick name: Jin",
+            "syntax": "https://github.com/phongmv"
+        },
+        {
             "question": "what are your job?",
             "answer": "I am a software engineer."
         },
