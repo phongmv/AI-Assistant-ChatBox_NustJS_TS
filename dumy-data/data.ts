@@ -899,47 +899,38 @@ export const questions = {
         {
             "question": "What is the weather like today?",
             "answer": "You can check the weather for today using a weather website or app, or by searching 'weather today' on a search engine.",
-            "syntax": "N/A"
         },
         {
             "question": "Will it rain tomorrow?",
             "answer": "To find out if it will rain tomorrow, check a weather forecast on a weather website, app, or search 'rain forecast for tomorrow'.",
-            "syntax": "N/A"
         },
         {
             "question": "How hot is it right now?",
             "answer": "You can find the current temperature by checking a weather website or app, or searching 'current temperature' for your location.",
-            "syntax": "N/A"
         },
         {
             "question": "How can I check my bank account balance?",
             "answer": "You can check your bank account balance by logging into your bank's online banking system or mobile app.",
-            "syntax": "N/A"
         },
         {
             "question": "What is a budget?",
             "answer": "A budget is a financial plan that estimates income and expenses over a specific period of time to help manage money effectively.",
-            "syntax": "N/A"
         },
         {
             "question": "How do I save money effectively?",
             "answer": "To save money effectively, create a budget, set savings goals, automate savings transfers, and reduce unnecessary expenses.",
-            "syntax": "N/A"
         },
         {
             "question": "What are the benefits of exercise?",
             "answer": "Exercise provides numerous benefits including improved cardiovascular health, better mood, weight management, increased energy levels, and reduced risk of chronic diseases.",
-            "syntax": "N/A"
         },
         {
             "question": "How can I stay healthy?",
             "answer": "Staying healthy involves maintaining a balanced diet, exercising regularly, getting enough sleep, managing stress, and avoiding harmful habits like smoking.",
-            "syntax": "N/A"
         },
         {
             "question": "What should I eat to be healthy?",
             "answer": "To be healthy, eat a balanced diet that includes a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats. Avoid excessive amounts of processed foods and sugars.",
-            "syntax": "N/A"
         },
         {
             "question": "How do I check the status of the working directory in Git?",
