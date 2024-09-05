@@ -601,6 +601,10 @@ export const questions = {
         {
             "question": "Do you often participate in activities outside of work?",
             "answer": "I usually focus on my work and personal interests, but I also like to engage in social activities when I have time."
+        },
+        {
+            "question": "How are you?",
+            "answer": "I'm good, how about you?"
         }
     ]
 };
