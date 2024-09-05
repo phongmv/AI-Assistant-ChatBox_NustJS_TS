@@ -118,3 +118,61 @@ export const gitCommands: IGitCommands = {
         description: "Fetch and integrate changes from the remote 'origin' repository into the current branch.",
     }
 };
+
+// Dữ liệu câu hỏi
+export const questions = {
+    "training_data": [
+        {
+            "question": "How do I initialize a new Git repository?",
+            "answer": "To initialize a new Git repository, use the command `git init` in the directory where you want the repository to be created."
+        },
+        {
+            "question": "What is the command to check the status of your Git repository?",
+            "answer": "Use the command `git status` to check the status of your Git repository."
+        },
+        {
+            "question": "How do I stage changes in Git?",
+            "answer": "To stage changes, use the command `git add <file>` to add individual files or `git add .` to add all changes in the current directory."
+        },
+        {
+            "question": "How do I commit changes in Git?",
+            "answer": "To commit changes, use the command `git commit -m 'your commit message'` where 'your commit message' describes the changes you made."
+        },
+        {
+            "question": "How can I view the commit history?",
+            "answer": "Use the command `git log` to view the commit history. You can use additional options to format and limit the output."
+        },
+        {
+            "question": "How do I create a new branch?",
+            "answer": "To create a new branch, use the command `git branch <branch-name>`. To switch to the new branch, use `git checkout <branch-name>` or `git switch <branch-name>`."
+        },
+        {
+            "question": "How can I merge a branch into the main branch?",
+            "answer": "First, switch to the main branch using `git checkout main` or `git switch main`. Then use the command `git merge <branch-name>` to merge the specified branch into the main branch."
+        },
+        {
+            "question": "What does 'git pull' do?",
+            "answer": "The command `git pull` fetches changes from the remote repository and merges them into your current branch."
+        },
+        {
+            "question": "How do I resolve merge conflicts?",
+            "answer": "To resolve merge conflicts, open the conflicted files and manually edit the conflicts. After resolving, stage the resolved files using `git add <file>` and commit the changes with `git commit`."
+        },
+        {
+            "question": "How do I clone a Git repository?",
+            "answer": "To clone a Git repository, use the command `git clone <repository-url>`, where `<repository-url>` is the URL of the repository you want to clone."
+        },
+        {
+            "question": "How do I revert a commit?",
+            "answer": "To revert a commit, use the command `git revert <commit-hash>`. This will create a new commit that undoes the changes introduced by the specified commit."
+        },
+        {
+            "question": "What is the difference between 'git fetch' and 'git pull'?",
+            "answer": "'git fetch' downloads changes from the remote repository but does not merge them into your current branch. 'git pull' does both fetching and merging the changes."
+        },
+        {
+            "question": "How do I delete a branch?",
+            "answer": "To delete a local branch, use the command `git branch -d <branch-name>`. To delete a remote branch, use `git push origin --delete <branch-name>`."
+        }
+    ]
+};

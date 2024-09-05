@@ -6,3 +6,12 @@ export interface IGitCommand {
 export interface IGitCommands {
     [category: string]: IGitCommand;
 }
+
+export interface IQuestionAnswer {
+    question: string;
+    answer: string;
+};
+
+export interface IQuestionAnswers {
+    training_data : IQuestionAnswer[];
+};

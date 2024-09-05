@@ -8,7 +8,6 @@
                 placeholder="Enter your message..."
             ></textarea>
     <button
-        onclick=""
         type="submit"
         class="absolute top-2 right-2 h-10 w-10 flex items-center justify-center bg-gradient-to-t from-sky-500 to-emerald-500 rounded-full text-white"
     >
@@ -30,8 +29,8 @@
 <script setup lang="ts">
 import {marked} from "marked";
 import dompurify from "dompurify"
-import {getFakeAIResponse} from "~/services/message.service";
-import type {IGitCommands} from "~/interfaces/IGitCommands";
+import {getFakeAIResponse, getQuestionsResponse} from "~/services/message.service";
+import type {IGitCommands, IQuestionAnswers} from "~/interfaces/IGitCommands";
 import {formatDate, replaceSpecialCharacters} from "~/helpers/message-formatter";
 import {specialKey, welcomeKey} from "~/constant/keys";
 
@@ -43,7 +42,8 @@ const emits = defineEmits<IEmits>()
 const newMessage = ref("")
 const messages = useMessages()
 const {customerInitials, customerName} = useCustomer()
-const gitCommands = ref<IGitCommands>({})
+const gitCommands = ref<IGitCommands>({ ...await getFakeAIResponse()})
+const questions = ref<IQuestionAnswers>({...await getQuestionsResponse()})
 
 //init value
 onMounted(  () => {
@@ -58,57 +58,77 @@ onMounted(  () => {
   })
 })
 
+function getKeywordMatchCount(question: string, keywords: string[]): number {
+  const questionWords = question.toLowerCase().split(/\s+/);
+  return keywords.reduce((count, keyword) => {
+    return count + (questionWords.includes(keyword.toLowerCase()) ? 1 : 0);
+  }, 0);
+}
 
+function getAnswerForQuestion(question: string) {
+  const foundInQuestions = questions.value["training_data"].find((q) => {
+    const questionKeywords = q.question.split(/\s+/);
+    const matchCount = getKeywordMatchCount(question, questionKeywords);
+    const threshold = Math.ceil(questionKeywords.length * 1 / 2);
+    return matchCount >= threshold;
+  });
+
+  if (foundInQuestions) {
+    return foundInQuestions.answer
+  }
+}
 
 async function getFakeAiResponse(keySearching: string): Promise<string> {
-  gitCommands.value = { ...await getFakeAIResponse() };
 
-  emits("onSubmit");
-  const keyData = Object.keys(gitCommands.value);
-  const keysFilter = replaceSpecialCharacters(keySearching).split(" ").filter(k => !!k).map(i => i.toLowerCase());
+  if (getAnswerForQuestion(keySearching))
+    return `<p class="text-sm text-wrap">${getAnswerForQuestion(keySearching)}</p>`
+
+    emits("onSubmit");
+    const keyData = Object.keys(gitCommands.value);
+    const keysFilter = replaceSpecialCharacters(keySearching).split(" ").filter(k => !!k).map(i => i.toLowerCase());
 
 
-  let matchingKeys = keyData.filter(key =>
-      keysFilter.some(filterKey => key === filterKey)
-  );
+    let matchingKeys = keyData.filter(key =>
+        keysFilter.some(filterKey => key === filterKey)
+    );
 
-  //handle special key all
-  for (const key of keysFilter){
-    if(welcomeKey.includes(key))
-      return `<p class="text-wrap text-sm"><strong>^^!</strong> Hi ${customerName.value}! I'm Hana 😍</p>`
+    //handle special key all
+    for (const key of keysFilter) {
+      if (welcomeKey.includes(key))
+        return `<p class="text-wrap text-sm"><strong>^^!</strong> Hi ${customerName.value}! I'm Hana 😍</p>`
 
-    if(specialKey.includes(key)) matchingKeys = keyData
+      if (specialKey.includes(key)) matchingKeys = keyData
+    }
+
+    if (matchingKeys.length > 0 && gitCommands.value) {
+      return matchingKeys.map(key =>
+          `<p class="text-wrap text-sm"><strong>Syntax:</strong> ${gitCommands?.value[key]?.command}</p>` +
+          `<p class="text-wrap text-sm text-gray"><strong>Description:</strong> ${gitCommands?.value[key]?.description}</p>`
+      ).join('<hr class="my-4"/>');
+    }
+
+
+    return '<p class="text-sm text-wrap">Oops! Please try searching for something else. It\'s better if you use <strong>specific git command name</strong>. I’m so sorry 😭!</p>'
   }
 
 
-  if (matchingKeys.length > 0 && gitCommands.value) {
-    return matchingKeys.map(key =>
-        `<p class="text-wrap text-sm"><strong>Syntax:</strong> ${gitCommands?.value[key]?.command}</p>` +
-        `<p class="text-wrap text-sm text-gray"><strong>Description:</strong> ${gitCommands?.value[key]?.description}</p>`
-    ).join('<hr class="my-4"/>');
+async function handleSubmit() {
+    messages.value.push({
+      name: customerInitials.value,
+      message: newMessage.value,
+      isHana: false,
+      timestamp: formatDate()
+    })
+
+    const commandNode = await getFakeAiResponse(newMessage.value) || ''
+    const parsedMessage = await marked.parse(dompurify.sanitize(commandNode))
+    newMessage.value = ""
+
+    messages.value.push({
+      name: "Hana",
+      message: parsedMessage,
+      isHana: true,
+      timestamp: formatDate()
+    })
   }
-
-  return '<p class="text-sm text-wrap">Oops! Please try searching for something else. It\'s better if you use <strong>specific git command name</strong>. I’m so sorry 😭!</p>'
-}
-
-
-async function handleSubmit(){
-  messages.value.push({
-    name: customerInitials.value,
-    message: newMessage.value,
-    isHana: false,
-    timestamp: formatDate()
-  })
-
-  const commandNode = await getFakeAiResponse(newMessage.value) || ''
-  const parsedMessage = await marked.parse(dompurify.sanitize(commandNode))
-  newMessage.value = ""
-
-  messages.value.push({
-    name: "Hana",
-    message: parsedMessage,
-    isHana: true,
-    timestamp: formatDate()
-  })
-}
 </script>

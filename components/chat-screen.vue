@@ -95,7 +95,7 @@ watch(messages, () => {
   white-space: nowrap; /* Prevent text from wrapping to a new line */
   position: relative;
   color: #333; /* Text color */
-  animation: typing 2s steps(40, end);
+  animation: typing 1s steps(40, end);
 }
 
 .typing-text::after {

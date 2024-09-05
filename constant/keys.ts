@@ -1,2 +1,2 @@
 export const specialKey = ["all", "full", "het"]
-export  const welcomeKey = ["hello", "hi"]
+export  const welcomeKey = ["hello", "hi", "name"]
