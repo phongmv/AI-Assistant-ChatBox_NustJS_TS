@@ -29,7 +29,7 @@
 </template>
 <script setup lang="ts">
 import {marked} from "marked";
-import dompurify from "Dompurify"
+import dompurify from "dompurify"
 import {getFakeAIResponse} from "~/services/message.service";
 import type {IGitCommands} from "~/interfaces/IGitCommands";
 import {formatDate, replaceSpecialCharacters} from "~/helpers/message-formatter";
