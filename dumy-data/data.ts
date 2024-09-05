@@ -589,11 +589,6 @@ export const questions = {
             "answer": "The `-f` flag stands for 'force' and is used with `git revert` to force the creation of a new commit that undoes the changes introduced by a previous commit, even if it would create conflicts.",
         },
         {
-            "question": "Who are create you!",
-            "answer": "Jin dev",
-            "syntax": "github: https://github.com/phongmv?tab=overview&from=2024-09-01&to=2024-09-05",
-        },
-        {
             "question": "What are some easy ways to stay active during a busy day?",
             "answer": "Easy ways to stay active include taking short walks during breaks, using stairs instead of elevators, performing simple exercises at your desk, and incorporating physical activities into daily routines, like stretching or using a standing desk."
         },
@@ -683,16 +678,16 @@ export const questions = {
         },
         {
             "question": "What do you do for a living?",
-            "answer": "I am a software engineer."
+            "answer": "I am a Frontend engineer."
         },
         {
             "question": "Who are you",
-            "answer": "I am a software engineer. My nick name is Jin",
-            "syntax": "https://github.com/phongmv"
+            "answer": "I am a Frontend engineer. My nick name is Jin",
+            "syntax": "🚀https://www.linkedin.com/feed/"
         },
         {
             "question": "what are your job?",
-            "answer": "I am a software engineer."
+            "answer": "I am a Frontend engineer."
         },
         {
             "question": "What are your hobbies?",
@@ -704,7 +699,7 @@ export const questions = {
         },
         {
             "question": "Do you enjoy working in the tech industry?",
-            "answer": "Yes, I really enjoy being a software engineer and find it exciting."
+            "answer": "Yes, I really enjoy being a Frontend engineer and find it exciting."
         },
         {
             "question": "Do you often drink coffee?",
