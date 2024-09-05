@@ -895,6 +895,136 @@ export const questions = {
             "question": "How do you create an object in Java?",
             "syntax": "ClassName objectName = new ClassName();",
             "answer": "You create an object by using the `new` keyword followed by the class constructor. For example: `Person person = new Person();`."
+        },
+        {
+            "question": "What is the weather like today?",
+            "answer": "You can check the weather for today using a weather website or app, or by searching 'weather today' on a search engine.",
+            "syntax": "N/A"
+        },
+        {
+            "question": "Will it rain tomorrow?",
+            "answer": "To find out if it will rain tomorrow, check a weather forecast on a weather website, app, or search 'rain forecast for tomorrow'.",
+            "syntax": "N/A"
+        },
+        {
+            "question": "How hot is it right now?",
+            "answer": "You can find the current temperature by checking a weather website or app, or searching 'current temperature' for your location.",
+            "syntax": "N/A"
+        },
+        {
+            "question": "How can I check my bank account balance?",
+            "answer": "You can check your bank account balance by logging into your bank's online banking system or mobile app.",
+            "syntax": "N/A"
+        },
+        {
+            "question": "What is a budget?",
+            "answer": "A budget is a financial plan that estimates income and expenses over a specific period of time to help manage money effectively.",
+            "syntax": "N/A"
+        },
+        {
+            "question": "How do I save money effectively?",
+            "answer": "To save money effectively, create a budget, set savings goals, automate savings transfers, and reduce unnecessary expenses.",
+            "syntax": "N/A"
+        },
+        {
+            "question": "What are the benefits of exercise?",
+            "answer": "Exercise provides numerous benefits including improved cardiovascular health, better mood, weight management, increased energy levels, and reduced risk of chronic diseases.",
+            "syntax": "N/A"
+        },
+        {
+            "question": "How can I stay healthy?",
+            "answer": "Staying healthy involves maintaining a balanced diet, exercising regularly, getting enough sleep, managing stress, and avoiding harmful habits like smoking.",
+            "syntax": "N/A"
+        },
+        {
+            "question": "What should I eat to be healthy?",
+            "answer": "To be healthy, eat a balanced diet that includes a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats. Avoid excessive amounts of processed foods and sugars.",
+            "syntax": "N/A"
+        },
+        {
+            "question": "How do I check the status of the working directory in Git?",
+            "answer": "Use the command `git status` to check the status of the working directory and staging area.",
+            "syntax": "git status"
+        },
+        {
+            "question": "How do I add files to the staging area in Git?",
+            "answer": "Use the command `git add [file]` to add files to the staging area.",
+            "syntax": "git add [file]"
+        },
+        {
+            "question": "How do I commit changes in Git?",
+            "answer": "Use the command `git commit -m 'commit message'` to commit changes to the repository with a descriptive message.",
+            "syntax": "git commit -m 'commit message'"
+        },
+        {
+            "question": "How do I push changes to a remote repository in Git?",
+            "answer": "Use the command `git push` to push committed changes to a remote repository.",
+            "syntax": "git push"
+        },
+        {
+            "question": "How do I pull changes from a remote repository in Git?",
+            "answer": "Use the command `git pull` to fetch and integrate changes from a remote repository into your current branch.",
+            "syntax": "git pull"
+        },
+        {
+            "question": "How do I create a new branch in Git?",
+            "answer": "Use the command `git branch [branch-name]` to create a new branch.",
+            "syntax": "git branch [branch-name]"
+        },
+        {
+            "question": "How do I switch branches in Git?",
+            "answer": "Use the command `git checkout [branch-name]` to switch to another branch.",
+            "syntax": "git checkout [branch-name]"
+        },
+        {
+            "question": "How do I merge branches in Git?",
+            "answer": "Use the command `git merge [branch-name]` to merge changes from another branch into the current branch.",
+            "syntax": "git merge [branch-name]"
+        },
+        {
+            "question": "How do I delete a branch in Git?",
+            "answer": "Use the command `git branch -d [branch-name]` to delete a local branch, or `git push origin --delete [branch-name]` to delete a remote branch.",
+            "syntax": "git branch -d [branch-name] / git push origin --delete [branch-name]"
+        },
+        {
+            "question": "How do I revert a commit in Git?",
+            "answer": "Use the command `git revert [commit-hash]` to create a new commit that undoes changes made by a previous commit.",
+            "syntax": "git revert [commit-hash]"
+        },
+        {
+            "question": "How do I reset changes in Git?",
+            "answer": "Use the command `git reset [commit-hash]` to reset the current branch to a specific commit. Use `--hard` to discard changes or `--soft` to keep them in the staging area.",
+            "syntax": "git reset [commit-hash] / git reset --hard [commit-hash] / git reset --soft [commit-hash]"
+        },
+        {
+            "question": "How do I view the commit history in Git?",
+            "answer": "Use the command `git log` to view the commit history of the current branch.",
+            "syntax": "git log"
+        },
+        {
+            "question": "How do I create a tag in Git?",
+            "answer": "Use the command `git tag [tag-name]` to create a new tag at the current commit.",
+            "syntax": "git tag [tag-name]"
+        },
+        {
+            "question": "How do I delete a tag in Git?",
+            "answer": "Use the command `git tag -d [tag-name]` to delete a local tag, or `git push origin --delete [tag-name]` to delete a remote tag.",
+            "syntax": "git tag -d [tag-name] / git push origin --delete [tag-name]"
+        },
+        {
+            "question": "How do I stash changes in Git?",
+            "answer": "Use the command `git stash` to save changes in the working directory and revert to the last commit. Use `git stash pop` to apply stashed changes.",
+            "syntax": "git stash / git stash pop"
+        },
+        {
+            "question": "How do I view changes in Git?",
+            "answer": "Use the command `git diff` to view changes between commits, working directory, and staging area.",
+            "syntax": "git diff"
+        },
+        {
+            "question": "How do I clone a repository in Git?",
+            "answer": "Use the command `git clone [repository-url]` to create a copy of a remote repository on your local machine.",
+            "syntax": "git clone [repository-url]"
         }
     ]
 };

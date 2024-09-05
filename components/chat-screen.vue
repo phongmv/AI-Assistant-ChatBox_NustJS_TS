@@ -14,7 +14,7 @@
           Hana
         </div>
         <div class="text-slate-500 text-sm mt-0.5 truncate max-w-[9rem] md:max-w-none">
-          Git Command Assistant
+          Git Command Assistant and 🫥
         </div>
         <p class="text-red-800 italic text-sm">**Please note** : This app is frontend only 🏝 and does not have backend APIs 🖇, no ML model 🤖</p>
         <p class="text-red-900 italic text-sm">Just for fun! 😅</p>
