@@ -60,20 +60,33 @@ onMounted(  () => {
 import stringSimilarity from 'string-similarity';
 
 function findBestMatch(question: string): string | null {
-  const threshold = 0.6; // 70% similarity threshold
   const { training_data } = questions.value;
+
+  // Normalize the input question
+  const normalizedQuestion = question.toLowerCase();
 
   let bestMatch: IQuestionAnswer | null = null;
   let highestSimilarity = 0;
+
   for (const data of training_data) {
-    const similarity = stringSimilarity.compareTwoStrings(question, data.question);
-    if (similarity > highestSimilarity && similarity >= threshold) {
+    // Normalize each question in the training data
+    const normalizedDataQuestion = data.question.toLowerCase();
+
+    // Calculate similarity
+    const similarity = stringSimilarity.compareTwoStrings(normalizedQuestion, normalizedDataQuestion);
+
+    if (similarity > highestSimilarity) {
       highestSimilarity = similarity;
       bestMatch = data;
     }
   }
-  return bestMatch ? `${bestMatch.answer} <br><strong>${bestMatch?.syntax || ""}</strong>` : "Sorry, I couldn't find a good match for your question.";
+
+  // Provide feedback if no good match is found
+  return bestMatch
+      ? `${bestMatch.answer} <br><strong>${bestMatch?.syntax || ""}</strong>`
+      : "Sorry, I couldn't find a good match for your question. It's better to search using English keywords.";
 }
+
 
 async function getFakeAiResponse(keySearching: string){
 

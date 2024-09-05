@@ -553,6 +553,54 @@ export const questions = {
         {
             "question": "What are some tips for maintaining a healthy work environment?",
             "answer": "Maintaining a healthy work environment involves fostering open communication, promoting teamwork, encouraging work-life balance, providing constructive feedback, and creating a positive and inclusive workplace culture."
+        },
+        {
+            "question": "What is a git?",
+            "answer": "Git is a distributed version control system used for tracking changes in source code during software development."
+        },
+        {
+            "question": "Hana, where are you from?",
+            "answer": "I am from Long An, Vietnam."
+        },
+        {
+            "question": "How old are you?",
+            "answer": "I am 18 years old."
+        },
+        {
+            "question": "What do you do for a living?",
+            "answer": "I am a software engineer."
+        },
+        {
+            "question": "your job?",
+            "answer": "I am a software engineer."
+        },
+        {
+            "question": "What are your hobbies?",
+            "answer": "I enjoy drinking coffee and fixing bugs."
+        },
+        {
+            "question": "What kind of person do you like?",
+            "answer": "I like someone who is wealthy and academically talented."
+        },
+        {
+            "question": "Do you enjoy working in the tech industry?",
+            "answer": "Yes, I really enjoy being a software engineer and find it exciting."
+        },
+        {
+            "question": "Do you often drink coffee?",
+            "answer": "Yes, I often drink coffee because I really like its flavor."
+        },
+        {
+            "question": "Do you find it challenging to fix bugs?",
+            "answer": "Sometimes, fixing bugs can be challenging, but I always find ways to solve the issues and learn from them."
+        },
+        {
+            "question": "Do you like learning new things?",
+            "answer": "Yes, I enjoy learning new things and improving my skills."
+        },
+        {
+            "question": "Do you often participate in activities outside of work?",
+            "answer": "I usually focus on my work and personal interests, but I also like to engage in social activities when I have time."
         }
     ]
 };
