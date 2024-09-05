@@ -572,7 +572,7 @@ export const questions = {
         },
         {
             "question": "Who are you",
-            "answer": "I am a software engineer.My nick name: Jin",
+            "answer": "I am a software engineer. My nick name is Jin",
             "syntax": "https://github.com/phongmv"
         },
         {
