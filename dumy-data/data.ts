@@ -1011,6 +1011,11 @@ export const questions = {
             "question": "How do I clone a repository in Git?",
             "answer": "Use the command `git clone [repository-url]` to create a copy of a remote repository on your local machine.",
             "syntax": "git clone [repository-url]"
+        },
+        {
+            "question": "git clone",
+            "answer": "Use the command `git clone [repository-url]` to create a copy of a remote repository on your local machine.",
+            "syntax": "git clone [repository-url]"
         }
     ]
 };
