@@ -7,6 +7,7 @@
                 placeholder="Enter your message..."
             ></textarea>
     <button
+        onclick=""
         type="submit"
         class="absolute top-2 right-2 h-10 w-10 flex items-center justify-center bg-gradient-to-t from-sky-500 to-emerald-500 rounded-full text-white"
     >
@@ -28,11 +29,51 @@
 <script setup lang="ts">
 import {marked} from "marked";
 import dompurify from "Dompurify"
+import {getFakeAIResponse} from "~/services/message.service";
+import type {IGitCommands} from "~/interfaces/IGitCommands";
 
+interface IEmits {
+  (e: 'onSubmit'): void
+}
 
+const emits = defineEmits<IEmits>()
 const newMessage = ref("")
 const messages = useMessages()
 const {customerInitials} = useCustomer()
+const gitCommands = ref<IGitCommands>({})
+
+function replaceSpecialCharacters(input: string): string {
+  const regex = /[;,.!?()\-@!#$%^&*]/g;
+  return input.replace(regex, ' ');
+}
+
+
+async function getFakeAiResponse(keySearching: string): Promise<string> {
+  if (!keySearching) {
+    return '<p class="text-wrap">Please! try searching for something else :"((</p>';
+  }
+
+  gitCommands.value = { ...await getFakeAIResponse() };
+
+  emits("onSubmit");
+  const keyData = Object.keys(gitCommands.value);
+  const keysFilter = replaceSpecialCharacters(keySearching).split(" ").filter(k => !!k);
+
+  const matchingKeys = keyData.filter(key =>
+      keysFilter.some(filterKey => key.includes(filterKey))
+  );
+
+  if (matchingKeys.length > 0 && gitCommands.value) {
+    return matchingKeys.map(key =>
+        `<p class="text-wrap text-sm"><strong>Syntax:</strong> ${gitCommands?.value[key]?.command}</p>` +
+        `<p class="text-wrap text-sm text-gray"><strong>Description:</strong> ${gitCommands?.value[key]?.description}</p>`
+    ).join('<hr class="my-4"/>');
+  }
+
+  return `<p class="text-wrap text-sm"><strong>^^!</strong> Hi! I'm Hana</p>` +
+      `<p class="text-wrap text-sm text-gray">My job is help answer about basic git commands, if you have any question, talkin me!</p>`;
+}
+
 
 async function handleSubmit(){
   messages.value.push({
@@ -44,9 +85,9 @@ async function handleSubmit(){
     })
   })
 
+  const commandNode = await getFakeAiResponse(newMessage.value) || ''
+  const parsedMessage = await marked.parse(dompurify.sanitize(commandNode))
   newMessage.value = ""
-
-  const parsedMessage = await marked.parse(dompurify.sanitize("Hello **World**!"))
 
   messages.value.push({
     name: "Hana",
