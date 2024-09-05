@@ -83,7 +83,7 @@ async function getFakeAiResponse(keySearching: string){
     //handle special key all
     for (const key of keysFilter) {
       if (welcomeKey.includes(key))
-        return `<p class="text-wrap text-sm"><strong>^^!</strong> Hi ${customerName.value}! I'm Hana 😍</p>`
+        return `<p class="text-wrap text-sm"><strong>^^!</strong> Hi ${customerName.value}! I'm Hana, talkin me! </p>`
     }
 
   if (findBestMatch(keySearching))
