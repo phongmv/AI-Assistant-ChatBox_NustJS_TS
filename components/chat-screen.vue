@@ -16,7 +16,7 @@
         <div class="text-slate-500 text-sm mt-0.5 truncate max-w-[9rem] md:max-w-none">
           Git Command Assistant
         </div>
-        <span class="text-red-600 italic text-xs">Please note: This app is frontend only and does not have backend features.</span>
+        <span class="text-red-600 italic text-sm">Please note: This app is frontend only and does not have backend APIs.</span>
       </div>
     </div>
 

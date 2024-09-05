@@ -1,178 +1,558 @@
-import type { IGitCommands } from "~/interfaces/IGitCommands";
 
-export const gitCommands: IGitCommands = {
-    "configuration": {
-        command: "git config --global user.name 'Your Name'",
-        description: "Configure the global username.",
-    },
-    "config": {
-        command: "git config --global user.name 'Your Name'",
-        description: "Configure the global username.",
-    },
-    "initialize": {
-        command: "git init",
-        description: "Initialize a new Git repository.",
-    },
-    "init": {
-        command: "git init",
-        description: "Initialize a new Git repository.",
-    },
-    "status": {
-        command: "git status",
-        description: "Check the status of the working directory and staging area.",
-    },
-    "file": {
-        command: "git add [file]",
-        description: "Add files to the staging area.",
-    },
-    "branch": {
-        command: "git branch",
-        description: "List branches in the repository.",
-    },
-    "update": {
-        command: "git push [remote] [branch]",
-        description: "Push commits to a remote repository.",
-    },
-    "commit": {
-        command: "git commit -m [remote] [branch]",
-        description: "Push commits to a remote repository.",
-    },
-    "merge": {
-        command: "git merge [branch]",
-        description: "Merge the specified branch into the current branch.",
-    },
-    "undo": {
-        command: "git reset [file]",
-        description: "Remove a file from the staging area but keep the changes in the working directory.",
-    },
-    "tagging": {
-        command: "git tag [tag-name]",
-        description: "Create a new tag.",
-    },
-    "stashing": {
-        command: "git stash",
-        description: "Save current changes and reset the working directory.",
-    },
-    "submodules": {
-        command: "git submodule add [url] [path]",
-        description: "Add a submodule.",
-    },
-    "cherry": {
-        command: "git cherry-pick [commit-hash]",
-        description: "Apply a specific commit from another branch to the current branch without merging the entire branch.",
-    },
-    "reset": {
-        command: "git reset [commit]",
-        description: "Reset the HEAD state to the specified commit without affecting the working directory.",
-    },
-    "rebase": {
-        command: "git rebase [branch]",
-        description: "Reorganize the current branch's commits onto another branch.",
-    },
-    "format": {
-        command: "git format-patch [start-commit]",
-        description: "Create patch files from the specified commit.",
-    },
-    "remote": {
-        command: "git remote -v",
-        description: "Display a list of remotes and their URLs.",
-    },
-    "hooks": {
-        command: "git hooks",
-        description: "Use hooks to automate tasks such as pre-commit, pre-push, post-merge, etc.",
-    },
-    "blame": {
-        command: "git blame [file]",
-        description: "Show information about who changed which lines in a file.",
-    },
-    "archive": {
-        command: "git archive --format=zip --output=[file.zip] [branch]",
-        description: "Create a ZIP file from the specified branch.",
-    },
-    "log": {
-        command: "git log --oneline",
-        description: "Display the commit log with one line per commit.",
-    },
-    "bisect": {
-        command: "git bisect start",
-        description: "Start searching for the commit causing an issue.",
-    },
-    "filter": {
-        command: "git filter-branch --tree-filter '[command]' HEAD",
-        description: "Run a command on every commit in the current branch's history.",
-    },
-    "push": {
-        command: "git push [remote] [branch]",
-        description: "Push commits to a remote repository.",
-    },
-    "pull": {
-        command: "git pull [remote] [branch]",
-        description: "Fetch and integrate changes from a remote repository into the current branch.",
-    },
-    "push -f": {
-        command: "git push -f [remote] [branch]",
-        description: "Force push commits to a remote repository, overwriting remote changes.",
-    },
-    "pull origin": {
-        command: "git pull origin [branch]",
-        description: "Fetch and integrate changes from the remote 'origin' repository into the current branch.",
-    }
-};
 
 // Dữ liệu câu hỏi
 export const questions = {
     "training_data": [
         {
+            "question": "git push -f",
+            "syntax": "git push -f [remote] [branch].",
+            "answer": "git push is a command used to upload changes from your local repository to a remote repository in Git."
+        },
+        {
+            "question": "git push",
+            "syntax": "git push [remote] [branch].",
+            "answer": "git push is a command used to upload changes from your local repository to a remote repository in Git."
+        },
+        {
             "question": "How do I initialize a new Git repository?",
-            "answer": "To initialize a new Git repository, use the command `git init` in the directory where you want the repository to be created."
+            "answer": "To initialize a new Git repository, use the command `git init` in the directory where you want the repository to be created.",
+            "syntax":""
         },
         {
             "question": "What is the command to check the status of your Git repository?",
-            "answer": "Use the command `git status` to check the status of your Git repository."
+            "answer": "Use the command `git status` to check the status of your Git repository.",
+            "syntax":""
         },
         {
             "question": "How do I stage changes in Git?",
-            "answer": "To stage changes, use the command `git add <file>` to add individual files or `git add .` to add all changes in the current directory."
+            "answer": "To stage changes, use the command `git add <file>` to add individual files or `git add .` to add all changes in the current directory.",
+            "syntax":""
         },
         {
             "question": "How do I commit changes in Git?",
-            "answer": "To commit changes, use the command `git commit -m 'your commit message'` where 'your commit message' describes the changes you made."
+            "answer": "To commit changes, use the command `git commit -m 'your commit message'` where 'your commit message' describes the changes you made.",
+            "syntax":""
         },
         {
             "question": "How can I view the commit history?",
-            "answer": "Use the command `git log` to view the commit history. You can use additional options to format and limit the output."
+            "answer": "Use the command `git log` to view the commit history. You can use additional options to format and limit the output.",
+            "syntax":""
         },
         {
             "question": "How do I create a new branch?",
-            "answer": "To create a new branch, use the command `git branch <branch-name>`. To switch to the new branch, use `git checkout <branch-name>` or `git switch <branch-name>`."
+            "answer": "To create a new branch, use the command `git branch <branch-name>`. To switch to the new branch, use `git checkout <branch-name>` or `git switch <branch-name>`.",
+            "syntax":""
         },
         {
             "question": "How can I merge a branch into the main branch?",
-            "answer": "First, switch to the main branch using `git checkout main` or `git switch main`. Then use the command `git merge <branch-name>` to merge the specified branch into the main branch."
+            "answer": "First, switch to the main branch using `git checkout main` or `git switch main`. Then use the command `git merge <branch-name>` to merge the specified branch into the main branch.",
+            "syntax":""
         },
         {
             "question": "What does 'git pull' do?",
-            "answer": "The command `git pull` fetches changes from the remote repository and merges them into your current branch."
+            "answer": "The command `git pull` fetches changes from the remote repository and merges them into your current branch.",
+            "syntax":""
         },
         {
             "question": "How do I resolve merge conflicts?",
-            "answer": "To resolve merge conflicts, open the conflicted files and manually edit the conflicts. After resolving, stage the resolved files using `git add <file>` and commit the changes with `git commit`."
+            "answer": "To resolve merge conflicts, open the conflicted files and manually edit the conflicts. After resolving, stage the resolved files using `git add <file>` and commit the changes with `git commit`.",
+            "syntax":""
         },
         {
             "question": "How do I clone a Git repository?",
-            "answer": "To clone a Git repository, use the command `git clone <repository-url>`, where `<repository-url>` is the URL of the repository you want to clone."
+            "answer": "To clone a Git repository, use the command `git clone <repository-url>`, where `<repository-url>` is the URL of the repository you want to clone.",
+            "syntax":""
         },
         {
             "question": "How do I revert a commit?",
-            "answer": "To revert a commit, use the command `git revert <commit-hash>`. This will create a new commit that undoes the changes introduced by the specified commit."
+            "answer": "To revert a commit, use the command `git revert <commit-hash>`. This will create a new commit that undoes the changes introduced by the specified commit.",
+            "syntax":""
         },
         {
             "question": "What is the difference between 'git fetch' and 'git pull'?",
-            "answer": "'git fetch' downloads changes from the remote repository but does not merge them into your current branch. 'git pull' does both fetching and merging the changes."
+            "answer": "'git fetch' downloads changes from the remote repository but does not merge them into your current branch. 'git pull' does both fetching and merging the changes.",
+            "syntax":""
         },
         {
             "question": "How do I delete a branch?",
-            "answer": "To delete a local branch, use the command `git branch -d <branch-name>`. To delete a remote branch, use `git push origin --delete <branch-name>`."
+            "answer": "To delete a local branch, use the command `git branch -d <branch-name>`. To delete a remote branch, use `git push origin --delete <branch-name>`.",
+            "syntax":""
+        },
+        {
+            "question": "How can I rename a branch in Git?",
+            "answer": "To rename a branch, use the command `git branch -m <new-branch-name>`. This will rename the current branch to the new name.",
+            "syntax":""
+        },
+        {
+            "question": "How do I undo the last commit?",
+            "answer": "To undo the last commit but keep the changes in the working directory, use `git reset --soft HEAD~1`. To undo the last commit and discard the changes, use `git reset --hard HEAD~1`.",
+            "syntax":""
+        },
+        {
+            "question": "How do I remove a file from Git without deleting it from the working directory?",
+            "answer": "Use the command `git rm --cached <file>` to remove the file from Git's index without deleting it from your working directory.",
+            "syntax":""
+        },
+        {
+            "question": "What is a Git stash?",
+            "answer": "Git stash allows you to save your current changes in a stack and revert to a clean working directory. You can later apply the stashed changes with `git stash apply`.",
+            "syntax":""
+        },
+        {
+            "question": "How can I list all stashes in Git?",
+            "answer": "Use the command `git stash list` to see a list of all stashes stored in your repository.",
+            "syntax":""
+        },
+        {
+            "question": "How do I delete a stash in Git?",
+            "answer": "To delete a stash, use the command `git stash drop <stash>` or `git stash clear` to remove all stashes.",
+            "syntax":""
+        },
+        {
+            "question": "How do I create a new tag in Git?",
+            "answer": "To create a new tag, use the command `git tag <tag-name>` to create a lightweight tag or `git tag -a <tag-name> -m <message>` to create an annotated tag.",
+            "syntax":""
+        },
+        {
+            "question": "How do I push tags to a remote repository?",
+            "answer": "To push tags to a remote repository, use the command `git push origin <tag-name>` or `git push origin --tags` to push all tags.",
+            "syntax":""
+        },
+        {
+            "question": "How can I delete a tag in Git?",
+            "answer": "To delete a tag locally, use `git tag -d <tag-name>`. To delete a tag from a remote repository, use `git push origin --delete <tag-name>`.",
+            "syntax":""
+        },
+        {
+            "question": "How do I check out a specific commit in Git?",
+            "answer": "Use the command `git checkout <commit-hash>` to switch to a specific commit. This puts your repository in a 'detached HEAD' state.",
+            "syntax":""
+        },
+        {
+            "question": "What is a Git submodule?",
+            "answer": "A Git submodule is a repository embedded inside another repository. Use `git submodule add <repository-url>` to add a submodule.",
+            "syntax":""
+        },
+        {
+            "question": "How do I update a Git submodule?",
+            "answer": "To update a submodule, use the command `git submodule update --remote` to fetch the latest changes from the submodule's remote repository.",
+            "syntax":""
+        },
+        {
+            "question": "How do I remove a Git submodule?",
+            "answer": "To remove a submodule, delete the relevant section from the `.gitmodules` file, remove the submodule's entry from `.git/config`, and run `git rm --cached <submodule-path>`.",
+            "syntax":""
+        },
+        {
+            "question": "How do I list all branches in Git?",
+            "answer": "Use the command `git branch` to list all local branches. To list remote branches, use `git branch -r`.",
+            "syntax":""
+        },
+        {
+            "question": "How can I set up a Git remote?",
+            "answer": "To set up a Git remote, use the command `git remote add <name> <url>`, where `<name>` is the name of the remote and `<url>` is the remote repository's URL.",
+            "syntax":""
+        },
+        {
+            "question": "How do I remove a Git remote?",
+            "answer": "To remove a Git remote, use the command `git remote remove <name>`, where `<name>` is the name of the remote.",
+            "syntax":""
+        },
+        {
+            "question": "What is Git rebase?",
+            "answer": "Git rebase is a way to move or combine a series of commits onto a new base commit. Use `git rebase <branch>` to rebase your current branch onto another branch.",
+            "syntax":""
+        },
+        {
+            "question": "How can I abort a Git rebase?",
+            "answer": "To abort an ongoing rebase, use the command `git rebase --abort`. This will return your repository to the state before the rebase started.",
+            "syntax":""
+        },
+        {
+            "question": "How do I squash commits in Git?",
+            "answer": "To squash commits, use an interactive rebase with `git rebase -i <base-commit>`, then mark the commits you want to squash with 's' or 'squash'.",
+            "syntax":""
+        },
+        {
+            "question": "How do I initialize a new Git repository?",
+            "answer": "To initialize a new Git repository, use the command `git init` in the directory where you want the repository to be created.",
+            "syntax": "git init"
+        },
+        {
+            "question": "How do I configure the global username in Git?",
+            "answer": "Use the command `git config --global user.name 'Your Name'` to configure the global username.",
+            "syntax": "git config --global user.name 'Your Name'"
+        },
+        {
+            "question": "How do I check the status of the working directory in Git?",
+            "answer": "Use the command `git status` to check the status of the working directory and staging area.",
+            "syntax": "git status"
+        },
+        {
+            "answer": "Use the command `git add [file]` to add files to the staging area.",
+            "question": "How do I add files to the staging area in Git?",
+            "syntax": "git add [file]"
+        },
+        {
+            "question": "How do I list branches in a Git repository?",
+            "answer": "Use the command `git branch` to list branches in the repository.",
+            "syntax": "git branch"
+        },
+        {
+            "question": "How do I push commits to a remote Git repository?",
+            "answer": "Use the command `git push [remote] [branch]` to push commits to a remote repository.",
+            "syntax": "git push [remote] [branch]"
+        },
+        {
+            "question": "How do I commit changes in Git?",
+            "answer": "Use the command `git commit -m [message]` to commit changes with a descriptive message.",
+            "syntax": "git commit -m [message]"
+        },
+        {
+            "question": "How do I merge branches in Git?",
+            "answer": "Use the command `git merge [branch]` to merge the specified branch into the current branch.",
+            "syntax": "git merge [branch]"
+        },
+        {
+            "question": "How do I undo changes in Git?",
+            "answer": "Use the command `git reset [file]` to remove a file from the staging area but keep the changes in the working directory.",
+            "syntax": "git reset [file]"
+        },
+        {
+            "question": "How do I create a tag in Git?",
+            "answer": "Use the command `git tag [tag-name]` to create a new tag.",
+            "syntax": "git tag [tag-name]"
+        },
+        {
+            "question": "How do I stash changes in Git?",
+            "answer": "Use the command `git stash` to save current changes and reset the working directory.",
+            "syntax": "git stash"
+        },
+        {
+            "question": "How do I add a submodule in Git?",
+            "answer": "Use the command `git submodule add [url] [path]` to add a submodule.",
+            "syntax": "git submodule add [url] [path]"
+        },
+        {
+            "question": "How do I cherry-pick a commit in Git?",
+            "answer": "Use the command `git cherry-pick [commit-hash]` to apply a specific commit from another branch to the current branch without merging the entire branch.",
+            "syntax": "git cherry-pick [commit-hash]"
+        },
+        {
+            "question": "How do I reset the HEAD state in Git?",
+            "answer": "Use the command `git reset [commit]` to reset the HEAD state to the specified commit without affecting the working directory.",
+            "syntax": "git reset [commit]"
+        },
+        {
+            "question": "How do I rebase a branch in Git?",
+            "answer": "Use the command `git rebase [branch]` to reorganize the current branch's commits onto another branch.",
+            "syntax": "git rebase [branch]"
+        },
+        {
+            "question": "How do I create patch files from a commit in Git?",
+            "answer": "Use the command `git format-patch [start-commit]` to create patch files from the specified commit.",
+            "syntax": "git format-patch [start-commit]"
+        },
+        {
+            "question": "How do I display a list of remotes in Git?",
+            "answer": "Use the command `git remote -v` to display a list of remotes and their URLs.",
+            "syntax": "git remote -v"
+        },
+        {
+            "question": "How do I use Git hooks?",
+            "answer": "Use hooks to automate tasks such as pre-commit, pre-push, post-merge, etc.",
+            "syntax": "git hooks"
+        },
+        {
+            "question": "How do I see who changed lines in a file using Git?",
+            "answer": "Use the command `git blame [file]` to show information about who changed which lines in a file.",
+            "syntax": "git blame [file]"
+        },
+        {
+            "question": "How do I create a ZIP file from a Git branch?",
+            "answer": "Use the command `git archive --format=zip --output=[file.zip] [branch]` to create a ZIP file from the specified branch.",
+            "syntax": "git archive --format=zip --output=[file.zip] [branch]"
+        },
+        {
+            "question": "How do I display the commit log in Git?",
+            "answer": "Use the command `git log --oneline` to display the commit log with one line per commit.",
+            "syntax": "git log --oneline"
+        },
+        {
+            "question": "How do I start searching for a commit causing an issue in Git?",
+            "answer": "Use the command `git bisect start` to start searching for the commit causing an issue.",
+            "syntax": "git bisect start"
+        },
+        {
+            "question": "How do I filter commits in Git?",
+            "answer": "Use the command `git filter-branch --tree-filter '[command]' HEAD` to run a command on every commit in the current branch's history.",
+            "syntax": "git filter-branch --tree-filter '[command]' HEAD"
+        },
+        {
+            "question": "How do I force push commits in Git?",
+            "answer": "Use the command `git push -f [remote] [branch]` to force push commits to a remote repository, overwriting remote changes.",
+            "syntax": "git push -f [remote] [branch]"
+        },
+        {
+            "question": "How do I pull changes from the 'origin' remote in Git?",
+            "answer": "Use the command `git pull origin [branch]` to fetch and integrate changes from the remote 'origin' repository into the current branch.",
+            "syntax": "git pull origin [branch]"
+        },
+        {
+            "question": "git config",
+            "syntax": "git config --global user.name 'Your Name'",
+            "answer": "Configure the global username.",
+        },
+        {
+            "question": "git init",
+            "syntax": "git init",
+            "answer": "Initialize a new Git repository.",
+        },
+        {
+            "question": "git status",
+            "syntax": "git status",
+            "answer": "Check the status of the working directory and staging area.",
+        },
+        {
+            "question": "git add",
+            "syntax": "git add [file]",
+            "answer": "Add files to the staging area.",
+        },
+        {
+            "question": "branch",
+            "syntax": "git branch",
+            "answer": "List branches in the repository.",
+        },
+        {
+            "question": "update",
+            "syntax": "git push [remote] [branch]",
+            "answer": "Push commits to a remote repository.",
+        },
+        {
+            "question": "git commit",
+            "syntax": "git commit -m [remote] [branch]",
+            "answer": "Push commits to a remote repository.",
+        },
+        {
+            "question": "git merge",
+            "syntax": "git merge [branch]",
+            "answer": "Merge the specified branch into the current branch.",
+        },
+        {
+            "question": "git reset",
+            "syntax": "git reset [file]",
+            "answer": "Remove a file from the staging area but keep the changes in the working directory.",
+        },
+        {
+            "question": "git tagging",
+            "syntax": "git tag [tag-name]",
+            "answer": "Create a new tag.",
+        },
+        {
+            "question": "git stashing",
+            "syntax": "git stash",
+            "answer": "Save current changes and reset the working directory.",
+        },
+        {
+            "question": "git submodules",
+            "syntax": "git submodule add [url] [path]",
+            "answer": "Add a submodule.",
+        },
+        {
+            "question": "git cherry",
+            "syntax": "git cherry-pick [commit-hash]",
+            "answer": "Apply a specific commit from another branch to the current branch without merging the entire branch.",
+        },
+        {
+            "question": "git reset",
+            "syntax": "git reset [commit]",
+            "answer": "Reset the HEAD state to the specified commit without affecting the working directory.",
+        },
+        {
+            "question": "git rebase",
+            "syntax": "git rebase [branch]",
+            "answer": "Reorganize the current branch's commits onto another branch.",
+        },
+        {
+            "question": "git format",
+            "syntax": "git format-patch [start-commit]",
+            "answer": "Create patch files from the specified commit.",
+        },
+        {
+            "question": "git remote",
+            "syntax": "git remote -v",
+            "answer": "Display a list of remotes and their URLs.",
+        },
+        {
+            "question": "git hooks",
+            "syntax": "git hooks",
+            "answer": "Use hooks to automate tasks such as pre-commit, pre-push, post-merge, etc.",
+        },
+        {
+            "question": "git blame",
+            "syntax": "git blame [file]",
+            "answer": "Show information about who changed which lines in a file.",
+        },
+        {
+            "question": "git archive",
+            "syntax": "git archive --format=zip --output=[file.zip] [branch]",
+            "answer": "Create a ZIP file from the specified branch.",
+        },
+        {
+            "question": "git log",
+            "syntax": "git log --oneline",
+            "answer": "Display the commit log with one line per commit.",
+        },
+        {
+            "question": "git bisect",
+            "syntax": "git bisect start",
+            "answer": "Start searching for the commit causing an issue.",
+        },
+        {
+            "question": "git filter",
+            "syntax": "git filter-branch --tree-filter '[command]' HEAD",
+            "answer": "Run a command on every commit in the current branch's history.",
+        },
+        {
+            "question": "git pull",
+            "syntax": "git pull [remote] [branch]",
+            "answer": "Fetch and integrate changes from a remote repository into the current branch.",
+        },
+        {
+            "question": "git pull origin",
+            "syntax": "git pull origin [branch]",
+            "answer": "Fetch and integrate changes from the remote 'origin' repository into the current branch.",
+        },
+        {
+            "question": "What does the `-f` flag do in the `git push` command?",
+            "answer": "The `-f` flag stands for 'force' and is used with `git push` to forcefully push changes to the remote repository, overwriting any conflicts that may exist.",
+            "syntax": "git push -f [remote] [branch]"
+        },
+        {
+            "question": "What does the `-f` flag do in the `git checkout` command?",
+            "answer": "The `-f` flag in `git checkout` stands for 'force' and is used to force the checkout operation, discarding any local changes that are not yet committed.",
+            "syntax": "git checkout -f [branch]"
+        },
+        {
+            "question": "What does the `-f` flag do in the `git tag` command?",
+            "answer": "The `-f` flag in `git tag` is used to forcefully create a tag, overwriting an existing tag with the same name if it already exists.",
+            "syntax": "git tag -f [tag-name]"
+        },
+        {
+            "question": "What does the `-f` flag do in the `git reset` command?",
+            "answer": "The `-f` flag in `git reset` is used to forcefully reset the working directory and index, discarding any local changes that have not been committed.",
+            "syntax": "git reset -f [commit]"
+        },
+        {
+            "question": "What does the `-f` flag do in the `git revert` command?",
+            "answer": "The `-f` flag in `git revert` is used to force the creation of a new commit that undoes the changes introduced by a previous commit, even if it would create conflicts.",
+            "syntax": "git revert -f [commit]"
+        },
+        {
+            "question": "git push -f",
+            "syntax": "git push -f [remote] [branch]",
+            "answer": "The `-f` flag stands for 'force' and is used with `git push` to forcefully push changes to the remote repository, overwriting any conflicts that may exist."
+        },
+        {
+            "question": "git checkout -f",
+            "syntax": "git checkout -f [branch]",
+            "answer": "The `-f` flag stands for 'force' and is used in `git checkout` to forcefully switch branches, discarding any local changes that have not been committed."
+        },
+        {
+            "question": "git tag -f",
+            "syntax": "git tag -f",
+            "answer": "The `-f` flag stands for 'force' and is used with `git tag` to forcefully create or update a tag, overwriting an existing tag with the same name if it already exists."
+        },
+        {
+            "question": "git reset -f",
+            "syntax": "git reset -f [commit]",
+            "answer": "The `-f` flag stands for 'force' and is used with `git reset` to forcefully reset the working directory and index, discarding any local changes that have not been committed."
+        },
+        {
+            "question": "git revert -f",
+            "syntax": "git revert -f [commit]",
+            "answer": "The `-f` flag stands for 'force' and is used with `git revert` to force the creation of a new commit that undoes the changes introduced by a previous commit, even if it would create conflicts.",
+        },
+        {
+            "question": "Who are create you!",
+            "answer": "Jin dev",
+            "syntax": "github: https://github.com/phongmv?tab=overview&from=2024-09-01&to=2024-09-05",
+        },
+        {
+            "question": "What are some easy ways to stay active during a busy day?",
+            "answer": "Easy ways to stay active include taking short walks during breaks, using stairs instead of elevators, performing simple exercises at your desk, and incorporating physical activities into daily routines, like stretching or using a standing desk."
+        },
+        {
+            "question": "How can I improve my sleep quality?",
+            "answer": "To improve sleep quality, maintain a consistent sleep schedule, create a relaxing bedtime routine, limit screen time before bed, keep your sleep environment comfortable and dark, and avoid caffeine and heavy meals close to bedtime."
+        },
+        {
+            "question": "What are some tips for cooking healthy meals at home?",
+            "answer": "Tips for cooking healthy meals include planning your meals ahead, using fresh ingredients, incorporating a variety of vegetables, choosing lean proteins, using healthy cooking methods (like baking or grilling), and minimizing the use of processed foods and excess salt or sugar."
+        },
+        {
+            "question": "How can I effectively manage stress?",
+            "answer": "Effective stress management techniques include practicing relaxation exercises such as deep breathing or meditation, engaging in physical activities, setting realistic goals, maintaining a healthy work-life balance, and seeking support from friends, family, or professionals."
+        },
+        {
+            "question": "What are some practical tips for decluttering my home?",
+            "answer": "Practical tips for decluttering include setting specific decluttering goals, sorting items into categories (keep, donate, or discard), tackling one area at a time, using organizational tools like bins or shelves, and regularly reassessing your belongings to prevent future clutter."
+        },
+        {
+            "question": "How can I improve my personal productivity?",
+            "answer": "To improve personal productivity, set clear and achievable goals, create a daily to-do list or schedule, prioritize tasks, minimize distractions, use productivity tools or apps, and take regular breaks to recharge."
+        },
+        {
+            "question": "What are some strategies for effective communication in personal relationships?",
+            "answer": "Strategies for effective communication include actively listening, being clear and concise, expressing your thoughts and feelings honestly, using positive body language, and addressing issues calmly and respectfully."
+        },
+        {
+            "question": "How can I save money on everyday expenses?",
+            "answer": "To save money on everyday expenses, create and stick to a budget, shop with a list, compare prices before purchasing, use coupons or discounts, reduce discretionary spending, and find ways to lower utility bills and other recurring costs."
+        },
+        {
+            "question": "What are some ways to develop a positive mindset?",
+            "answer": "Ways to develop a positive mindset include practicing gratitude, focusing on your strengths and achievements, surrounding yourself with positive influences, setting realistic and achievable goals, and reframing negative thoughts into positive ones."
+        },
+        {
+            "question": "How can I maintain a balanced work-life integration?",
+            "answer": "Maintaining balanced work-life integration involves setting clear boundaries between work and personal time, prioritizing self-care and leisure activities, managing time effectively, and communicating openly with your employer or colleagues about your needs and limits."
+        },
+        {
+            "question": "What are some ways to build and maintain financial security?",
+            "answer": "Building and maintaining financial security involves creating and sticking to a budget, saving and investing regularly, having an emergency fund, managing debt responsibly, and planning for long-term financial goals such as retirement."
+        },
+        {
+            "question": "How can I support my child's education at home?",
+            "answer": "Supporting your child's education at home includes creating a dedicated study space, establishing a consistent homework routine, encouraging reading and curiosity, providing help with school projects, and maintaining open communication with teachers about your child's progress."
+        },
+        {
+            "question": "What are some tips for achieving work-life balance?",
+            "answer": "Tips for achieving work-life balance include setting clear work hours, delegating tasks, managing time effectively, making time for hobbies and relaxation, and maintaining a healthy boundary between work and personal life."
+        },
+        {
+            "question": "How can I improve my decision-making skills?",
+            "answer": "To improve decision-making skills, gather relevant information, weigh the pros and cons, consider long-term consequences, seek advice when necessary, and reflect on past decisions to learn from experience."
+        },
+        {
+            "question": "What are some effective ways to handle family conflicts?",
+            "answer": "Effective ways to handle family conflicts include addressing issues calmly, listening to all perspectives, finding common ground, avoiding blame, and seeking compromise or mediation if necessary."
+        },
+        {
+            "question": "How can I stay motivated to achieve personal goals?",
+            "answer": "To stay motivated, set clear and specific goals, break them into smaller, manageable tasks, track your progress, reward yourself for milestones, and stay connected with supportive friends or mentors."
+        },
+        {
+            "question": "What are some ways to practice self-care?",
+            "answer": "Ways to practice self-care include setting aside time for yourself, engaging in activities you enjoy, practicing relaxation techniques, maintaining a healthy lifestyle, and seeking support when needed."
+        },
+        {
+            "question": "How can I improve my time management skills?",
+            "answer": "To improve time management skills, create a daily or weekly plan, set priorities, use time-tracking tools, avoid multitasking, and allocate time for both work and leisure activities."
+        },
+        {
+            "question": "What are some tips for maintaining a healthy work environment?",
+            "answer": "Maintaining a healthy work environment involves fostering open communication, promoting teamwork, encouraging work-life balance, providing constructive feedback, and creating a positive and inclusive workplace culture."
         }
     ]
 };

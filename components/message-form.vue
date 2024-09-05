@@ -29,10 +29,10 @@
 <script setup lang="ts">
 import {marked} from "marked";
 import dompurify from "dompurify"
-import {getFakeAIResponse, getQuestionsResponse} from "~/services/message.service";
-import type {IGitCommands, IQuestionAnswers} from "~/interfaces/IGitCommands";
+import {getQuestionsResponse} from "~/services/message.service";
+import type { IQuestionAnswer, IQuestionAnswers} from "~/interfaces/IGitCommands";
 import {formatDate, replaceSpecialCharacters} from "~/helpers/message-formatter";
-import {specialKey, welcomeKey} from "~/constant/keys";
+import { welcomeKey} from "~/constant/keys";
 
 interface IEmits {
   (e: 'onSubmit'): void
@@ -42,7 +42,6 @@ const emits = defineEmits<IEmits>()
 const newMessage = ref("")
 const messages = useMessages()
 const {customerInitials, customerName} = useCustomer()
-const gitCommands = ref<IGitCommands>({ ...await getFakeAIResponse()})
 const questions = ref<IQuestionAnswers>({...await getQuestionsResponse()})
 
 //init value
@@ -58,58 +57,38 @@ onMounted(  () => {
   })
 })
 
-function getKeywordMatchCount(question: string, keywords: string[]): number {
-  const questionWords = question.toLowerCase().split(/\s+/);
-  return keywords.reduce((count, keyword) => {
-    return count + (questionWords.includes(keyword.toLowerCase()) ? 1 : 0);
-  }, 0);
-}
+import stringSimilarity from 'string-similarity';
 
-function getAnswerForQuestion(question: string) {
-  const foundInQuestions = questions.value["training_data"].find((q) => {
-    const questionKeywords = q.question.split(/\s+/);
-    const matchCount = getKeywordMatchCount(question, questionKeywords);
-    const threshold = Math.ceil(questionKeywords.length * 1 / 2);
-    return matchCount >= threshold;
-  });
+function findBestMatch(question: string): string | null {
+  const threshold = 0.6; // 70% similarity threshold
+  const { training_data } = questions.value;
 
-  if (foundInQuestions) {
-    return foundInQuestions.answer
+  let bestMatch: IQuestionAnswer | null = null;
+  let highestSimilarity = 0;
+  for (const data of training_data) {
+    const similarity = stringSimilarity.compareTwoStrings(question, data.question);
+    if (similarity > highestSimilarity && similarity >= threshold) {
+      highestSimilarity = similarity;
+      bestMatch = data;
+    }
   }
+  return bestMatch ? `${bestMatch.answer} <br><strong>${bestMatch?.syntax || ""}</strong>` : "Sorry, I couldn't find a good match for your question.";
 }
 
-async function getFakeAiResponse(keySearching: string): Promise<string> {
-
-  if (getAnswerForQuestion(keySearching))
-    return `<p class="text-sm text-wrap">${getAnswerForQuestion(keySearching)}</p>`
+async function getFakeAiResponse(keySearching: string){
 
     emits("onSubmit");
-    const keyData = Object.keys(gitCommands.value);
     const keysFilter = replaceSpecialCharacters(keySearching).split(" ").filter(k => !!k).map(i => i.toLowerCase());
-
-
-    let matchingKeys = keyData.filter(key =>
-        keysFilter.some(filterKey => key === filterKey)
-    );
 
     //handle special key all
     for (const key of keysFilter) {
       if (welcomeKey.includes(key))
         return `<p class="text-wrap text-sm"><strong>^^!</strong> Hi ${customerName.value}! I'm Hana 😍</p>`
-
-      if (specialKey.includes(key)) matchingKeys = keyData
     }
 
-    if (matchingKeys.length > 0 && gitCommands.value) {
-      return matchingKeys.map(key =>
-          `<p class="text-wrap text-sm"><strong>Syntax:</strong> ${gitCommands?.value[key]?.command}</p>` +
-          `<p class="text-wrap text-sm text-gray"><strong>Description:</strong> ${gitCommands?.value[key]?.description}</p>`
-      ).join('<hr class="my-4"/>');
-    }
-
-
-    return '<p class="text-sm text-wrap">Oops! Please try searching for something else. It\'s better if you use <strong>specific git command name</strong>. I’m so sorry 😭!</p>'
-  }
+  if (findBestMatch(keySearching))
+    return `<p class="text-sm text-wrap">${findBestMatch(keySearching)}</p>`
+}
 
 
 async function handleSubmit() {
