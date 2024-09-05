@@ -6,7 +6,7 @@
         <div
             class="w-12 h-12 overflow-hidden rounded-full image-fit border-2 border-slate-200/70"
         >
-          <img src="/hana.jpg" />
+          <NuxtImg src="/hana.jpg" />
         </div>
       </div>
       <div>
@@ -16,7 +16,7 @@
         <div class="text-slate-500 text-sm mt-0.5 truncate max-w-[9rem] md:max-w-none">
           Git Command Assistant
         </div>
-        <span class="text-red-400 italic text-xs">Please note: This app is frontend only and does not have backend features.</span>
+        <span class="text-red-600 italic text-xs">Please note: This app is frontend only and does not have backend features.</span>
       </div>
     </div>
 
@@ -33,7 +33,7 @@
           :class="{ 'flex-row-reverse': !mes.isHana }"
       >
         <!-- Profile Image -->
-        <img
+        <NuxtImg
             v-if="mes.isHana"
             alt="hana"
             class="block w-12 h-12 overflow-hidden rounded-full border-2 border-slate-200/70"
@@ -51,7 +51,7 @@
             class="w-3/4 flex flex-col gap-2 border px-4 pt-3 pb-4 rounded-xl bg-slate-50/80 border-slate-200/80"
         >
           <!-- Message Content -->
-          <div class="text-sm break-words overflow-auto" v-if="mes.isHana" v-html="mes.message"></div>
+          <div class="text-sm break-words overflow-auto typing-text" v-if="mes.isHana" v-html="mes.message"></div>
           <div class="text-sm break-words overflow-auto" v-else>
             {{ mes.message }}
           </div>
@@ -63,6 +63,7 @@
     <MessageForm @on-submit="handleScrollToBottom" />
   </section>
 </template>
+
 
 <script setup lang="ts">
 import { ref, watch } from 'vue';
@@ -85,3 +86,38 @@ watch(messages, () => {
   handleScrollToBottom()
 }, { deep: true });
 </script>
+
+<style>
+
+.typing-text {
+  display: inline-block;
+  overflow: hidden; /* Hide text outside of the container */
+  white-space: nowrap; /* Prevent text from wrapping to a new line */
+  position: relative;
+  color: #333; /* Text color */
+  animation: typing 2s steps(40, end);
+}
+
+.typing-text::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0) 100%);
+  z-index: 1;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
+
+</style>
