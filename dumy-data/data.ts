@@ -571,7 +571,7 @@ export const questions = {
             "answer": "I am a software engineer."
         },
         {
-            "question": "your job?",
+            "question": "what are your job?",
             "answer": "I am a software engineer."
         },
         {
@@ -605,6 +605,176 @@ export const questions = {
         {
             "question": "How are you?",
             "answer": "I'm good, how about you?"
+        },
+        {
+            "question": "What are some key trends in the AI market?",
+            "answer": "Key trends in the AI market include the rise of generative AI, advancements in natural language processing, increased use of AI in automation, and growing investments in AI-driven healthcare solutions."
+        },
+        {
+            "question": "How is AI impacting different industries?",
+            "answer": "AI is significantly impacting various industries by enhancing automation, improving decision-making through data analysis, optimizing operations, and enabling new products and services. For example, in healthcare, AI is used for diagnostics and personalized medicine, while in finance, it helps with fraud detection and algorithmic trading."
+        },
+        {
+            "question": "What are the challenges faced by the AI industry?",
+            "answer": "Challenges faced by the AI industry include issues related to data privacy and security, the need for ethical guidelines, the potential for job displacement, and the requirement for substantial computational resources. Additionally, there are concerns about bias in AI algorithms and the need for transparency in AI decision-making."
+        },
+        {
+            "question": "What are some popular AI technologies currently being developed?",
+            "answer": "Popular AI technologies being developed include machine learning algorithms, natural language processing (NLP), computer vision, and robotics. Technologies like deep learning and reinforcement learning are also gaining traction in various applications."
+        },
+        {
+            "question": "How is AI expected to evolve in the next decade?",
+            "answer": "In the next decade, AI is expected to evolve with advancements in general artificial intelligence (AGI), increased integration into daily life through smart devices, more sophisticated AI ethics and regulations, and enhanced capabilities in areas such as autonomous vehicles and personalized AI-driven experiences."
+        },
+        {
+            "question": "How do you declare a variable in JavaScript?",
+            "syntax": "let variableName = value;",
+            "answer": "You use `let` to declare a variable that can be reassigned, and `const` to declare a variable that cannot be reassigned. For example: `let age = 25;` or `const name = 'John';`."
+        },
+        {
+            "question": "How do you define a function in JavaScript?",
+            "syntax": "function functionName(parameters) { /* function body */ }",
+            "answer": "You define a function using the `function` keyword. For example: `function greet(name) { return 'Hello ' + name; }`."
+        },
+        {
+            "question": "How do you create an object in JavaScript?",
+            "syntax": "let objectName = { key1: value1, key2: value2 };",
+            "answer": "You create an object using curly braces with key-value pairs. For example: `let person = { name: 'Alice', age: 30 };`."
+        },
+        {
+            "question": "How do you handle errors in JavaScript?",
+            "syntax": "try { /* code */ } catch (error) { /* error handling code */ }",
+            "answer": "You use `try...catch` to handle errors. For example: `try { riskyOperation(); } catch (error) { console.error(error); }`."
+        },
+        {
+            "question": "How do you create an array in JavaScript?",
+            "syntax": "let arrayName = [item1, item2, item3];",
+            "answer": "You create an array using square brackets with items separated by commas. For example: `let numbers = [1, 2, 3];`."
+        },
+        {
+            "question": "How do you add an element to an array in JavaScript?",
+            "syntax": "arrayName.push(element);",
+            "answer": "You use the `push` method to add an element to the end of an array. For example: `numbers.push(4);`."
+        },
+        {
+            "question": "How do you remove an element from an array in JavaScript?",
+            "syntax": "arrayName.pop();",
+            "answer": "You use the `pop` method to remove the last element from an array. For example: `numbers.pop();`."
+        },
+        {
+            "question": "How do you iterate over an array in JavaScript?",
+            "syntax": "arrayName.forEach(element => { /* code */ });",
+            "answer": "You use the `forEach` method to iterate over each element of the array. For example: `numbers.forEach(number => console.log(number));`."
+        },
+        {
+            "question": "How do you declare a variable in Python?",
+            "syntax": "variable_name = value",
+            "answer": "In Python, you simply assign a value to a variable name. For example: `age = 25` or `name = 'John'`."
+        },
+        {
+            "question": "How do you define a function in Python?",
+            "syntax": "def function_name(parameters):\n    # function body",
+            "answer": "You define a function using the `def` keyword. For example: `def greet(name):\n    return 'Hello ' + name`."
+        },
+        {
+            "question": "How do you create a list in Python?",
+            "syntax": "list_name = [item1, item2, item3]",
+            "answer": "You create a list using square brackets with items separated by commas. For example: `numbers = [1, 2, 3]`."
+        },
+        {
+            "question": "How do you handle exceptions in Python?",
+            "syntax": "try:\n    # code\nexcept Exception as e:\n    # handle exception",
+            "answer": "You use `try...except` to handle exceptions. For example: `try:\n    risky_operation()\nexcept Exception as e:\n    print(e)`."
+        },
+        {
+            "question": "How do you add an item to a list in Python?",
+            "syntax": "list_name.append(item)",
+            "answer": "You use the `append` method to add an item to the end of a list. For example: `numbers.append(4)`."
+        },
+        {
+            "question": "How do you remove an item from a list in Python?",
+            "syntax": "list_name.remove(item)",
+            "answer": "You use the `remove` method to remove an item from a list. For example: `numbers.remove(2)`."
+        },
+        {
+            "question": "How do you iterate over a list in Python?",
+            "syntax": "for item in list_name:\n    # code",
+            "answer": "You use a `for` loop to iterate over each item in a list. For example: `for number in numbers:\n    print(number)`."
+        },
+        {
+            "question": "How do you create a dictionary in Python?",
+            "syntax": "dict_name = {key1: value1, key2: value2}",
+            "answer": "You create a dictionary using curly braces with key-value pairs. For example: `person = {'name': 'Alice', 'age': 30}`."
+        },
+        {
+            "question": "How do you declare a variable in C/C++?",
+            "syntax": "type variableName = value;",
+            "answer": "In C/C++, you declare a variable with a type followed by the variable name and value. For example: `int age = 25;` or `char name[] = 'John';`."
+        },
+        {
+            "question": "How do you define a function in C/C++?",
+            "syntax": "returnType functionName(parameters) { /* function body */ }",
+            "answer": "You define a function with a return type, function name, and parameters. For example: `int add(int a, int b) { return a + b; }`."
+        },
+        {
+            "question": "How do you create an array in C/C++?",
+            "syntax": "type arrayName[size] = {value1, value2, value3};",
+            "answer": "You create an array with a type, name, and size, and initialize it with values. For example: `int numbers[3] = {1, 2, 3};`."
+        },
+        {
+            "question": "How do you handle exceptions in C++?",
+            "syntax": "try {\n    // code\n} catch (ExceptionType& e) {\n    // handle exception\n}",
+            "answer": "In C++, you use `try...catch` blocks for exception handling. For example: `try { riskyOperation(); } catch (const std::exception& e) { std::cerr << e.what(); }`."
+        },
+        {
+            "question": "How do you print output to the console in C/C++?",
+            "syntax": "printf(\"format string\", variables); // C\ncout << variables; // C++",
+            "answer": "In C, you use `printf` to print output. In C++, you use `cout`. For example: `printf(\"%d\", age);` in C or `cout << age;` in C++."
+        },
+        {
+            "question": "How do you allocate memory dynamically in C/C++?",
+            "syntax": "pointer = (type*)malloc(size); // C\npointer = new type; // C++",
+            "answer": "In C, you use `malloc` to allocate memory dynamically. In C++, you use `new`. For example: `int* ptr = (int*)malloc(sizeof(int));` in C or `int* ptr = new int;` in C++."
+        },
+        {
+            "question": "How do you free dynamically allocated memory in C/C++?",
+            "syntax": "free(pointer); // C\ndelete pointer; // C++",
+            "answer": "In C, you use `free` to deallocate memory. In C++, you use `delete`. For example: `free(ptr);` in C or `delete ptr;` in C++."
+        },
+        {
+            "question": "How do you declare a variable in Java?",
+            "syntax": "type variableName = value;",
+            "answer": "In Java, you declare a variable with a type followed by the variable name and value. For example: `int age = 25;` or `String name = 'John';`."
+        },
+        {
+            "question": "How do you define a method in Java?",
+            "syntax": "returnType methodName(parameters) { /* method body */ }",
+            "answer": "You define a method with a return type, method name, and parameters. For example: `int add(int a, int b) { return a + b; }`."
+        },
+        {
+            "question": "How do you create an array in Java?",
+            "syntax": "type[] arrayName = new type[size];",
+            "answer": "You create an array with a type, name, and size. For example: `int[] numbers = new int[3];`."
+        },
+        {
+            "question": "How do you handle exceptions in Java?",
+            "syntax": "try {\n    // code\n} catch (ExceptionType e) {\n    // handle exception\n}",
+            "answer": "In Java, you use `try...catch` blocks for exception handling. For example: `try { riskyOperation(); } catch (Exception e) { e.printStackTrace(); }`."
+        },
+        {
+            "question": "How do you print output to the console in Java?",
+            "syntax": "System.out.println(\"message\");",
+            "answer": "You use `System.out.println` to print output. For example: `System.out.println(\"Hello, world!\");`."
+        },
+        {
+            "question": "How do you create a class in Java?",
+            "syntax": "class ClassName {\n    // fields and methods\n}",
+            "answer": "You create a class with the `class` keyword followed by the class name. For example: `class Person {\n    String name;\n    int age;\n}`."
+        },
+        {
+            "question": "How do you create an object in Java?",
+            "syntax": "ClassName objectName = new ClassName();",
+            "answer": "You create an object by using the `new` keyword followed by the class constructor. For example: `Person person = new Person();`."
         }
     ]
 };
