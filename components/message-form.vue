@@ -65,12 +65,17 @@ async function getFakeAiResponse(keySearching: string): Promise<string> {
   emits("onSubmit");
   const keyData = Object.keys(gitCommands.value);
   const keysFilter = replaceSpecialCharacters(keySearching).split(" ").filter(k => !!k);
+  const specialKey = ["all", "full", "het"]
 
 
-  const matchingKeys = keyData.filter(key =>
+  let matchingKeys = keyData.filter(key =>
       keysFilter.some(filterKey => key === filterKey)
   );
 
+  //handle special key all
+ for (const key of keysFilter){
+   if(specialKey.includes(key)) matchingKeys = keyData
+ }
 
   if (matchingKeys.length > 0 && gitCommands.value) {
     return matchingKeys.map(key =>
