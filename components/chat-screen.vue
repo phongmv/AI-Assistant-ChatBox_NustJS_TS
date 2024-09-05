@@ -13,9 +13,10 @@
         <div class="font-medium truncate max-w-[9rem] md:max-w-none">
           Hana
         </div>
-        <div class="text-slate-500 mt-0.5 truncate max-w-[9rem] md:max-w-none">
-         Git commands Chatbot
+        <div class="text-slate-500 text-sm mt-0.5 truncate max-w-[9rem] md:max-w-none">
+          Git Command Assistant
         </div>
+        <span class="text-red-400 italic text-xs">Please note: This app is frontend only and does not have backend features.</span>
       </div>
     </div>
 
