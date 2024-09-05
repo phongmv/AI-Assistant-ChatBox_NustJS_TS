@@ -29,8 +29,8 @@
 <script setup lang="ts">
 import {marked} from "marked";
 import dompurify from "dompurify"
-import {getQuestionsResponse} from "~/services/message.service";
-import type { IQuestionAnswer, IQuestionAnswers} from "~/interfaces/IGitCommands";
+import {getFakeAIResponse, getQuestionsResponse} from "~/services/message.service";
+import type {IGitCommands, IQuestionAnswer, IQuestionAnswers} from "~/interfaces/IGitCommands";
 import {formatDate, replaceSpecialCharacters} from "~/helpers/message-formatter";
 import { welcomeKey} from "~/constant/keys";
 
@@ -43,6 +43,7 @@ const newMessage = ref("")
 const messages = useMessages()
 const {customerInitials, customerName} = useCustomer()
 const questions = ref<IQuestionAnswers>({...await getQuestionsResponse()})
+const gitCommands = ref<IGitCommands>({...await getFakeAIResponse()})
 
 //init value
 onMounted(  () => {
@@ -89,19 +90,35 @@ function findBestMatch(question: string): string | null {
 
 
 async function getFakeAiResponse(keySearching: string){
+  emits("onSubmit");
 
-    emits("onSubmit");
-    const keysFilter = replaceSpecialCharacters(keySearching).split(" ").filter(k => !!k).map(i => i.toLowerCase());
+  const keyData = Object.keys(gitCommands.value);
+  const keysFilter = replaceSpecialCharacters(keySearching).split(" ").filter(k => !!k);
 
-    //handle special key all
-    for (const key of keysFilter) {
-      if (welcomeKey.includes(key))
-        return `<p class="text-wrap text-sm"><strong>^^!</strong> Hi ${customerName.value}! I'm Hana, talkin me! </p>`
-    }
+  //handle special key all
+  for (const key of keysFilter) {
+    if (welcomeKey.includes(key))
+      return `<p class="text-wrap text-sm"><strong>^^!</strong> Hi ${customerName.value}! I'm Hana, talkin me! </p>`
+  }
 
+  //handle multiple keywords
+  let matchingKeys = keyData.filter(key =>
+      keysFilter.some(filterKey => key === filterKey)
+  );
+
+
+  if (matchingKeys.length > 1 && gitCommands.value) {
+    return matchingKeys.map(key =>
+        `<p class="text-wrap text-sm"><strong>Syntax:</strong> ${gitCommands?.value[key]?.command}</p>` +
+        `<p class="text-wrap text-sm text-gray"><strong>Description:</strong> ${gitCommands?.value[key]?.description}</p>`
+    ).join('<hr class="my-4"/>');
+  }
+
+  //handle specifier keywords
   if (findBestMatch(keySearching))
     return `<p class="text-sm text-wrap">${findBestMatch(keySearching)}</p>`
 }
+
 
 
 async function handleSubmit() {
