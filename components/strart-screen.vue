@@ -2,7 +2,7 @@
   <section class="flex flex-col items-center gap-6">
     <img src="/hana.jpg" class="w-64 h-64 rounded-full" />
     <h1 class="text-center font-bold text-2xl">
-      Hana's Customer Support
+      Hana's Git Chatbot Assistance
     </h1>
     <form @submit.prevent="handleSubmit" class="flex flex-col gap-2 w-full">
       <input

@@ -51,7 +51,7 @@
         >
           <!-- Message Content -->
           <div v-if="mes.isHana" v-html="mes.message"></div>
-          <div v-else>
+          <div class="text-sm" v-else>
             {{ mes.message }}
           </div>
           <!-- Time -->

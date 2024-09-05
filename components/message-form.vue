@@ -31,6 +31,7 @@ import {marked} from "marked";
 import dompurify from "Dompurify"
 import {getFakeAIResponse} from "~/services/message.service";
 import type {IGitCommands} from "~/interfaces/IGitCommands";
+import {formatDate, replaceSpecialCharacters} from "~/helpers/message-formatter";
 
 interface IEmits {
   (e: 'onSubmit'): void
@@ -39,29 +40,36 @@ interface IEmits {
 const emits = defineEmits<IEmits>()
 const newMessage = ref("")
 const messages = useMessages()
-const {customerInitials} = useCustomer()
+const {customerInitials, customerName} = useCustomer()
 const gitCommands = ref<IGitCommands>({})
 
-function replaceSpecialCharacters(input: string): string {
-  const regex = /[;,.!?()\-@!#$%^&*]/g;
-  return input.replace(regex, ' ');
-}
+//init value
+onMounted(  () => {
+  messages.value.push({
+    name: "Hana",
+    message: `<p class="text-wrap text-sm"><strong>^^!</strong> Hi ${customerName.value}! I'm Hana 😍</p>` +
+        `<p class="text-wrap text-sm text-gray">My job is help answer about basic git commands, if you have any question, talkin me! </p>`,
+    isHana: true,
+    timestamp: new Date().toLocaleString([],  {
+      timeStyle: "short"
+    })
+  })
+})
+
 
 
 async function getFakeAiResponse(keySearching: string): Promise<string> {
-  if (!keySearching) {
-    return '<p class="text-wrap">Please! try searching for something else :"((</p>';
-  }
-
   gitCommands.value = { ...await getFakeAIResponse() };
 
   emits("onSubmit");
   const keyData = Object.keys(gitCommands.value);
   const keysFilter = replaceSpecialCharacters(keySearching).split(" ").filter(k => !!k);
 
+
   const matchingKeys = keyData.filter(key =>
-      keysFilter.some(filterKey => key.includes(filterKey))
+      keysFilter.some(filterKey => key === filterKey)
   );
+
 
   if (matchingKeys.length > 0 && gitCommands.value) {
     return matchingKeys.map(key =>
@@ -70,8 +78,7 @@ async function getFakeAiResponse(keySearching: string): Promise<string> {
     ).join('<hr class="my-4"/>');
   }
 
-  return `<p class="text-wrap text-sm"><strong>^^!</strong> Hi! I'm Hana</p>` +
-      `<p class="text-wrap text-sm text-gray">My job is help answer about basic git commands, if you have any question, talkin me!</p>`;
+  return '<p class="text-sm text-wrap">Oops! Please try searching for something else. It\'s better if you use <strong>specific keywords</strong>. I’m so sorry 😭!</p>'
 }
 
 
@@ -80,9 +87,7 @@ async function handleSubmit(){
     name: customerInitials.value,
     message: newMessage.value,
     isHana: false,
-    timestamp: new Date().toLocaleString([],  {
-      timeStyle: "short"
-    })
+    timestamp: formatDate()
   })
 
   const commandNode = await getFakeAiResponse(newMessage.value) || ''
@@ -93,9 +98,7 @@ async function handleSubmit(){
     name: "Hana",
     message: parsedMessage,
     isHana: true,
-    timestamp: new Date().toLocaleString([],  {
-      timeStyle: "short"
-    })
+    timestamp: formatDate()
   })
 }
 </script>
