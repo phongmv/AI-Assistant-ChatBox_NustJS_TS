@@ -54,7 +54,7 @@
             <div class="text-sm break-words overflow-auto typing-text"  v-html="mes.message"></div>
             <button  @click="copyToClipboard(mes)"
                      :class="{ 'text-green-800': isCopied[mes.id] }"
-                     class="flex justify-center items-center w-1 h-1 text-black text-xs p-3 mt-2 absolute bottom-[-28px] right-[4px] hover:text-slate-300">{{isCopied[mes.id] ? "Copied" : "Copy"}}</button>
+                     class="flex justify-center items-center w-1 h-1 text-black text-xs p-3 mt-2 absolute bottom-[-28px] right-[4px]">{{isCopied[mes.id] ? "Copied" : "Copy"}}</button>
           </div>
           <div class="text-sm break-words overflow-auto" v-else>
             {{ mes.message }}
@@ -104,7 +104,6 @@ function copyToClipboard(mes: IMessage) {
   // set timeout
  timeOutIds.value[mes.id] = setTimeout(() => {
    isCopied.value[mes.id] = false
-   timeOutIds.value[mes.id] = undefined;
  }, 5000)
 
   }).catch(err => {
