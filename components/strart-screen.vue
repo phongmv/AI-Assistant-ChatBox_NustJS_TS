@@ -1,6 +1,8 @@
 <template>
   <section class="flex flex-col items-center gap-6">
-    <NuxtImg src="/hana.jpg" class="w-64 h-64 rounded-full" />
+    <div v-tilt class="w-64 h-64 rounded-full overflow-hidden">
+      <NuxtImg src="/hana.jpg" class="w-full h-full object-cover" />
+    </div>
     <h1 class="text-center font-bold text-2xl">
       Hana's Git Chatbot Assistance
     </h1>

@@ -7,7 +7,7 @@
           <NuxtImg src="/hana.jpg" />
         </div>
       </div>
-      <div>
+      <div v-tilt>
         <div class="font-medium truncate max-w-[9rem] md:max-w-none">
           Hana's Git Chatbot Assistance
         </div>
@@ -33,6 +33,7 @@
       >
         <!-- Profile Image -->
         <NuxtImg
+            v-tilt
             v-if="mes.isHana"
             alt="hana"
             class="block w-12 h-12 overflow-hidden rounded-full border-2 border-slate-200/70"
