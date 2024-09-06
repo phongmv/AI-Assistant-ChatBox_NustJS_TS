@@ -2807,7 +2807,62 @@ export const questions = {
             "question": "git config --global fetch.prune true?",
             "answer": "`git config --global fetch.prune true` automatically prunes deleted branches when fetching.",
             "syntax": "git config --global fetch.prune true"
+        },
+        {
+            "question": "What is the difference between GitLab and GitBucket?",
+            "answer": "GitLab and GitBucket are both platforms for Git repository management, but they have some key differences. GitLab is a comprehensive DevOps platform that includes features like CI/CD pipelines, issue tracking, and project management, while GitBucket is a simpler, self-hosted Git platform with fewer features focused mainly on repository management. GitLab offers more built-in tools and integrations, whereas GitBucket is more lightweight and can be customized with plugins."
+        },
+        {
+            "question": "What is Git?",
+            "answer": "Git is a distributed version control system used to track changes in source code during software development. It allows multiple developers to work on a project simultaneously, manage changes, and maintain a history of revisions."
+        },
+        {
+            "question": "What are the key features of Git?",
+            "answer": "Key features of Git include branching and merging, a distributed nature, commit history, and a staging area for preparing changes before committing."
+        },
+        {
+            "question": "What is GitHub?",
+            "answer": "GitHub is a web-based platform for hosting and managing Git repositories. It provides collaboration features such as pull requests, code reviews, project management tools, and GitHub Pages for hosting static websites."
+        },
+        {
+            "question": "What are the key features of GitHub?",
+            "answer": "Key features of GitHub include pull requests, GitHub Actions for CI/CD, issues and project management tools, and GitHub Pages for static site hosting."
+        },
+        {
+            "question": "What is GitLab?",
+            "answer": "GitLab is a DevOps platform that combines Git repository management with integrated CI/CD, monitoring, and security features. It offers advanced project management and security tools, and can be self-hosted for more control."
+        },
+        {
+            "question": "What are the key features of GitLab?",
+            "answer": "Key features of GitLab include built-in CI/CD, issue tracking and project management, security features, and the option for self-hosting."
+        },
+        {
+            "question": "What is Bitbucket?",
+            "answer": "Bitbucket is a Git repository hosting service with a focus on team collaboration and integration with Atlassian tools like Jira. It offers CI/CD integration and code review features."
+        },
+        {
+            "question": "What are the key features of Bitbucket?",
+            "answer": "Key features of Bitbucket include Bitbucket Pipelines for CI/CD, code review through pull requests, and integration with Atlassian products like Jira, Confluence, and Trello."
+        },
+        {
+            "question": "What is GitBucket?",
+            "answer": "GitBucket is a self-hosted Git platform written in Scala. It is designed to be a lightweight and easy-to-install alternative to GitHub, with a simple interface and plugin support."
+        },
+        {
+            "question": "What are the key features of GitBucket?",
+            "answer": "Key features of GitBucket include a simple interface, plugin support for additional functionality, and the option for self-hosting."
+        },
+        {
+            "question": "What is GitKraken?",
+            "answer": "GitKraken is a cross-platform Git GUI client that provides a visual interface for managing Git repositories. It features an intuitive interface, a built-in merge tool, and is available for Windows, macOS, and Linux."
+        },
+        {
+            "question": "What are the key features of GitKraken?",
+            "answer": "Key features of GitKraken include an intuitive graphical interface for managing repositories, a built-in merge tool for conflict resolution, and cross-platform availability."
+        },
+        {
+            "question": "What problem does Git resolve?",
+            "answer": "Git resolves several problems in software development, including managing multiple versions of code, enabling collaboration among developers, tracking changes and their history, and handling merges from different contributors. Its distributed nature also means that developers can work offline and have a full copy of the project’s history."
         }
-
     ]
 };
