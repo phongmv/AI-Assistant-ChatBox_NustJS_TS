@@ -1780,7 +1780,24 @@ export const questions = {
         {
             "question": "What is a Git stash?",
             "answer": "Git stash allows you to temporarily save changes in your working directory without committing them. You can later apply or drop these changes using `git stash apply` or `git stash drop`."
+        },
+        {
+            "question": "What is the difference between GitLab and GitHub?",
+            "answer": "GitHub is primarily a platform for hosting Git repositories and is widely used for open-source projects and collaboration. It offers features like pull requests and issues for project management. GitLab, on the other hand, is a comprehensive DevOps platform that integrates Git repository hosting with continuous integration/continuous deployment (CI/CD) pipelines, project management, and more. GitLab also provides robust self-hosting options and is available in both open-source and enterprise editions."
+        },
+        {
+            "question": "Can you self-host GitLab and GitHub?",
+            "answer": "Yes, both GitLab and GitHub offer self-hosting options. GitLab provides a fully-featured self-hosted version, including its open-source community edition. GitHub offers GitHub Enterprise for self-hosting, but it is primarily known as a cloud service."
+        },
+        {
+            "question": "How do GitLab's CI/CD pipelines compare to GitHub Actions?",
+            "answer": "GitLab has a robust and mature CI/CD pipeline system that is tightly integrated with its platform. It allows for automated testing, deployment, and more without needing third-party services. GitHub Actions also provide CI/CD capabilities but is relatively new compared to GitLab's built-in system."
+        },
+        {
+            "question": "Which platform is more open-source friendly, GitLab or GitHub?",
+            "answer": "GitHub is popular for hosting open-source projects, but the platform itself is not open-source. GitLab offers an open-source community edition, which allows users to self-host and modify the platform, making it more open-source friendly in terms of the platform itself."
         }
+
 
     ]
 };
