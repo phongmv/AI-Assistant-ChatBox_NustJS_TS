@@ -2653,6 +2653,23 @@ export const questions = {
         {
             "question": "Do you need any help?",
             "answer": "Thank you for asking! If there's something specific you think I might need help with or if you have any questions, feel free to let me know."
-        }
+        },
+        {
+            "question": "Give me some examples about Git.",
+            "answer": "Here are a few examples of how Git is used:\n1. **Branching:** You can create a new branch to work on a feature or bug fix. For example, `git checkout -b feature-x` creates a new branch called `feature-x`.\n2. **Committing:** After making changes to your code, you can commit them with a message. For example, `git commit -m 'Added login feature'` saves your changes.\n3. **Merging:** Once your work on a branch is done, you can merge it into the main branch. For example, `git merge feature-x` integrates `feature-x` into the main branch."
+        },
+        {
+            "question": "Git?",
+            "answer": "Git is a distributed version control system that allows multiple developers to work on the same project simultaneously. It tracks changes in your code, helps manage different versions, and facilitates collaboration.",
+            "example": "For instance, if you're developing a website and want to add a new feature, you can create a separate branch in Git. This branch allows you to work on the new feature without affecting the main code. Once you're done, you can merge the changes back into the main branch."
+        },
+        {
+            "question": "example git?",
+            "answer": "Here are a few examples of how Git is used:\n1. **Branching:** You can create a new branch to work on a feature or bug fix. For example, `git checkout -b feature-x` creates a new branch called `feature-x`.\n2. **Committing:** After making changes to your code, you can commit them with a message. For example, `git commit -m 'Added login feature'` saves your changes.\n3. **Merging:** Once your work on a branch is done, you can merge it into the main branch. For example, `git merge feature-x` integrates `feature-x` into the main branch."
+        },
+        {
+            "question": "example",
+            "answer": "Here are a few examples of how Git is used:\n1. **Branching:** You can create a new branch to work on a feature or bug fix. For example, `git checkout -b feature-x` creates a new branch called `feature-x`.\n2. **Committing:** After making changes to your code, you can commit them with a message. For example, `git commit -m 'Added login feature'` saves your changes.\n3. **Merging:** Once your work on a branch is done, you can merge it into the main branch. For example, `git merge feature-x` integrates `feature-x` into the main branch."
+        },
     ]
 };
