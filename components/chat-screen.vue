@@ -117,9 +117,8 @@ watch(messages, () => {
 <style>
 .typing-text {
   display: inline-block;
-  overflow: hidden; /* Hide text outside of the container */
-  white-space: nowrap; /* Prevent text from wrapping to a new line */
   position: relative;
+  word-break: break-word;
   color: #333; /* Text color */
   animation: typing 1s steps(40, end);
   pointer-events: auto; /* Allow text selection */

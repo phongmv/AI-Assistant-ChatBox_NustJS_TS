@@ -1255,6 +1255,5 @@ export const questions = {
             "answer": "To create a tag, use `git tag [tag-name]`. Tags are often used to mark significant points in history, such as releases or milestones.",
             "syntax": "git tag [tag-name]"
         }
-
     ]
 };
