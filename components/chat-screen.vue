@@ -9,13 +9,13 @@
       </div>
       <div>
         <div class="font-medium truncate max-w-[9rem] md:max-w-none">
-          Hana
+          Hana's Git Chatbot Assistance
         </div>
         <div class="text-slate-500 text-sm mt-0.5 truncate max-w-[9rem] md:max-w-none">
-          Git Command Assistant and 🫥
         </div>
-        <p class="text-red-800 italic text-sm">**Please note** : This app is frontend only 🏝 and does not have backend APIs 🖇, no ML model 🤖</p>
-        <p class="text-red-900 italic text-sm">Just for fun! 😅</p>
+        <p class="text-xs">🏝 <span class="text-red-800">frontend</span> only</p>
+        <p class="text-xs">🖇 not have <span class="text-red-800 text-xs">backend APIs</span></p>
+        <p class="text-xs">🤖 not have <span class="text-red-800 text-xs">machine learning model</span></p>
       </div>
     </div>
 
