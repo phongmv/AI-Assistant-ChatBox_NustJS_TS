@@ -32,7 +32,6 @@ import dompurify from "dompurify"
 import {getFakeAIResponse, getQuestionsResponse} from "~/services/message.service";
 import type {IGitCommands, IQuestionAnswer, IQuestionAnswers} from "~/interfaces/IGitCommands";
 import {formatDate, replaceSpecialCharacters} from "~/helpers/message-formatter";
-import { welcomeKey} from "~/constant/keys";
 
 interface IEmits {
   (e: 'onSubmit'): void
@@ -59,6 +58,7 @@ onMounted(  () => {
 })
 
 import stringSimilarity from 'string-similarity';
+import {SpecialKey} from "~/contants/special-key";
 
 function findBestMatch(question: string): string | null {
   const threshold = 0.49; // 50% similarity threshold
@@ -96,23 +96,19 @@ async function getFakeAiResponse(keySearching: string){
   const keyData = Object.keys(gitCommands.value);
   const keysFilter = replaceSpecialCharacters(keySearching).split(" ").filter(k => !!k);
 
-  //handle special key all
-  for (const key of keysFilter) {
-    if (welcomeKey.includes(key.toLowerCase()))
-      return `<p class="text-wrap text-sm"><strong>^^!</strong> Hi ${customerName.value}! I'm Hana, talkin me! </p>`
-  }
-
   //handle multiple keywords
-  let matchingKeys = keyData.filter(key =>
-      keysFilter.some(filterKey => key === filterKey)
-  );
+  if(!keySearching.split(" ").some(i => SpecialKey.includes(i))) {
+    let matchingKeys = keyData.filter(key =>
+        keysFilter.some(filterKey => key === filterKey)
+    );
 
 
-  if (matchingKeys.length > 1 && gitCommands.value) {
-    return matchingKeys.map(key =>
-        `<p class="text-wrap text-sm"><strong>Syntax:</strong> ${gitCommands?.value[key]?.command}</p>` +
-        `<p class="text-wrap text-sm text-gray"><strong>Description:</strong> ${gitCommands?.value[key]?.description}</p>`
-    ).join('<hr class="my-4"/>');
+    if (matchingKeys.length > 1 && gitCommands.value) {
+      return matchingKeys.map(key =>
+          `<p class="text-wrap text-sm"><strong>Syntax:</strong> ${gitCommands?.value[key]?.command}</p>` +
+          `<p class="text-wrap text-sm text-gray"><strong>Description:</strong> ${gitCommands?.value[key]?.description}</p>`
+      ).join('<hr class="my-4"/>');
+    }
   }
 
   //handle specifier keywords
@@ -127,7 +123,8 @@ async function handleSubmit() {
       name: customerInitials.value,
       message: newMessage.value,
       isHana: false,
-      timestamp: formatDate()
+      timestamp: formatDate(),
+      id: Date.now()
     })
 
     const commandNode = await getFakeAiResponse(newMessage.value) || ''
@@ -138,7 +135,8 @@ async function handleSubmit() {
       name: "Hana",
       message: parsedMessage,
       isHana: true,
-      timestamp: formatDate()
+      timestamp: formatDate(),
+      id: Date.now()
     })
   }
 </script>

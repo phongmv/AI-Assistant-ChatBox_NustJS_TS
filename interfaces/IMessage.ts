@@ -3,4 +3,5 @@ export interface IMessage {
     message: string;
     isHana: boolean;
     timestamp: string
+    id: number
 }

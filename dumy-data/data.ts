@@ -1,6 +1,4 @@
-
-
-import type { IGitCommands } from "~/interfaces/IGitCommands";
+import type {IGitCommands} from "~/interfaces/IGitCommands";
 
 export const gitCommands: IGitCommands = {
     "config": {
@@ -99,20 +97,48 @@ export const gitCommands: IGitCommands = {
         command: "git push [remote] [branch]",
         description: "Push commits to a remote repository.",
     },
-    "git push -f": {
-        command: "git push -f [remote] [branch].",
-        description: "git push is a command used to upload changes from your local repository to a remote repository in Git",
-    },
     "pull": {
         command: "git pull [remote] [branch]",
         description: "Fetch and integrate changes from a remote repository into the current branch.",
     },
-    "pull origin": {
-        command: "git pull origin [branch]",
-        description: "Fetch and integrate changes from the remote 'origin' repository into the current branch.",
+    "clone": {
+        description: "Use the command `git clone [repository-url]` to create a copy of a remote repository on your local machine.",
+        command: "git clone [repository-url]"
+    },
+    "fetch": {
+        command: "git fetch",
+        description: "Download the latest changes from the remote repository without merging them into your current branch."
+    },
+    "clean": {
+        command: "git clean -fd",
+        description: "Remove untracked files and directories from the working directory. The `-f` flag is for force, and `-d` removes directories as well."
+    },
+    "cherry-pick": {
+        "command": "git cherry-pick [commit-hash]",
+        "description": "Apply the changes introduced by the specified commit from another branch onto the current branch."
+    },
+    "reflog": {
+        "command": "git reflog",
+        "description": "Show a log of all the changes to the tips of branches and other references. Useful for recovering lost commits or finding previous states."
+    },
+    "stash": {
+        "command": "git stash push -m 'message'",
+        "description": "Temporarily save changes in your working directory and index so you can work on something else. The optional message helps identify the stash later."
+    },
+    "rebase-interactive": {
+        "command": "git rebase -i [commit-hash]",
+        "description": "Interactively rebase a series of commits. Useful for editing, reordering, squashing, or deleting commits in the history."
+    },
+    "diff": {
+        "command": "git diff [file]",
+        "description": "Show the differences between the working directory and the index (staging area). Useful for reviewing changes before committing."
+    },
+    "tag": {
+        "command": "git tag [tag-name]",
+        "description": "Create a tag in the repository. Tags are often used to mark specific points in history as important, like releases."
     }
-};
 
+};
 
 
 // Dữ liệu câu hỏi
@@ -131,162 +157,162 @@ export const questions = {
         {
             "question": "How do I initialize a new Git repository?",
             "answer": "To initialize a new Git repository, use the command `git init` in the directory where you want the repository to be created.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "What is the command to check the status of your Git repository?",
             "answer": "Use the command `git status` to check the status of your Git repository.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "How do I stage changes in Git?",
             "answer": "To stage changes, use the command `git add <file>` to add individual files or `git add .` to add all changes in the current directory.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "How do I commit changes in Git?",
             "answer": "To commit changes, use the command `git commit -m 'your commit message'` where 'your commit message' describes the changes you made.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "How can I view the commit history?",
             "answer": "Use the command `git log` to view the commit history. You can use additional options to format and limit the output.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "How do I create a new branch?",
             "answer": "To create a new branch, use the command `git branch <branch-name>`. To switch to the new branch, use `git checkout <branch-name>` or `git switch <branch-name>`.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "How can I merge a branch into the main branch?",
             "answer": "First, switch to the main branch using `git checkout main` or `git switch main`. Then use the command `git merge <branch-name>` to merge the specified branch into the main branch.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "What does 'git pull' do?",
             "answer": "The command `git pull` fetches changes from the remote repository and merges them into your current branch.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "How do I resolve merge conflicts?",
             "answer": "To resolve merge conflicts, open the conflicted files and manually edit the conflicts. After resolving, stage the resolved files using `git add <file>` and commit the changes with `git commit`.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "How do I clone a Git repository?",
             "answer": "To clone a Git repository, use the command `git clone <repository-url>`, where `<repository-url>` is the URL of the repository you want to clone.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "How do I revert a commit?",
             "answer": "To revert a commit, use the command `git revert <commit-hash>`. This will create a new commit that undoes the changes introduced by the specified commit.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "What is the difference between 'git fetch' and 'git pull'?",
             "answer": "'git fetch' downloads changes from the remote repository but does not merge them into your current branch. 'git pull' does both fetching and merging the changes.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "How do I delete a branch?",
             "answer": "To delete a local branch, use the command `git branch -d <branch-name>`. To delete a remote branch, use `git push origin --delete <branch-name>`.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "How can I rename a branch in Git?",
             "answer": "To rename a branch, use the command `git branch -m <new-branch-name>`. This will rename the current branch to the new name.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "How do I undo the last commit?",
             "answer": "To undo the last commit but keep the changes in the working directory, use `git reset --soft HEAD~1`. To undo the last commit and discard the changes, use `git reset --hard HEAD~1`.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "How do I remove a file from Git without deleting it from the working directory?",
             "answer": "Use the command `git rm --cached <file>` to remove the file from Git's index without deleting it from your working directory.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "What is a Git stash?",
             "answer": "Git stash allows you to save your current changes in a stack and revert to a clean working directory. You can later apply the stashed changes with `git stash apply`.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "How can I list all stashes in Git?",
             "answer": "Use the command `git stash list` to see a list of all stashes stored in your repository.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "How do I delete a stash in Git?",
             "answer": "To delete a stash, use the command `git stash drop <stash>` or `git stash clear` to remove all stashes.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "How do I create a new tag in Git?",
             "answer": "To create a new tag, use the command `git tag <tag-name>` to create a lightweight tag or `git tag -a <tag-name> -m <message>` to create an annotated tag.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "How do I push tags to a remote repository?",
             "answer": "To push tags to a remote repository, use the command `git push origin <tag-name>` or `git push origin --tags` to push all tags.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "How can I delete a tag in Git?",
             "answer": "To delete a tag locally, use `git tag -d <tag-name>`. To delete a tag from a remote repository, use `git push origin --delete <tag-name>`.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "How do I check out a specific commit in Git?",
             "answer": "Use the command `git checkout <commit-hash>` to switch to a specific commit. This puts your repository in a 'detached HEAD' state.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "What is a Git submodule?",
             "answer": "A Git submodule is a repository embedded inside another repository. Use `git submodule add <repository-url>` to add a submodule.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "How do I update a Git submodule?",
             "answer": "To update a submodule, use the command `git submodule update --remote` to fetch the latest changes from the submodule's remote repository.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "How do I remove a Git submodule?",
             "answer": "To remove a submodule, delete the relevant section from the `.gitmodules` file, remove the submodule's entry from `.git/config`, and run `git rm --cached <submodule-path>`.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "How do I list all branches in Git?",
             "answer": "Use the command `git branch` to list all local branches. To list remote branches, use `git branch -r`.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "How can I set up a Git remote?",
             "answer": "To set up a Git remote, use the command `git remote add <name> <url>`, where `<name>` is the name of the remote and `<url>` is the remote repository's URL.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "How do I remove a Git remote?",
             "answer": "To remove a Git remote, use the command `git remote remove <name>`, where `<name>` is the name of the remote.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "What is Git rebase?",
             "answer": "Git rebase is a way to move or combine a series of commits onto a new base commit. Use `git rebase <branch>` to rebase your current branch onto another branch.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "How can I abort a Git rebase?",
             "answer": "To abort an ongoing rebase, use the command `git rebase --abort`. This will return your repository to the state before the rebase started.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "How do I squash commits in Git?",
             "answer": "To squash commits, use an interactive rebase with `git rebase -i <base-commit>`, then mark the commits you want to squash with 's' or 'squash'.",
-            "syntax":""
+            "syntax": ""
         },
         {
             "question": "How do I initialize a new Git repository?",
@@ -549,6 +575,36 @@ export const questions = {
             "syntax": "git checkout -f [branch]"
         },
         {
+            "question": "What is the difference between Git rebase and Git merge?",
+            "answer": "Both Git rebase and Git merge are used to integrate changes from one branch into another, but they work differently. `Git merge` creates a merge commit and preserves the history, while `Git rebase` rewrites the commit history, making it linear by applying your changes on top of the target branch. Rebase is cleaner, but merge is safer when working in a team.",
+            "syntax": "git merge [branch-name] / git rebase [branch-name]"
+        },
+        {
+            "question": "What is the difference between Git fetch and Git pull?",
+            "answer": "Both `git fetch` and `git pull` are used to update your local repository with changes from the remote repository, but they work differently. `Git fetch` downloads the latest changes without merging them into your current branch, while `git pull` both fetches and merges the changes. Use `git fetch` if you want to review changes before integrating them.",
+            "syntax": "git fetch / git pull"
+        },
+        {
+            "question": "What is the difference between Git reset and Git revert?",
+            "answer": "`Git reset` is used to undo changes by moving the HEAD to a specific commit, effectively removing commits from the history. `Git revert`, on the other hand, creates a new commit that undoes the changes of a previous commit without altering the commit history. `Reset` is more destructive, while `revert` is safer for collaborative work.",
+            "syntax": "git reset [commit-hash] / git revert [commit-hash]"
+        },
+        {
+            "question": "What is the difference between Git stash and Git commit?",
+            "answer": "`Git stash` temporarily saves your changes without committing them, allowing you to work on something else without losing your progress. `Git commit` permanently saves your changes in the repository. Stash is useful for quick context switches, while commit is for finalizing changes.",
+            "syntax": "git stash / git commit -m 'message'"
+        },
+        {
+            "question": "What is the difference between Git clone and Git fork?",
+            "answer": "`Git clone` creates a copy of a repository on your local machine, allowing you to work on the codebase. `Git fork`, often used in platforms like GitHub, creates a copy of the repository under your account, enabling you to make changes independently from the original repository. Fork is used for contributing to open source or working on independent copies, while clone is for direct work on a repository.",
+            "syntax": "git clone [repository-url] / Fork on GitHub"
+        },
+        {
+            "question": "What is the difference between Git branch and Git checkout?",
+            "answer": "`Git branch` is used to create, list, or delete branches. `Git checkout` is used to switch between branches or restore files. Use `git branch` to manage branches and `git checkout` to switch contexts within your repository.",
+            "syntax": "git branch [branch-name] / git checkout [branch-name]"
+        },
+        {
             "question": "What does the `-f` flag do in the `git tag` command?",
             "answer": "The `-f` flag in `git tag` is used to forcefully create a tag, overwriting an existing tag with the same name if it already exists.",
             "syntax": "git tag -f [tag-name]"
@@ -669,21 +725,12 @@ export const questions = {
             "answer": "Git is a distributed version control system used for tracking changes in source code during software development."
         },
         {
-            "question": "Hana, where are you from?",
-            "answer": "I am from Long An, Vietnam."
-        },
-        {
             "question": "How old are you?",
             "answer": "I am 18 years old."
         },
         {
             "question": "What do you do for a living?",
             "answer": "I am a Frontend engineer."
-        },
-        {
-            "question": "Who are you",
-            "answer": "I am a Frontend engineer. My nick name is Jin",
-            "syntax": "🚀https://www.linkedin.com/feed/"
         },
         {
             "question": "what are your job?",
@@ -1016,6 +1063,198 @@ export const questions = {
             "question": "git clone",
             "answer": "Use the command `git clone [repository-url]` to create a copy of a remote repository on your local machine.",
             "syntax": "git clone [repository-url]"
+        },
+        {
+            "question": "git clone",
+            "answer": "Use the command `git clone [repository-url]` to create a copy of a remote repository on your local machine.",
+            "syntax": "git clone [repository-url]"
+        },
+        {
+            "question": "git clone",
+            "answer": "Use the command `git clone [repository-url]` to create a copy of a remote repository on your local machine.",
+            "syntax": "git clone [repository-url]"
+        },
+        {
+            "question": "Hi",
+            "answer": "Hi , Can i help you! ^^ "
+        },
+        {
+            "question": "hello",
+            "answer": "Hello, I'm Hana tankin me 🥰"
+        },
+        {
+            "question": "Xin chao",
+            "answer": "Xin chào bạn, sẽ tốt hơn khi bạn hỏi mình bằng tiếng anh! 🧐"
+        },
+        {
+            "question": "Xin chào",
+            "answer": "Xin chào bạn, sẽ tốt hơn khi bạn hỏi mình bằng tiếng anh! 🧐"
+        },
+        {
+            "question": "Good bye",
+            "answer": "Talk to you later!"
+        },
+        {
+            "question": "Tạm biệt",
+            "answer": "Have a nice day!! ❤️"
+        },
+        {
+            "question": "Tam biet",
+            "answer": "Have a nice day!! ❤️"
+        },
+        {
+            "question": "See you",
+            "answer": "Farewell!! 😘"
+        },
+        {
+            "question": "How do I reset a branch to a specific commit?",
+            "answer": "You can reset a branch to a specific commit using the command `git reset --hard [commit-hash]`. This command will reset your branch to the specified commit, removing all commits after it in your history.",
+            "syntax": "git reset --hard [commit-hash]"
+        },
+        {
+            "question": "How do I view all remote branches in Git?",
+            "answer": "To view all remote branches, use the command `git branch -r`. This will list all branches that are on the remote repository.",
+            "syntax": "git branch -r"
+        },
+        {
+            "question": "How do I squash commits in Git?",
+            "answer": "You can squash commits using an interactive rebase with the command `git rebase -i HEAD~[number-of-commits]`. Then, mark the commits you want to squash with `s` (squash) in the interactive editor.",
+            "syntax": "git rebase -i HEAD~[number-of-commits]"
+        },
+        {
+            "question": "How do I create a patch file in Git?",
+            "answer": "To create a patch file, you can use the command `git format-patch -1 [commit-hash]`. This will generate a `.patch` file with the changes from the specified commit.",
+            "syntax": "git format-patch -1 [commit-hash]"
+        },
+        {
+            "question": "How do I apply a patch in Git?",
+            "answer": "You can apply a patch using the command `git apply [patch-file]`. This will apply the changes from the patch file to your working directory.",
+            "syntax": "git apply [patch-file]"
+        },
+        {
+            "question": "How do I find a specific commit by its message in Git?",
+            "answer": "Use the command `git log --grep='search-term'` to search for a commit by its message. This will return commits that contain the search term in their commit message.",
+            "syntax": "git log --grep='search-term'"
+        },
+        {
+            "question": "How do I undo a commit in Git without losing changes?",
+            "answer": "You can undo a commit while keeping your changes with the command `git reset --soft HEAD~1`. This will move the commit to the staging area but leave your working directory intact.",
+            "syntax": "git reset --soft HEAD~1"
+        },
+        {
+            "question": "How do I rename a branch in Git?",
+            "answer": "To rename a branch, use the command `git branch -m [old-branch-name] [new-branch-name]`. If you are on the branch you want to rename, you can simply use `git branch -m [new-branch-name]`.",
+            "syntax": "git branch -m [old-branch-name] [new-branch-name]"
+        },
+        {
+            "question": "What is your name?",
+            "answer": "My name is Hana. It's a pleasure to meet you! How can I assist you today?"
+        },
+        {
+            "question": "Okay",
+            "answer": "Is there anything else I can help you with? Feel free to ask!"
+        },
+        {
+            "question": "No",
+            "answer": "I am sorry, I made mistake"
+        },
+        {
+            "question": "Yes",
+            "answer": "Thank you for continuing our conversation! What would you like to talk about next?"
+        },
+        {
+            "question": "Where are you from?",
+            "answer": "I don't have a physical location, but I'm here to assist you from wherever you are in the world!"
+        },
+        {
+            "question": "What languages do you speak?",
+            "answer": "I can communicate in single languages, I'm best at English. How can I assist you today?"
+        },
+        {
+            "question": "Can you tell me more about yourself?",
+            "answer": "I'm Hana, your virtual assistant, here to help with anything you need! What would you like to know more about?"
+        },
+        {
+            "question": "thank you",
+            "answer": "He he, No problem! What would you like to talk about next?"
+        },
+        {
+            "question": "Thank you",
+            "answer": "Hehe, no problem! What would you like to talk about next?"
+        },
+        {
+            "question": "Who are you?",
+            "answer": "I'm Hana, your virtual assistant. I'm here to help with anything you need! How can I assist you today?"
+        },
+        {
+            "question": "Who created you?",
+            "answer": "I was brought to life by a passionate Frontend engineer who goes by the nickname Jin. Always striving for innovation and creativity!",
+            "syntax": "🚀 Connect with Jin on LinkedIn: [Jin's LinkedIn Profile](https://www.linkedin.com/in/phong-mai-6448b2313/)"
+        },
+        {
+            "question": "What does `git rebase` do?",
+            "answer": "The command `git rebase [branch-name]` applies commits from the current branch onto the tip of the specified branch. This rewrites the commit history to create a linear progression of commits, which helps in cleaner project history and easier integration.",
+            "syntax": "git rebase [branch-name]"
+        },
+        {
+            "question": "How do I cherry-pick a commit in Git?",
+            "answer": "Use `git cherry-pick [commit-hash]` to apply the changes from a specific commit on another branch to your current branch. This command allows you to selectively include individual commits without merging the entire branch.",
+            "syntax": "git cherry-pick [commit-hash]"
+        },
+        {
+            "question": "What is the purpose of `git reflog`?",
+            "answer": "`git reflog` displays a log of all changes to the tips of branches and other references. It's particularly useful for recovering lost commits or identifying previous states of the repository.",
+            "syntax": "git reflog"
+        },
+        {
+            "question": "git reflog?",
+            "answer": "`git reflog` displays a log of all changes to the tips of branches and other references. It's particularly useful for recovering lost commits or identifying previous states of the repository.",
+            "syntax": "git reflog"
+        },
+        {
+            "question": "How can `git bisect` help in debugging?",
+            "answer": "`git bisect` is used to perform a binary search through the commit history to find the commit that introduced a bug. By marking commits as good or bad, you can pinpoint the exact commit that caused the issue.",
+            "syntax": "git bisect start / git bisect bad / git bisect good [commit-hash]"
+        },
+        {
+            "question": "How do I temporarily save changes using `git stash`?",
+            "answer": "To save changes temporarily, use `git stash push -m 'message'`. This command stores your changes in a stash so you can work on something else, and the message helps you remember the context of the stash.",
+            "syntax": "git stash push -m 'message'"
+        }, {
+            "question": "git stash push -m?",
+            "answer": "To save changes temporarily, use `git stash push -m 'message'`. This command stores your changes in a stash so you can work on something else, and the message helps you remember the context of the stash.",
+            "syntax": "git stash push -m 'message'"
+        },
+        {
+            "question": "What is interactive rebase in Git and how do I use it?",
+            "answer": "Interactive rebase, performed with `git rebase -i [commit-hash]`, allows you to modify commit history by editing, reordering, squashing, or deleting commits. It's useful for cleaning up your commit history before merging.",
+            "syntax": "git rebase -i [commit-hash]"
+        },
+        {
+            "question": "How do I set configuration options in Git?",
+            "answer": "Use `git config [key] [value]` to set configuration options. For example, `git config user.name 'Your Name'` sets your Git username.",
+            "syntax": "git config [key] [value]"
+        },
+        {
+            "question": "How can I remove untracked files from my working directory?",
+            "answer": "To remove untracked files and directories, use `git clean -fd`. The `-f` flag forces the removal, and `-d` includes directories.",
+            "syntax": "git clean -fd"
+        },
+        {
+            "question": "git clean?",
+            "answer": "To remove untracked files and directories, use `git clean -fd`. The `-f` flag forces the removal, and `-d` includes directories.",
+            "syntax": "git clean -fd"
+        },
+        {
+            "question": "git diff?",
+            "answer": "Use `git diff [file]` to view differences between the working directory and the index (staging area). This helps in reviewing changes before committing them.",
+            "syntax": "git diff [file]"
+        },
+        {
+            "question": "git tag?",
+            "answer": "To create a tag, use `git tag [tag-name]`. Tags are often used to mark significant points in history, such as releases or milestones.",
+            "syntax": "git tag [tag-name]"
         }
+
     ]
 };

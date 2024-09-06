@@ -21,6 +21,7 @@
 </template>
 
 <script lang="ts" setup>
+
 const isChatting = useIsChatting()
 </script>
 

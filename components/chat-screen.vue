@@ -3,9 +3,7 @@
     <!-- Customer Support Agent -->
     <div class="flex items-center gap-3.5 pb-4 border-b border-dashed">
       <div>
-        <div
-            class="w-12 h-12 overflow-hidden rounded-full image-fit border-2 border-slate-200/70"
-        >
+        <div class="w-12 h-12 overflow-hidden rounded-full image-fit border-2 border-slate-200/70">
           <NuxtImg src="/hana.jpg" />
         </div>
       </div>
@@ -52,7 +50,12 @@
             class="w-3/4 flex flex-col gap-2 border px-4 pt-3 pb-4 rounded-xl bg-slate-50/80 border-slate-200/80"
         >
           <!-- Message Content -->
-          <div class="text-sm break-words overflow-auto typing-text" v-if="mes.isHana" v-html="mes.message"></div>
+          <div v-if="mes.isHana" class="relative">
+            <div class="text-sm break-words overflow-auto typing-text"  v-html="mes.message"></div>
+            <button  @click="copyToClipboard(mes)"
+                     :class="{ 'text-green-500': isCopied[mes.id] }"
+                     class=" w-1 h-1 text-black text-xs p-3 mt-2 absolute bottom-[-26px] right-[24px] hover:text-slate-300">{{isCopied[mes.id] ? "Copied" : "Copy"}}</button>
+          </div>
           <div class="text-sm break-words overflow-auto" v-else>
             {{ mes.message }}
           </div>
@@ -65,14 +68,18 @@
   </section>
 </template>
 
-
 <script setup lang="ts">
 import { ref, watch } from 'vue';
 import { useMessages } from '~/composables/states';
+import type {IMessage} from "~/interfaces/IMessage";
+import {stripHtmlTags} from "~/helpers/strip-html-tags";
 
+const isCopied = ref<{[key: string]: boolean}>({})
 const messages = useMessages();
 const { customerInitials } = useCustomer();
 const messagesContainer = ref<HTMLDivElement | null>(null);
+const timeOutIds = ref<{[key: string]: any}>({})
+
 
 // Watch for changes in messages and scroll to the bottom
 function handleScrollToBottom (){
@@ -83,13 +90,31 @@ function handleScrollToBottom (){
   }, 200)
 }
 
+function copyToClipboard(mes: IMessage) {
+  const plainText = stripHtmlTags(mes.message);
+  navigator.clipboard.writeText(plainText).then(() => {
+    isCopied.value[mes.id] = true
+
+  // clear existing timeout
+  clearTimeout(timeOutIds.value[mes.id])
+
+  // set timeout
+ timeOutIds.value[mes.id] = setTimeout(() => {
+   isCopied.value[mes.id] = false
+   timeOutIds.value[mes.id] = undefined;
+ }, 5000)
+
+  }).catch(err => {
+    console.error('Failed to copy text: ', err);
+  });
+}
+
 watch(messages, () => {
   handleScrollToBottom()
 }, { deep: true });
 </script>
 
 <style>
-
 .typing-text {
   display: inline-block;
   overflow: hidden; /* Hide text outside of the container */
@@ -97,6 +122,7 @@ watch(messages, () => {
   position: relative;
   color: #333; /* Text color */
   animation: typing 1s steps(40, end);
+  pointer-events: auto; /* Allow text selection */
 }
 
 .typing-text::after {
@@ -108,6 +134,7 @@ watch(messages, () => {
   height: 100%;
   background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0) 100%);
   z-index: 1;
+  pointer-events: none; /* Ensure the gradient does not block interactions */
 }
 
 @keyframes typing {
@@ -118,7 +145,4 @@ watch(messages, () => {
     width: 100%;
   }
 }
-
-
-
 </style>
