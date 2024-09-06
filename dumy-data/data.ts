@@ -2426,10 +2426,6 @@ export const questions = {
             "answer": "He aims to advance his career in software development and take on leadership roles in tech projects."
         },
         {
-            "question": "Do you have any pets?",
-            "answer": "Yes, I have a dog named KeyTy."
-        },
-        {
             "question": "What’s your favorite food?",
             "answer": "My favorite food is sushi."
         },
