@@ -1600,6 +1600,187 @@ export const questions = {
             "question": "git branch --show-current?",
             "answer": "`git branch --show-current` displays the name of the current branch you are on.",
             "syntax": "git branch --show-current"
+        },
+        {
+            "question": "Who created Git?",
+            "answer": "Git was created by Linus Torvalds in 2005, the creator of the Linux operating system kernel, to manage the development of the Linux kernel."
+        },
+        {
+            "question": "What is the difference between Git, GitHub, GitLab, and Bitbucket?",
+            "answer": "Git is a version control system used to track changes in source code during software development. GitHub, GitLab, and Bitbucket are web-based platforms that provide Git repository hosting, as well as additional features like issue tracking, continuous integration, and collaboration tools. While GitHub is widely used for open-source projects, GitLab offers built-in CI/CD and DevOps tools, and Bitbucket is often preferred by teams using Atlassian products."
+        },
+        {
+            "question": "How do I clone a Git repository?",
+            "answer": "To clone a Git repository, use the command `git clone <repository_url>`. This will create a copy of the repository on your local machine."
+        },
+        {
+            "question": "What is a Git commit?",
+            "answer": "A Git commit is a snapshot of your changes in the repository. Each commit records the state of the files at a specific point in time, and commits are identified by a unique SHA-1 hash."
+        },
+        {
+            "question": "How do I create a branch in Git?",
+            "answer": "To create a new branch in Git, use the command `git branch <branch_name>`. To switch to the new branch, use `git checkout <branch_name>` or `git switch <branch_name>`."
+        },
+        {
+            "question": "What is a pull request in GitHub?",
+            "answer": "A pull request in GitHub is a way to propose changes to a repository. It allows developers to review the changes, discuss them, and merge them into the main branch if approved."
+        },
+        {
+            "question": "How do I merge branches in Git?",
+            "answer": "To merge one branch into another in Git, first switch to the target branch using `git checkout <branch_name>`, then use the command `git merge <source_branch>` to merge the changes from the source branch."
+        },
+        {
+            "question": "What is Git rebase?",
+            "answer": "Git rebase is a command that allows you to integrate changes from one branch into another by moving or combining commits, providing a cleaner project history compared to a merge."
+        },
+        {
+            "question": "What is the difference between `git merge` and `git rebase`?",
+            "answer": "`git merge` integrates changes from one branch into another while preserving the commit history, creating a merge commit. `git rebase` rewrites the commit history by applying your changes on top of another branch, creating a linear history."
+        },
+        {
+            "question": "How do I resolve merge conflicts in Git?",
+            "answer": "Merge conflicts occur when changes from different branches conflict. To resolve them, manually edit the conflicting files to keep the desired changes, then add the resolved files using `git add`, and finally commit the changes."
+        },
+        {
+            "question": "What is GitLab CI/CD?",
+            "answer": "GitLab CI/CD is a built-in continuous integration and continuous delivery tool in GitLab. It allows you to automate the testing, building, and deployment of your code with pipelines defined in a `.gitlab-ci.yml` file."
+        },
+        {
+            "question": "What is Bitbucket Pipelines?",
+            "answer": "Bitbucket Pipelines is a continuous integration and delivery (CI/CD) service integrated into Bitbucket. It automates the process of building, testing, and deploying your code using a YAML configuration file."
+        },
+        {
+            "question": "How do I push changes to a remote Git repository?",
+            "answer": "To push changes to a remote Git repository, use the command `git push origin <branch_name>`. This will upload your local commits to the remote branch."
+        },
+        {
+            "question": "What is a Git fork?",
+            "answer": "A Git fork is a personal copy of a repository hosted on a platform like GitHub or GitLab. It allows you to make changes without affecting the original repository, and you can later submit a pull request to propose your changes."
+        },
+        {
+            "question": "How do I create a pull request in GitHub?",
+            "answer": "To create a pull request in GitHub, first push your changes to a branch in your fork of the repository, then go to the original repository and click the 'New pull request' button to propose your changes."
+        },
+        {
+            "question": "What is a Git stash?",
+            "answer": "Git stash is a command that temporarily saves your changes without committing them. This allows you to switch branches or perform other tasks without losing your current work. You can later apply the stashed changes with `git stash apply`."
+        },
+        {
+            "question": "How do I undo the last commit in Git?",
+            "answer": "To undo the last commit in Git, you can use the command `git reset --soft HEAD~1` to keep the changes in your working directory or `git reset --hard HEAD~1` to discard them entirely."
+        },
+        {
+            "question": "Who created Git and when?",
+            "answer": "Git was created by Linus Torvalds in 2005. He developed it to manage the source code for the Linux kernel after the project switched away from the proprietary BitKeeper system."
+        },
+        {
+            "question": "Why was Git created?",
+            "answer": "Git was created out of necessity for a distributed version control system that was fast, scalable, and could handle the complex branching and merging required by large projects like the Linux kernel."
+        },
+        {
+            "question": "What is the difference between Git and other version control systems?",
+            "answer": "Git is a distributed version control system, meaning every developer has a complete copy of the repository history. This differs from centralized systems like Subversion (SVN), where the repository history is stored on a central server."
+        },
+        {
+            "question": "What was used before Git for Linux kernel development?",
+            "answer": "Before Git, the Linux kernel project used a proprietary version control system called BitKeeper. However, due to licensing conflicts, the project switched to Git, which was open-source and suited their needs."
+        },
+        {
+            "question": "How has Git evolved since its creation?",
+            "answer": "Since its creation in 2005, Git has evolved significantly with contributions from developers around the world. Features like rebasing, stash, and bisect, as well as integration with platforms like GitHub, have made it the most popular version control system."
+        },
+        {
+            "question": "What are some key milestones in the history of Git?",
+            "answer": "Key milestones in Git's history include its initial release in 2005, the first stable release in 2006, the introduction of GitHub in 2008, and Git's adoption by major companies and open-source projects over the years."
+        },
+        {
+            "question": "What role did GitHub play in the popularization of Git?",
+            "answer": "GitHub, launched in 2008, played a significant role in popularizing Git by providing a user-friendly interface, collaboration tools, and social features that made it easier for developers to share and contribute to projects."
+        },
+        {
+            "question": "How does Git's decentralized nature benefit developers?",
+            "answer": "Git's decentralized nature allows developers to work independently, commit changes locally, and collaborate without relying on a central server. This improves speed, flexibility, and the ability to work offline."
+        },
+        {
+            "question": "What are some notable projects that use Git?",
+            "answer": "Notable projects that use Git include the Linux kernel, Android, many open-source projects on GitHub, and major tech companies like Google, Facebook, and Microsoft for internal and external projects."
+        },
+        {
+            "question": "How did Git influence other version control systems?",
+            "answer": "Git's success and features influenced the development of other version control systems and tools. For example, Mercurial and Bazaar were inspired by Git's distributed model, and many platforms integrated Git support."
+        },
+        {
+            "question": "What is the significance of Git in open-source software development?",
+            "answer": "Git has become the de facto standard for version control in open-source software development. Its distributed nature, speed, and collaboration tools have made it essential for managing contributions from developers worldwide."
+        },
+        {
+            "question": "How has Git changed software development practices?",
+            "answer": "Git has changed software development practices by promoting a more collaborative and decentralized approach. Branching and merging have become integral to workflows, enabling continuous integration and deployment in modern development."
+        },
+        {
+            "question": "What is Git?",
+            "answer": "Git is a distributed version control system that allows multiple developers to work on a project simultaneously, track changes, and manage code history."
+        },
+        {
+            "question": "How do I initialize a new Git repository?",
+            "answer": "To initialize a new Git repository, use the command `git init` in the directory where you want the repository to be created."
+        },
+        {
+            "question": "What is the difference between Git and GitHub?",
+            "answer": "Git is a version control system used to manage code, while GitHub is a web-based platform that hosts Git repositories and provides collaboration features like pull requests and issues."
+        },
+        {
+            "question": "How do I clone a repository in Git?",
+            "answer": "To clone a repository, use the command `git clone <repository-url>`. This will create a local copy of the repository on your machine."
+        },
+        {
+            "question": "What is a commit in Git?",
+            "answer": "A commit in Git is a snapshot of changes made to the codebase. It represents a specific point in the project's history."
+        },
+        {
+            "question": "How do I stage changes for a commit?",
+            "answer": "To stage changes for a commit, use the command `git add <file-name>` or `git add .` to stage all changes in the current directory."
+        },
+        {
+            "question": "How do I check the status of my repository?",
+            "answer": "You can check the status of your repository by using the command `git status`. This will show you which files have been modified, staged, or untracked."
+        },
+        {
+            "question": "How do I create a new branch in Git?",
+            "answer": "To create a new branch, use the command `git branch <branch-name>`. To switch to that branch, use `git checkout <branch-name>` or `git switch <branch-name>`."
+        },
+        {
+            "question": "What is a merge in Git?",
+            "answer": "A merge in Git is the process of integrating changes from one branch into another. This is commonly done to combine work from different branches into the main branch."
+        },
+        {
+            "question": "How do I resolve merge conflicts in Git?",
+            "answer": "To resolve merge conflicts, manually edit the conflicting files to choose which changes to keep. After resolving the conflicts, stage the changes with `git add` and commit them."
+        },
+        {
+            "question": "How do I push changes to a remote repository?",
+            "answer": "To push changes to a remote repository, use the command `git push origin <branch-name>`. This will update the remote repository with your local changes."
+        },
+        {
+            "question": "How do I pull changes from a remote repository?",
+            "answer": "To pull changes from a remote repository, use the command `git pull`. This will fetch and merge changes from the remote repository into your local branch."
+        },
+        {
+            "question": "What is the difference between Git and GitLab?",
+            "answer": "Git is a version control system, while GitLab is a web-based platform that offers Git repository hosting along with CI/CD pipelines, project management, and more."
+        },
+        {
+            "question": "What is the difference between GitHub and Bitbucket?",
+            "answer": "GitHub and Bitbucket are both platforms for hosting Git repositories. GitHub is widely used for open-source projects, while Bitbucket offers support for both Git and Mercurial repositories and is often used by teams for private repositories."
+        },
+        {
+            "question": "How do I revert a commit in Git?",
+            "answer": "To revert a commit, use the command `git revert <commit-hash>`. This will create a new commit that undoes the changes from the specified commit."
+        },
+        {
+            "question": "What is a Git stash?",
+            "answer": "Git stash allows you to temporarily save changes in your working directory without committing them. You can later apply or drop these changes using `git stash apply` or `git stash drop`."
         }
+
     ]
 };
