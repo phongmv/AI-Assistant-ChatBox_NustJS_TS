@@ -7,7 +7,7 @@
           <NuxtImg src="/hana.jpg" />
         </div>
       </div>
-      <div>
+      <div v-tilt="{ max: 25, speed: 400, glare: true, 'max-glare': 0.5 }">
         <div class="font-medium truncate max-w-[9rem] md:max-w-none">
           Hana's Git Chatbot Assistance
         </div>

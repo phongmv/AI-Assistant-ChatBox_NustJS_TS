@@ -155,7 +155,7 @@ export const questions = {
             "answer": "git push is a command used to upload changes from your local repository to a remote repository in Git."
         },
         {
-            "question": "How do I initialize a new Git repository?",
+            "question": "How to I initialize a new Git repository?",
             "answer": "To initialize a new Git repository, use the command `git init` in the directory where you want the repository to be created.",
         },
         {
@@ -163,11 +163,11 @@ export const questions = {
             "answer": "Use the command `git status` to check the status of your Git repository.",
         },
         {
-            "question": "How do I stage changes in Git?",
+            "question": "How to I stage changes in Git?",
             "answer": "To stage changes, use the command `git add <file>` to add individual files or `git add .` to add all changes in the current directory.",
         },
         {
-            "question": "How do I commit changes in Git?",
+            "question": "How to I commit changes in Git?",
             "answer": "To commit changes, use the command `git commit -m 'your commit message'` where 'your commit message' describes the changes you made.",
         },
         {
@@ -175,7 +175,7 @@ export const questions = {
             "answer": "Use the command `git log` to view the commit history. You can use additional options to format and limit the output.",
         },
         {
-            "question": "How do I create a new branch?",
+            "question": "How to I create a new branch?",
             "answer": "To create a new branch, use the command `git branch <branch-name>`. To switch to the new branch, use `git checkout <branch-name>` or `git switch <branch-name>`.",
         },
         {
@@ -187,15 +187,15 @@ export const questions = {
             "answer": "The command `git pull` fetches changes from the remote repository and merges them into your current branch.",
         },
         {
-            "question": "How do I resolve merge conflicts?",
+            "question": "How to  resolve merge conflicts?",
             "answer": "To resolve merge conflicts, open the conflicted files and manually edit the conflicts. After resolving, stage the resolved files using `git add <file>` and commit the changes with `git commit`.",
         },
         {
-            "question": "How do I clone a Git repository?",
+            "question": "How to clone a Git repository?",
             "answer": "To clone a Git repository, use the command `git clone <repository-url>`, where `<repository-url>` is the URL of the repository you want to clone.",
         },
         {
-            "question": "How do I revert a commit?",
+            "question": "How to  revert a commit?",
             "answer": "To revert a commit, use the command `git revert <commit-hash>`. This will create a new commit that undoes the changes introduced by the specified commit.",
         },
         {
@@ -203,7 +203,7 @@ export const questions = {
             "answer": "'git fetch' downloads changes from the remote repository but does not merge them into your current branch. 'git pull' does both fetching and merging the changes.",
         },
         {
-            "question": "How do I delete a branch?",
+            "question": "How to delete a branch?",
             "answer": "To delete a local branch, use the command `git branch -d <branch-name>`. To delete a remote branch, use `git push origin --delete <branch-name>`.",
         },
         {
@@ -211,11 +211,11 @@ export const questions = {
             "answer": "To rename a branch, use the command `git branch -m <new-branch-name>`. This will rename the current branch to the new name.",
         },
         {
-            "question": "How do I undo the last commit?",
+            "question": "How to undo the last commit?",
             "answer": "To undo the last commit but keep the changes in the working directory, use `git reset --soft HEAD~1`. To undo the last commit and discard the changes, use `git reset --hard HEAD~1`.",
         },
         {
-            "question": "How do I remove a file from Git without deleting it from the working directory?",
+            "question": "How to remove a file from Git without deleting it from the working directory?",
             "answer": "Use the command `git rm --cached <file>` to remove the file from Git's index without deleting it from your working directory.",
         },
         {
@@ -227,15 +227,15 @@ export const questions = {
             "answer": "Use the command `git stash list` to see a list of all stashes stored in your repository.",
         },
         {
-            "question": "How do I delete a stash in Git?",
+            "question": "How to delete a stash in Git?",
             "answer": "To delete a stash, use the command `git stash drop <stash>` or `git stash clear` to remove all stashes.",
         },
         {
-            "question": "How do I create a new tag in Git?",
+            "question": "How to create a new tag in Git?",
             "answer": "To create a new tag, use the command `git tag <tag-name>` to create a lightweight tag or `git tag -a <tag-name> -m <message>` to create an annotated tag.",
         },
         {
-            "question": "How do I push tags to a remote repository?",
+            "question": "How to push tags to a remote repository?",
             "answer": "To push tags to a remote repository, use the command `git push origin <tag-name>` or `git push origin --tags` to push all tags.",
         },
         {
@@ -243,7 +243,7 @@ export const questions = {
             "answer": "To delete a tag locally, use `git tag -d <tag-name>`. To delete a tag from a remote repository, use `git push origin --delete <tag-name>`.",
         },
         {
-            "question": "How do I check out a specific commit in Git?",
+            "question": "How to check out a specific commit in Git?",
             "answer": "Use the command `git checkout <commit-hash>` to switch to a specific commit. This puts your repository in a 'detached HEAD' state.",
         },
         {
@@ -251,15 +251,15 @@ export const questions = {
             "answer": "A Git submodule is a repository embedded inside another repository. Use `git submodule add <repository-url>` to add a submodule.",
         },
         {
-            "question": "How do I update a Git submodule?",
+            "question": "How to update a Git submodule?",
             "answer": "To update a submodule, use the command `git submodule update --remote` to fetch the latest changes from the submodule's remote repository.",
         },
         {
-            "question": "How do I remove a Git submodule?",
+            "question": "How to remove a Git submodule?",
             "answer": "To remove a submodule, delete the relevant section from the `.gitmodules` file, remove the submodule's entry from `.git/config`, and run `git rm --cached <submodule-path>`.",
         },
         {
-            "question": "How do I list all branches in Git?",
+            "question": "How to list all branches in Git?",
             "answer": "Use the command `git branch` to list all local branches. To list remote branches, use `git branch -r`.",
         },
         {
@@ -267,7 +267,7 @@ export const questions = {
             "answer": "To set up a Git remote, use the command `git remote add <name> <url>`, where `<name>` is the name of the remote and `<url>` is the remote repository's URL.",
         },
         {
-            "question": "How do I remove a Git remote?",
+            "question": "How to remove a Git remote?",
             "answer": "To remove a Git remote, use the command `git remote remove <name>`, where `<name>` is the name of the remote.",
         },
         {
@@ -279,125 +279,125 @@ export const questions = {
             "answer": "To abort an ongoing rebase, use the command `git rebase --abort`. This will return your repository to the state before the rebase started.",
         },
         {
-            "question": "How do I squash commits in Git?",
+            "question": "How to squash commits in Git?",
             "answer": "To squash commits, use an interactive rebase with `git rebase -i <base-commit>`, then mark the commits you want to squash with 's' or 'squash'.",
         },
         {
-            "question": "How do I initialize a new Git repository?",
+            "question": "How to initialize a new Git repository?",
             "answer": "To initialize a new Git repository, use the command `git init` in the directory where you want the repository to be created.",
         },
         {
-            "question": "How do I configure the global username in Git?",
+            "question": "How to configure the global username in Git?",
             "answer": "Use the command `git config --global user.name 'Your Name'` to configure the global username.",
             "syntax": "git config --global user.name 'Your Name'"
         },
         {
-            "question": "How do I check the status of the working directory in Git?",
+            "question": "How to check the status of the working directory in Git?",
             "answer": "Use the command `git status` to check the status of the working directory and staging area.",
             "syntax": "git status"
         },
         {
+            "question": "How to add files to staging in Git?",
             "answer": "Use the command `git add [file]` to add files to the staging area.",
-            "question": "How do I add files to the staging area in Git?",
             "syntax": "git add [file]"
         },
         {
-            "question": "How do I list branches in a Git repository?",
+            "question": "How to list branches in Git?",
             "answer": "Use the command `git branch` to list branches in the repository.",
             "syntax": "git branch"
         },
         {
-            "question": "How do I push commits to a remote Git repository?",
+            "question": "How to push commits to remote Git?",
             "answer": "Use the command `git push [remote] [branch]` to push commits to a remote repository.",
             "syntax": "git push [remote] [branch]"
         },
         {
-            "question": "How do I commit changes in Git?",
+            "question": "How to commit changes in Git?",
             "answer": "Use the command `git commit -m [message]` to commit changes with a descriptive message.",
             "syntax": "git commit -m [message]"
         },
         {
-            "question": "How do I merge branches in Git?",
+            "question": "How to merge branches in Git?",
             "answer": "Use the command `git merge [branch]` to merge the specified branch into the current branch.",
             "syntax": "git merge [branch]"
         },
         {
-            "question": "How do I undo changes in Git?",
+            "question": "How to undo changes in Git?",
             "answer": "Use the command `git reset [file]` to remove a file from the staging area but keep the changes in the working directory.",
             "syntax": "git reset [file]"
         },
         {
-            "question": "How do I create a tag in Git?",
+            "question": "How to create a tag in Git?",
             "answer": "Use the command `git tag [tag-name]` to create a new tag.",
             "syntax": "git tag [tag-name]"
         },
         {
-            "question": "How do I stash changes in Git?",
+            "question": "How to stash changes in Git?",
             "answer": "Use the command `git stash` to save current changes and reset the working directory.",
             "syntax": "git stash"
         },
         {
-            "question": "How do I add a submodule in Git?",
+            "question": "How to add a submodule in Git?",
             "answer": "Use the command `git submodule add [url] [path]` to add a submodule.",
             "syntax": "git submodule add [url] [path]"
         },
         {
-            "question": "How do I cherry-pick a commit in Git?",
+            "question": "How to cherry-pick a commit in Git?",
             "answer": "Use the command `git cherry-pick [commit-hash]` to apply a specific commit from another branch to the current branch without merging the entire branch.",
             "syntax": "git cherry-pick [commit-hash]"
         },
         {
-            "question": "How do I reset the HEAD state in Git?",
+            "question": "How to reset HEAD in Git?",
             "answer": "Use the command `git reset [commit]` to reset the HEAD state to the specified commit without affecting the working directory.",
             "syntax": "git reset [commit]"
         },
         {
-            "question": "How do I rebase a branch in Git?",
+            "question": "How to rebase a branch in Git?",
             "answer": "Use the command `git rebase [branch]` to reorganize the current branch's commits onto another branch.",
             "syntax": "git rebase [branch]"
         },
         {
-            "question": "How do I create patch files from a commit in Git?",
+            "question": "How to create patch files in Git?",
             "answer": "Use the command `git format-patch [start-commit]` to create patch files from the specified commit.",
             "syntax": "git format-patch [start-commit]"
         },
         {
-            "question": "How do I display a list of remotes in Git?",
+            "question": "How to list remotes in Git?",
             "answer": "Use the command `git remote -v` to display a list of remotes and their URLs.",
             "syntax": "git remote -v"
         },
         {
-            "question": "How do I use Git hooks?",
+            "question": "How to use Git hooks?",
             "answer": "Use hooks to automate tasks such as pre-commit, pre-push, post-merge, etc.",
             "syntax": "git hooks"
         },
         {
-            "question": "How do I see who changed lines in a file using Git?",
+            "question": "How to see file changes in Git?",
             "answer": "Use the command `git blame [file]` to show information about who changed which lines in a file.",
             "syntax": "git blame [file]"
         },
         {
-            "question": "How do I create a ZIP file from a Git branch?",
+            "question": "How to create ZIP from Git branch?",
             "answer": "Use the command `git archive --format=zip --output=[file.zip] [branch]` to create a ZIP file from the specified branch.",
             "syntax": "git archive --format=zip --output=[file.zip] [branch]"
         },
         {
-            "question": "How do I display the commit log in Git?",
+            "question": "How to display commit log in Git?",
             "answer": "Use the command `git log --oneline` to display the commit log with one line per commit.",
             "syntax": "git log --oneline"
         },
         {
-            "question": "How do I start searching for a commit causing an issue in Git?",
+            "question": "How to start Git bisect?",
             "answer": "Use the command `git bisect start` to start searching for the commit causing an issue.",
             "syntax": "git bisect start"
         },
         {
-            "question": "How do I filter commits in Git?",
+            "question": "How to filter commits in Git?",
             "answer": "Use the command `git filter-branch --tree-filter '[command]' HEAD` to run a command on every commit in the current branch's history.",
             "syntax": "git filter-branch --tree-filter '[command]' HEAD"
         },
         {
-            "question": "How do I force push commits in Git?",
+            "question": "How to force push commits in Git?",
             "answer": "Use the command `git push -f [remote] [branch]` to force push commits to a remote repository, overwriting remote changes.",
             "syntax": "git push -f [remote] [branch]"
         },
@@ -756,154 +756,154 @@ export const questions = {
             "answer": "In the next decade, AI is expected to evolve with advancements in general artificial intelligence (AGI), increased integration into daily life through smart devices, more sophisticated AI ethics and regulations, and enhanced capabilities in areas such as autonomous vehicles and personalized AI-driven experiences."
         },
         {
-            "question": "How do you declare a variable in JavaScript?",
+            "question": "How to you declare a variable in JavaScript?",
             "syntax": "let variableName = value;",
             "answer": "You use `let` to declare a variable that can be reassigned, and `const` to declare a variable that cannot be reassigned. For example: `let age = 25;` or `const name = 'John';`."
         },
         {
-            "question": "How do you define a function in JavaScript?",
+            "question": "How to you define a function in JavaScript?",
             "syntax": "function functionName(parameters) { /* function body */ }",
             "answer": "You define a function using the `function` keyword. For example: `function greet(name) { return 'Hello ' + name; }`."
         },
         {
-            "question": "How do you create an object in JavaScript?",
+            "question": "How to you create an object in JavaScript?",
             "syntax": "let objectName = { key1: value1, key2: value2 };",
             "answer": "You create an object using curly braces with key-value pairs. For example: `let person = { name: 'Alice', age: 30 };`."
         },
         {
-            "question": "How do you handle errors in JavaScript?",
+            "question": "How to you handle errors in JavaScript?",
             "syntax": "try { /* code */ } catch (error) { /* error handling code */ }",
             "answer": "You use `try...catch` to handle errors. For example: `try { riskyOperation(); } catch (error) { console.error(error); }`."
         },
         {
-            "question": "How do you create an array in JavaScript?",
+            "question": "How to you create an array in JavaScript?",
             "syntax": "let arrayName = [item1, item2, item3];",
             "answer": "You create an array using square brackets with items separated by commas. For example: `let numbers = [1, 2, 3];`."
         },
         {
-            "question": "How do you add an element to an array in JavaScript?",
+            "question": "How to you add an element to an array in JavaScript?",
             "syntax": "arrayName.push(element);",
             "answer": "You use the `push` method to add an element to the end of an array. For example: `numbers.push(4);`."
         },
         {
-            "question": "How do you remove an element from an array in JavaScript?",
+            "question": "How to remove an element from an array in JavaScript?",
             "syntax": "arrayName.pop();",
-            "answer": "You use the `pop` method to remove the last element from an array. For example: `numbers.pop();`."
+            "answer": "Use the `pop` method to remove the last element from an array. For example: `numbers.pop();`."
         },
         {
-            "question": "How do you iterate over an array in JavaScript?",
+            "question": "How to iterate over an array in JavaScript?",
             "syntax": "arrayName.forEach(element => { /* code */ });",
-            "answer": "You use the `forEach` method to iterate over each element of the array. For example: `numbers.forEach(number => console.log(number));`."
+            "answer": "Use the `forEach` method to iterate over each element of the array. For example: `numbers.forEach(number => console.log(number));`."
         },
         {
-            "question": "How do you declare a variable in Python?",
+            "question": "How to declare a variable in Python?",
             "syntax": "variable_name = value",
-            "answer": "In Python, you simply assign a value to a variable name. For example: `age = 25` or `name = 'John'`."
+            "answer": "Assign a value to a variable name. For example: `age = 25` or `name = 'John'`."
         },
         {
-            "question": "How do you define a function in Python?",
+            "question": "How to define a function in Python?",
             "syntax": "def function_name(parameters):\n    # function body",
-            "answer": "You define a function using the `def` keyword. For example: `def greet(name):\n    return 'Hello ' + name`."
+            "answer": "Use the `def` keyword. For example: `def greet(name):\n    return 'Hello ' + name`."
         },
         {
-            "question": "How do you create a list in Python?",
+            "question": "How to create a list in Python?",
             "syntax": "list_name = [item1, item2, item3]",
-            "answer": "You create a list using square brackets with items separated by commas. For example: `numbers = [1, 2, 3]`."
+            "answer": "Use square brackets with items separated by commas. For example: `numbers = [1, 2, 3]`."
         },
         {
-            "question": "How do you handle exceptions in Python?",
+            "question": "How to handle exceptions in Python?",
             "syntax": "try:\n    # code\nexcept Exception as e:\n    # handle exception",
-            "answer": "You use `try...except` to handle exceptions. For example: `try:\n    risky_operation()\nexcept Exception as e:\n    print(e)`."
+            "answer": "Use `try...except` to handle exceptions. For example: `try:\n    risky_operation()\nexcept Exception as e:\n    print(e)`."
         },
         {
-            "question": "How do you add an item to a list in Python?",
+            "question": "How to add an item to a list in Python?",
             "syntax": "list_name.append(item)",
-            "answer": "You use the `append` method to add an item to the end of a list. For example: `numbers.append(4)`."
+            "answer": "Use the `append` method. For example: `numbers.append(4)`."
         },
         {
-            "question": "How do you remove an item from a list in Python?",
+            "question": "How to remove an item from a list in Python?",
             "syntax": "list_name.remove(item)",
-            "answer": "You use the `remove` method to remove an item from a list. For example: `numbers.remove(2)`."
+            "answer": "Use the `remove` method. For example: `numbers.remove(2)`."
         },
         {
-            "question": "How do you iterate over a list in Python?",
+            "question": "How to iterate over a list in Python?",
             "syntax": "for item in list_name:\n    # code",
-            "answer": "You use a `for` loop to iterate over each item in a list. For example: `for number in numbers:\n    print(number)`."
+            "answer": "Use a `for` loop. For example: `for number in numbers:\n    print(number)`."
         },
         {
-            "question": "How do you create a dictionary in Python?",
+            "question": "How to create a dictionary in Python?",
             "syntax": "dict_name = {key1: value1, key2: value2}",
-            "answer": "You create a dictionary using curly braces with key-value pairs. For example: `person = {'name': 'Alice', 'age': 30}`."
+            "answer": "Use curly braces with key-value pairs. For example: `person = {'name': 'Alice', 'age': 30}`."
         },
         {
-            "question": "How do you declare a variable in C/C++?",
+            "question": "How to declare a variable in C/C++?",
             "syntax": "type variableName = value;",
-            "answer": "In C/C++, you declare a variable with a type followed by the variable name and value. For example: `int age = 25;` or `char name[] = 'John';`."
+            "answer": "Declare a variable with a type, name, and value. For example: `int age = 25;` or `char name[] = 'John';`."
         },
         {
-            "question": "How do you define a function in C/C++?",
+            "question": "How to define a function in C/C++?",
             "syntax": "returnType functionName(parameters) { /* function body */ }",
-            "answer": "You define a function with a return type, function name, and parameters. For example: `int add(int a, int b) { return a + b; }`."
+            "answer": "Define with a return type, name, and parameters. For example: `int add(int a, int b) { return a + b; }`."
         },
         {
-            "question": "How do you create an array in C/C++?",
+            "question": "How to create an array in C/C++?",
             "syntax": "type arrayName[size] = {value1, value2, value3};",
-            "answer": "You create an array with a type, name, and size, and initialize it with values. For example: `int numbers[3] = {1, 2, 3};`."
+            "answer": "Create with a type, name, size, and values. For example: `int numbers[3] = {1, 2, 3};`."
         },
         {
-            "question": "How do you handle exceptions in C++?",
+            "question": "How to handle exceptions in C++?",
             "syntax": "try {\n    // code\n} catch (ExceptionType& e) {\n    // handle exception\n}",
-            "answer": "In C++, you use `try...catch` blocks for exception handling. For example: `try { riskyOperation(); } catch (const std::exception& e) { std::cerr << e.what(); }`."
+            "answer": "Use `try...catch` blocks. For example: `try { riskyOperation(); } catch (const std::exception& e) { std::cerr << e.what(); }`."
         },
         {
-            "question": "How do you print output to the console in C/C++?",
+            "question": "How to print output in C/C++?",
             "syntax": "printf(\"format string\", variables); // C\ncout << variables; // C++",
-            "answer": "In C, you use `printf` to print output. In C++, you use `cout`. For example: `printf(\"%d\", age);` in C or `cout << age;` in C++."
+            "answer": "In C, use `printf`. In C++, use `cout`. For example: `printf(\"%d\", age);` in C or `cout << age;` in C++."
         },
         {
-            "question": "How do you allocate memory dynamically in C/C++?",
+            "question": "How to allocate memory dynamically in C/C++?",
             "syntax": "pointer = (type*)malloc(size); // C\npointer = new type; // C++",
-            "answer": "In C, you use `malloc` to allocate memory dynamically. In C++, you use `new`. For example: `int* ptr = (int*)malloc(sizeof(int));` in C or `int* ptr = new int;` in C++."
+            "answer": "In C, use `malloc`. In C++, use `new`. For example: `int* ptr = (int*)malloc(sizeof(int));` in C or `int* ptr = new int;` in C++."
         },
         {
-            "question": "How do you free dynamically allocated memory in C/C++?",
+            "question": "How to free memory in C/C++?",
             "syntax": "free(pointer); // C\ndelete pointer; // C++",
-            "answer": "In C, you use `free` to deallocate memory. In C++, you use `delete`. For example: `free(ptr);` in C or `delete ptr;` in C++."
+            "answer": "In C, use `free`. In C++, use `delete`. For example: `free(ptr);` in C or `delete ptr;` in C++."
         },
         {
-            "question": "How do you declare a variable in Java?",
+            "question": "How to declare a variable in Java?",
             "syntax": "type variableName = value;",
-            "answer": "In Java, you declare a variable with a type followed by the variable name and value. For example: `int age = 25;` or `String name = 'John';`."
+            "answer": "Declare with a type, name, and value. For example: `int age = 25;` or `String name = 'John';`."
         },
         {
-            "question": "How do you define a method in Java?",
+            "question": "How to define a method in Java?",
             "syntax": "returnType methodName(parameters) { /* method body */ }",
-            "answer": "You define a method with a return type, method name, and parameters. For example: `int add(int a, int b) { return a + b; }`."
+            "answer": "Define with a return type, name, and parameters. For example: `int add(int a, int b) { return a + b; }`."
         },
         {
-            "question": "How do you create an array in Java?",
+            "question": "How to create an array in Java?",
             "syntax": "type[] arrayName = new type[size];",
-            "answer": "You create an array with a type, name, and size. For example: `int[] numbers = new int[3];`."
+            "answer": "Create with a type, name, and size. For example: `int[] numbers = new int[3];`."
         },
         {
-            "question": "How do you handle exceptions in Java?",
+            "question": "How to handle exceptions in Java?",
             "syntax": "try {\n    // code\n} catch (ExceptionType e) {\n    // handle exception\n}",
-            "answer": "In Java, you use `try...catch` blocks for exception handling. For example: `try { riskyOperation(); } catch (Exception e) { e.printStackTrace(); }`."
+            "answer": "Use `try...catch` blocks. For example: `try { riskyOperation(); } catch (Exception e) { e.printStackTrace(); }`."
         },
         {
-            "question": "How do you print output to the console in Java?",
+            "question": "How to print output in Java?",
             "syntax": "System.out.println(\"message\");",
-            "answer": "You use `System.out.println` to print output. For example: `System.out.println(\"Hello, world!\");`."
+            "answer": "Use `System.out.println`. For example: `System.out.println(\"Hello, world!\");`."
         },
         {
-            "question": "How do you create a class in Java?",
+            "question": "How to create a class in Java?",
             "syntax": "class ClassName {\n    // fields and methods\n}",
-            "answer": "You create a class with the `class` keyword followed by the class name. For example: `class Person {\n    String name;\n    int age;\n}`."
+            "answer": "Create with the `class` keyword. For example: `class Person {\n    String name;\n    int age;\n}`."
         },
         {
-            "question": "How do you create an object in Java?",
+            "question": "How to create an object in Java?",
             "syntax": "ClassName objectName = new ClassName();",
-            "answer": "You create an object by using the `new` keyword followed by the class constructor. For example: `Person person = new Person();`."
+            "answer": "Create with `new` keyword and class constructor. For example: `Person person = new Person();`."
         },
         {
             "question": "What is the weather like today?",
@@ -942,89 +942,90 @@ export const questions = {
             "answer": "To be healthy, eat a balanced diet that includes a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats. Avoid excessive amounts of processed foods and sugars.",
         },
         {
-            "question": "How do I check the status of the working directory in Git?",
+            "question": "How to  check the status of the working directory in Git?",
             "answer": "Use the command `git status` to check the status of the working directory and staging area.",
             "syntax": "git status"
         },
         {
-            "question": "How do I add files to the staging area in Git?",
+            "question": "How to add files to the staging area in Git?",
             "answer": "Use the command `git add [file]` to add files to the staging area.",
             "syntax": "git add [file]"
         },
+
         {
-            "question": "How do I commit changes in Git?",
-            "answer": "Use the command `git commit -m 'commit message'` to commit changes to the repository with a descriptive message.",
-            "syntax": "git commit -m 'commit message'"
+            "question": "How to commit changes in Git?",
+            "syntax": "git commit -m 'commit message'",
+            "answer": "Use the command `git commit -m 'commit message'` to commit changes with a descriptive message."
         },
         {
-            "question": "How do I push changes to a remote repository in Git?",
-            "answer": "Use the command `git push` to push committed changes to a remote repository.",
-            "syntax": "git push"
+            "question": "How to push changes to a remote repository in Git?",
+            "syntax": "git push",
+            "answer": "Use the command `git push` to push committed changes to a remote repository."
         },
         {
-            "question": "How do I pull changes from a remote repository in Git?",
-            "answer": "Use the command `git pull` to fetch and integrate changes from a remote repository into your current branch.",
-            "syntax": "git pull"
+            "question": "How to pull changes from a remote repository in Git?",
+            "syntax": "git pull",
+            "answer": "Use the command `git pull` to fetch and integrate changes from a remote repository into your current branch."
         },
         {
-            "question": "How do I create a new branch in Git?",
-            "answer": "Use the command `git branch [branch-name]` to create a new branch.",
-            "syntax": "git branch [branch-name]"
+            "question": "How to create a new branch in Git?",
+            "syntax": "git branch [branch-name]",
+            "answer": "Use the command `git branch [branch-name]` to create a new branch."
         },
         {
-            "question": "How do I switch branches in Git?",
-            "answer": "Use the command `git checkout [branch-name]` to switch to another branch.",
-            "syntax": "git checkout [branch-name]"
+            "question": "How to switch branches in Git?",
+            "syntax": "git checkout [branch-name]",
+            "answer": "Use the command `git checkout [branch-name]` to switch to another branch."
         },
         {
-            "question": "How do I merge branches in Git?",
-            "answer": "Use the command `git merge [branch-name]` to merge changes from another branch into the current branch.",
-            "syntax": "git merge [branch-name]"
+            "question": "How to merge branches in Git?",
+            "syntax": "git merge [branch-name]",
+            "answer": "Use the command `git merge [branch-name]` to merge changes from another branch into the current branch."
         },
         {
-            "question": "How do I delete a branch in Git?",
-            "answer": "Use the command `git branch -d [branch-name]` to delete a local branch, or `git push origin --delete [branch-name]` to delete a remote branch.",
-            "syntax": "git branch -d [branch-name] / git push origin --delete [branch-name]"
+            "question": "How to delete a branch in Git?",
+            "syntax": "git branch -d [branch-name] / git push origin --delete [branch-name]",
+            "answer": "Use `git branch -d [branch-name]` to delete a local branch, or `git push origin --delete [branch-name]` to delete a remote branch."
         },
         {
-            "question": "How do I revert a commit in Git?",
-            "answer": "Use the command `git revert [commit-hash]` to create a new commit that undoes changes made by a previous commit.",
-            "syntax": "git revert [commit-hash]"
+            "question": "How to revert a commit in Git?",
+            "syntax": "git revert [commit-hash]",
+            "answer": "Use the command `git revert [commit-hash]` to create a new commit that undoes changes made by a previous commit."
         },
         {
-            "question": "How do I reset changes in Git?",
-            "answer": "Use the command `git reset [commit-hash]` to reset the current branch to a specific commit. Use `--hard` to discard changes or `--soft` to keep them in the staging area.",
-            "syntax": "git reset [commit-hash] / git reset --hard [commit-hash] / git reset --soft [commit-hash]"
+            "question": "How to reset changes in Git?",
+            "syntax": "git reset [commit-hash] / git reset --hard [commit-hash] / git reset --soft [commit-hash]",
+            "answer": "Use `git reset [commit-hash]` to reset the current branch to a specific commit. Use `--hard` to discard changes or `--soft` to keep them in the staging area."
         },
         {
-            "question": "How do I view the commit history in Git?",
-            "answer": "Use the command `git log` to view the commit history of the current branch.",
-            "syntax": "git log"
+            "question": "How to view commit history in Git?",
+            "syntax": "git log",
+            "answer": "Use the command `git log` to view the commit history of the current branch."
         },
         {
-            "question": "How do I create a tag in Git?",
-            "answer": "Use the command `git tag [tag-name]` to create a new tag at the current commit.",
-            "syntax": "git tag [tag-name]"
+            "question": "How to create a tag in Git?",
+            "syntax": "git tag [tag-name]",
+            "answer": "Use the command `git tag [tag-name]` to create a new tag at the current commit."
         },
         {
-            "question": "How do I delete a tag in Git?",
-            "answer": "Use the command `git tag -d [tag-name]` to delete a local tag, or `git push origin --delete [tag-name]` to delete a remote tag.",
-            "syntax": "git tag -d [tag-name] / git push origin --delete [tag-name]"
+            "question": "How to delete a tag in Git?",
+            "syntax": "git tag -d [tag-name] / git push origin --delete [tag-name]",
+            "answer": "Use `git tag -d [tag-name]` to delete a local tag, or `git push origin --delete [tag-name]` to delete a remote tag."
         },
         {
-            "question": "How do I stash changes in Git?",
-            "answer": "Use the command `git stash` to save changes in the working directory and revert to the last commit. Use `git stash pop` to apply stashed changes.",
-            "syntax": "git stash / git stash pop"
+            "question": "How to stash changes in Git?",
+            "syntax": "git stash / git stash pop",
+            "answer": "Use `git stash` to save changes in the working directory and revert to the last commit. Use `git stash pop` to apply stashed changes."
         },
         {
-            "question": "How do I view changes in Git?",
-            "answer": "Use the command `git diff` to view changes between commits, working directory, and staging area.",
-            "syntax": "git diff"
+            "question": "How to view changes in Git?",
+            "syntax": "git diff",
+            "answer": "Use the command `git diff` to view changes between commits, working directory, and staging area."
         },
         {
-            "question": "How do I clone a repository in Git?",
-            "answer": "Use the command `git clone [repository-url]` to create a copy of a remote repository on your local machine.",
-            "syntax": "git clone [repository-url]"
+            "question": "How to clone a repository in Git?",
+            "syntax": "git clone [repository-url]",
+            "answer": "Use the command `git clone [repository-url]` to create a copy of a remote repository on your local machine."
         },
         {
             "question": "git clone",
@@ -1392,7 +1393,7 @@ export const questions = {
             "syntax": "git push --force-with-lease"
         },
         {
-            "question": "How do I push all my tags to the remote repository?",
+            "question": "How to I push all my tags to the remote repository?",
             "answer": "`git push --tags` uploads all tags from your local repository to the remote repository.",
             "syntax": "git push --tags"
         },
@@ -1402,7 +1403,7 @@ export const questions = {
             "syntax": "git push <remote> --delete <branch>"
         },
         {
-            "question": "How do I set the upstream branch and push my changes?",
+            "question": "How to I set the upstream branch and push my changes?",
             "answer": "`git push --set-upstream <remote> <branch>` sets the specified remote branch as the upstream branch for the current local branch and pushes the changes.",
             "syntax": "git push --set-upstream <remote> <branch>"
         },
@@ -1412,7 +1413,7 @@ export const questions = {
             "syntax": "git push --all"
         },
         {
-            "question": "How do I fetch changes from a remote repository?",
+            "question": "How to I fetch changes from a remote repository?",
             "answer": "`git fetch` downloads changes from the remote repository into your local repository, but does not merge them into your working branch. It updates your remote-tracking branches.",
             "syntax": "git fetch"
         },
@@ -1422,12 +1423,12 @@ export const questions = {
             "syntax": "git fetch <remote>"
         },
         {
-            "question": "How do I fetch changes from a specific branch of a remote repository?",
+            "question": "How to I fetch changes from a specific branch of a remote repository?",
             "answer": "`git fetch <remote> <branch>` downloads changes from the specified branch in the remote repository and updates the corresponding remote-tracking branch.",
             "syntax": "git fetch <remote> <branch>"
         },
         {
-            "question": "How do I fetch changes from all remotes and branches?",
+            "question": "How to I fetch changes from all remotes and branches?",
             "answer": "`git fetch --all` downloads changes from all configured remote repositories and updates the remote-tracking branches for all of them.",
             "syntax": "git fetch --all"
         },
@@ -1437,7 +1438,7 @@ export const questions = {
             "syntax": "git fetch --depth=<depth>"
         },
         {
-            "question": "How do I fetch changes from a remote repository and prune deleted branches?",
+            "question": "How to I fetch changes from a remote repository and prune deleted branches?",
             "answer": "`git fetch --prune` downloads changes from the remote repository and removes any remote-tracking branches that no longer exist on the remote.",
             "syntax": "git fetch --prune"
         },
@@ -1447,7 +1448,7 @@ export const questions = {
             "syntax": "git fetch --shallow-since=<date>"
         },
         {
-            "question": "How do I fetch changes from a remote repository and include all tags?",
+            "question": "How to I fetch changes from a remote repository and include all tags?",
             "answer": "`git fetch --tags` downloads all tags from the remote repository along with the changes to the remote-tracking branches.",
             "syntax": "git fetch --tags"
         },
@@ -1661,64 +1662,44 @@ export const questions = {
             "answer": "Git is a version control system used to track changes in source code during software development. GitHub, GitLab, and Bitbucket are web-based platforms that provide Git repository hosting, as well as additional features like issue tracking, continuous integration, and collaboration tools. While GitHub is widely used for open-source projects, GitLab offers built-in CI/CD and DevOps tools, and Bitbucket is often preferred by teams using Atlassian products."
         },
         {
-            "question": "How do I clone a Git repository?",
-            "answer": "To clone a Git repository, use the command `git clone <repository_url>`. This will create a copy of the repository on your local machine."
+            "question": "How to reset a branch to a specific commit?",
+            "syntax": "git reset --hard [commit-hash]",
+            "answer": "Use `git reset --hard [commit-hash]` to reset a branch to a specific commit, removing all commits after it."
         },
         {
-            "question": "What is a Git commit?",
-            "answer": "A Git commit is a snapshot of your changes in the repository. Each commit records the state of the files at a specific point in time, and commits are identified by a unique SHA-1 hash."
+            "question": "How to view all remote branches in Git?",
+            "syntax": "git branch -r",
+            "answer": "Use `git branch -r` to list all remote branches."
         },
         {
-            "question": "How do I create a branch in Git?",
-            "answer": "To create a new branch in Git, use the command `git branch <branch_name>`. To switch to the new branch, use `git checkout <branch_name>` or `git switch <branch_name>`."
+            "question": "How to squash commits in Git?",
+            "syntax": "git rebase -i HEAD~[number-of-commits]",
+            "answer": "Use `git rebase -i HEAD~[number-of-commits]` and mark commits with `s` (squash) in the interactive editor."
         },
         {
-            "question": "What is a pull request in GitHub?",
-            "answer": "A pull request in GitHub is a way to propose changes to a repository. It allows developers to review the changes, discuss them, and merge them into the main branch if approved."
+            "question": "How to create a patch file in Git?",
+            "syntax": "git format-patch -1 [commit-hash]",
+            "answer": "Use `git format-patch -1 [commit-hash]` to generate a `.patch` file with changes from the specified commit."
         },
         {
-            "question": "How do I merge branches in Git?",
-            "answer": "To merge one branch into another in Git, first switch to the target branch using `git checkout <branch_name>`, then use the command `git merge <source_branch>` to merge the changes from the source branch."
+            "question": "How to apply a patch in Git?",
+            "syntax": "git apply [patch-file]",
+            "answer": "Use `git apply [patch-file]` to apply changes from a patch file to your working directory."
         },
         {
-            "question": "What is Git rebase?",
-            "answer": "Git rebase is a command that allows you to integrate changes from one branch into another by moving or combining commits, providing a cleaner project history compared to a merge."
+            "question": "How to find a specific commit by its message?",
+            "syntax": "git log --grep='search-term'",
+            "answer": "Use `git log --grep='search-term'` to search for commits by message."
         },
         {
-            "question": "What is the difference between `git merge` and `git rebase`?",
-            "answer": "`git merge` integrates changes from one branch into another while preserving the commit history, creating a merge commit. `git rebase` rewrites the commit history by applying your changes on top of another branch, creating a linear history."
+            "question": "How to undo a commit without losing changes?",
+            "syntax": "git reset --soft HEAD~1",
+            "answer": "Use `git reset --soft HEAD~1` to undo a commit while keeping changes in the staging area."
         },
         {
-            "question": "How do I resolve merge conflicts in Git?",
-            "answer": "Merge conflicts occur when changes from different branches conflict. To resolve them, manually edit the conflicting files to keep the desired changes, then add the resolved files using `git add`, and finally commit the changes."
-        },
-        {
-            "question": "What is GitLab CI/CD?",
-            "answer": "GitLab CI/CD is a built-in continuous integration and continuous delivery tool in GitLab. It allows you to automate the testing, building, and deployment of your code with pipelines defined in a `.gitlab-ci.yml` file."
-        },
-        {
-            "question": "What is Bitbucket Pipelines?",
-            "answer": "Bitbucket Pipelines is a continuous integration and delivery (CI/CD) service integrated into Bitbucket. It automates the process of building, testing, and deploying your code using a YAML configuration file."
-        },
-        {
-            "question": "How do I push changes to a remote Git repository?",
-            "answer": "To push changes to a remote Git repository, use the command `git push origin <branch_name>`. This will upload your local commits to the remote branch."
-        },
-        {
-            "question": "What is a Git fork?",
-            "answer": "A Git fork is a personal copy of a repository hosted on a platform like GitHub or GitLab. It allows you to make changes without affecting the original repository, and you can later submit a pull request to propose your changes."
-        },
-        {
-            "question": "How do I create a pull request in GitHub?",
-            "answer": "To create a pull request in GitHub, first push your changes to a branch in your fork of the repository, then go to the original repository and click the 'New pull request' button to propose your changes."
-        },
-        {
-            "question": "What is a Git stash?",
-            "answer": "Git stash is a command that temporarily saves your changes without committing them. This allows you to switch branches or perform other tasks without losing your current work. You can later apply the stashed changes with `git stash apply`."
-        },
-        {
-            "question": "How do I undo the last commit in Git?",
-            "answer": "To undo the last commit in Git, you can use the command `git reset --soft HEAD~1` to keep the changes in your working directory or `git reset --hard HEAD~1` to discard them entirely."
+            "question": "How to rename a branch in Git?",
+            "syntax": "git branch -m [old-branch-name] [new-branch-name]",
+            "answer": "Use `git branch -m [old-branch-name] [new-branch-name]` to rename a branch. If on the branch, use `git branch -m [new-branch-name]`."
         },
         {
             "question": "Who created Git and when?",
@@ -1773,427 +1754,423 @@ export const questions = {
             "answer": "Git is a distributed version control system that allows multiple developers to work on a project simultaneously, track changes, and manage code history."
         },
         {
-            "question": "How do I initialize a new Git repository?",
-            "answer": "To initialize a new Git repository, use the command `git init` in the directory where you want the repository to be created."
+            "question": "How to initialize a new Git repository?",
+            "answer": "Use `git init` in the directory where you want to create the repository."
         },
         {
-            "question": "What is the difference between Git and GitHub?",
-            "answer": "Git is a version control system used to manage code, while GitHub is a web-based platform that hosts Git repositories and provides collaboration features like pull requests and issues."
+            "question": "Difference between Git and GitHub?",
+            "answer": "Git is a version control system; GitHub is a platform for hosting Git repositories and offers collaboration features."
         },
         {
-            "question": "How do I clone a repository in Git?",
-            "answer": "To clone a repository, use the command `git clone <repository-url>`. This will create a local copy of the repository on your machine."
+            "question": "How to clone a repository in Git?",
+            "answer": "Use `git clone <repository-url>` to create a local copy of the repository."
         },
         {
             "question": "What is a commit in Git?",
-            "answer": "A commit in Git is a snapshot of changes made to the codebase. It represents a specific point in the project's history."
+            "answer": "A commit is a snapshot of changes in the codebase, representing a point in the project's history."
         },
         {
-            "question": "How do I stage changes for a commit?",
-            "answer": "To stage changes for a commit, use the command `git add <file-name>` or `git add .` to stage all changes in the current directory."
+            "question": "How to stage changes for a commit?",
+            "answer": "Use `git add <file-name>` or `git add .` to stage changes for a commit."
         },
         {
-            "question": "How do I check the status of my repository?",
-            "answer": "You can check the status of your repository by using the command `git status`. This will show you which files have been modified, staged, or untracked."
+            "question": "How to check the status of a repository?",
+            "answer": "Use `git status` to see which files are modified, staged, or untracked."
         },
         {
-            "question": "How do I create a new branch in Git?",
-            "answer": "To create a new branch, use the command `git branch <branch-name>`. To switch to that branch, use `git checkout <branch-name>` or `git switch <branch-name>`."
+            "question": "How to create a new branch in Git?",
+            "answer": "Use `git branch <branch-name>` to create a branch, and `git checkout <branch-name>` or `git switch <branch-name>` to switch to it."
         },
         {
             "question": "What is a merge in Git?",
-            "answer": "A merge in Git is the process of integrating changes from one branch into another. This is commonly done to combine work from different branches into the main branch."
+            "answer": "A merge integrates changes from one branch into another, often to combine work from different branches."
         },
         {
-            "question": "How do I resolve merge conflicts in Git?",
-            "answer": "To resolve merge conflicts, manually edit the conflicting files to choose which changes to keep. After resolving the conflicts, stage the changes with `git add` and commit them."
+            "question": "How to resolve merge conflicts in Git?",
+            "answer": "Edit conflicting files manually, stage changes with `git add`, and commit them to resolve conflicts."
         },
         {
-            "question": "How do I push changes to a remote repository?",
-            "answer": "To push changes to a remote repository, use the command `git push origin <branch-name>`. This will update the remote repository with your local changes."
+            "question": "How to push changes to a remote repository?",
+            "answer": "Use `git push origin <branch-name>` to update the remote repository with your local changes."
         },
         {
-            "question": "How do I pull changes from a remote repository?",
-            "answer": "To pull changes from a remote repository, use the command `git pull`. This will fetch and merge changes from the remote repository into your local branch."
+            "question": "How to pull changes from a remote repository?",
+            "answer": "Use `git pull` to fetch and merge changes from the remote repository into your local branch."
         },
         {
-            "question": "What is the difference between Git and GitLab?",
-            "answer": "Git is a version control system, while GitLab is a web-based platform that offers Git repository hosting along with CI/CD pipelines, project management, and more."
+            "question": "Difference between Git and GitLab?",
+            "answer": "Git is a version control system; GitLab is a platform offering Git hosting, CI/CD, project management, and more."
         },
         {
-            "question": "What is the difference between GitHub and Bitbucket?",
-            "answer": "GitHub and Bitbucket are both platforms for hosting Git repositories. GitHub is widely used for open-source projects, while Bitbucket offers support for both Git and Mercurial repositories and is often used by teams for private repositories."
+            "question": "Difference between GitHub and Bitbucket?",
+            "answer": "GitHub is popular for open-source projects; Bitbucket supports Git and Mercurial, often used for private repositories."
         },
         {
-            "question": "How do I revert a commit in Git?",
-            "answer": "To revert a commit, use the command `git revert <commit-hash>`. This will create a new commit that undoes the changes from the specified commit."
+            "question": "How to revert a commit in Git?",
+            "answer": "Use `git revert <commit-hash>` to create a new commit that undoes the changes from a previous commit."
         },
         {
             "question": "What is a Git stash?",
-            "answer": "Git stash allows you to temporarily save changes in your working directory without committing them. You can later apply or drop these changes using `git stash apply` or `git stash drop`."
+            "answer": "Git stash saves changes temporarily without committing them. Apply or drop these changes using `git stash apply` or `git stash drop`."
         },
         {
-            "question": "What is the difference between GitLab and GitHub?",
-            "answer": "GitHub is primarily a platform for hosting Git repositories and is widely used for open-source projects and collaboration. It offers features like pull requests and issues for project management. GitLab, on the other hand, is a comprehensive DevOps platform that integrates Git repository hosting with continuous integration/continuous deployment (CI/CD) pipelines, project management, and more. GitLab also provides robust self-hosting options and is available in both open-source and enterprise editions."
+            "question": "Difference between GitLab and GitHub?",
+            "answer": "GitHub is for hosting Git repositories and collaboration. GitLab offers Git hosting with integrated CI/CD, project management, and robust self-hosting options."
         },
         {
             "question": "Can you self-host GitLab and GitHub?",
-            "answer": "Yes, both GitLab and GitHub offer self-hosting options. GitLab provides a fully-featured self-hosted version, including its open-source community edition. GitHub offers GitHub Enterprise for self-hosting, but it is primarily known as a cloud service."
+            "answer": "Yes, GitLab offers a self-hosted version. GitHub offers GitHub Enterprise for self-hosting, but it's mainly a cloud service."
         },
         {
-            "question": "How do GitLab's CI/CD pipelines compare to GitHub Actions?",
-            "answer": "GitLab has a robust and mature CI/CD pipeline system that is tightly integrated with its platform. It allows for automated testing, deployment, and more without needing third-party services. GitHub Actions also provide CI/CD capabilities but is relatively new compared to GitLab's built-in system."
+            "question": "GitLab CI/CD vs. GitHub Actions?",
+            "answer": "GitLab's CI/CD is mature and integrated with its platform. GitHub Actions is newer but also provides CI/CD capabilities."
         },
         {
             "question": "Which platform is more open-source friendly, GitLab or GitHub?",
-            "answer": "GitHub is popular for hosting open-source projects, but the platform itself is not open-source. GitLab offers an open-source community edition, which allows users to self-host and modify the platform, making it more open-source friendly in terms of the platform itself."
+            "answer": "GitHub is popular for open-source projects but is not open-source itself. GitLab offers an open-source community edition for self-hosting."
         },
         {
-            "question": "How do you greet someone for the first time?",
-            "answer": "You can greet someone for the first time by saying, 'Hello! My name is [Your Name]. Nice to meet you.'"
+            "question": "How to greet someone for the first time?",
+            "answer": "Say, 'Hello! My name is [Your Name]. Nice to meet you.'"
         },
         {
-            "question": "How do you ask for someone's name?",
-            "answer": "You can ask for someone's name by saying, 'What’s your name?' or 'May I ask your name?'"
+            "question": "How to ask for someone's name?",
+            "answer": "Ask, 'What’s your name?' or 'May I ask your name?'"
         },
         {
-            "question": "How do you ask for directions?",
-            "answer": "To ask for directions, you can say, 'Can you help me find [place]?' or 'How do I get to [place]?'"
+            "question": "How to ask for directions?",
+            "answer": "Say, 'Can you help me find [place]?' or 'How do I get to [place]?'"
         },
         {
-            "question": "How do you ask for help in a store?",
-            "answer": "You can ask for help in a store by saying, 'Excuse me, can you help me find [item]?' or 'I need assistance with [item].'"
+            "question": "How to ask for help in a store?",
+            "answer": "Say, 'Excuse me, can you help me find [item]?' or 'I need assistance with [item].'"
         },
         {
-            "question": "How do you inquire about the cost of something?",
-            "answer": "To inquire about the cost, you can ask, 'How much does this cost?' or 'What’s the price of this?'"
+            "question": "How to inquire about the cost of something?",
+            "answer": "Ask, 'How much does this cost?' or 'What’s the price of this?'"
         },
         {
-            "question": "How do you request the time?",
-            "answer": "You can request the time by asking, 'What time is it?' or 'Could you tell me the time, please?'"
+            "question": "How to request the time?",
+            "answer": "Ask, 'What time is it?' or 'Could you tell me the time, please?'"
         },
         {
-            "question": "How do you apologize for a mistake?",
-            "answer": "You can apologize by saying, 'I’m sorry for the mistake. How can I make it right?' or 'I apologize for the error.'"
+            "question": "How to apologize for a mistake?",
+            "answer": "Say, 'I’m sorry for the mistake. How can I make it right?' or 'I apologize for the error.'"
         },
         {
-            "question": "How do you express appreciation?",
-            "answer": "To express appreciation, you can say, 'Thank you very much!' or 'I appreciate your help.'"
+            "question": "How to express appreciation?",
+            "answer": "Say, 'Thank you very much!' or 'I appreciate your help.'"
         },
         {
-            "question": "How do you request clarification?",
-            "answer": "To request clarification, you can ask, 'Could you clarify that?' or 'I didn’t quite understand, could you explain again?'"
+            "question": "How to request clarification?",
+            "answer": "Ask, 'Could you clarify that?' or 'I didn’t quite understand, could you explain again?'"
         },
         {
-            "question": "How do you make a reservation?",
-            "answer": "You can make a reservation by saying, 'I would like to make a reservation for [number] at [time].' or 'Can I book a table for [number] people?'"
+            "question": "How to make a reservation?",
+            "answer": "Say, 'I would like to make a reservation for [number] at [time].' or 'Can I book a table for [number] people?'"
         },
         {
-            "question": "How do you ask about someone's weekend?",
-            "answer": "You can ask about someone’s weekend by saying, 'How was your weekend?' or 'Did you do anything interesting this weekend?'"
+            "question": "How to ask about someone's weekend?",
+            "answer": "Ask, 'How was your weekend?' or 'Did you do anything interesting this weekend?'"
         },
         {
-            "question": "How do you express that you’re lost?",
-            "answer": "To express that you’re lost, you can say, 'I’m lost. Can you help me find my way to [place]?'"
+            "question": "How to express that you’re lost?",
+            "answer": "Say, 'I’m lost. Can you help me find my way to [place]?'"
         },
         {
-            "question": "How do you ask for someone's opinion?",
-            "answer": "You can ask for someone’s opinion by saying, 'What do you think about [topic]?' or 'What’s your opinion on [issue]?'"
+            "question": "How to ask for someone's opinion?",
+            "answer": "Ask, 'What do you think about [topic]?' or 'What’s your opinion on [issue]?'"
         },
         {
-            "question": "How do you express that you’re busy?",
-            "answer": "You can express that you’re busy by saying, 'I’m sorry, I’m currently busy. Can we talk later?' or 'I have a lot on my plate right now.'"
+            "question": "How to express that you’re busy?",
+            "answer": "Say, 'I’m sorry, I’m currently busy. Can we talk later?' or 'I have a lot on my plate right now.'"
         },
         {
-            "question": "How do you ask for a recommendation?",
-            "answer": "To ask for a recommendation, you can say, 'Can you recommend a good [restaurant, book, movie, etc.]?'"
+            "question": "How to ask for a recommendation?",
+            "answer": "Say, 'Can you recommend a good [restaurant, book, movie, etc.]?'"
         },
         {
-            "question": "How do you request to speak to someone?",
-            "answer": "You can request to speak to someone by saying, 'Can I speak with [person’s name]?' or 'I’d like to talk to [person], please.'"
+            "question": "How to request to speak to someone?",
+            "answer": "Say, 'Can I speak with [person’s name]?' or 'I’d like to talk to [person], please.'"
         },
         {
-            "question": "How do you confirm an appointment?",
-            "answer": "To confirm an appointment, you can say, 'Just confirming our appointment for [date and time]. Is that still good?'"
+            "question": "How to confirm an appointment?",
+            "answer": "Say, 'Just confirming our appointment for [date and time]. Is that still good?'"
         },
         {
-            "question": "How do you express dissatisfaction with a service?",
-            "answer": "To express dissatisfaction, you can say, 'I’m not satisfied with the service. Can you help resolve this issue?'"
+            "question": "How to express dissatisfaction with a service?",
+            "answer": "Say, 'I’m not satisfied with the service. Can you help resolve this issue?'"
         },
         {
-            "question": "How do you introduce yourself to a group?",
-            "answer": "To introduce yourself to a group, you can say, 'Hi everyone, I’m [Your Name]. It’s nice to meet you all.'"
+            "question": "How to introduce yourself to a group?",
+            "answer": "Say, 'Hi everyone, I’m [Your Name]. It’s nice to meet you all.'"
         },
         {
-            "question": "How do you ask for someone's contact information?",
-            "answer": "You can ask for contact information by saying, 'Can I get your phone number/email address?' or 'What’s the best way to contact you?'"
+            "question": "How to ask for contact info?",
+            "answer": "Say, 'Can I get your phone number/email address?' or 'What’s the best way to contact you?'"
         },
         {
-            "question": "How do you offer assistance?",
-            "answer": "To offer assistance, you can say, 'Can I help you with anything?' or 'Is there anything I can do for you?'"
+            "question": "How to offer assistance?",
+            "answer": "Say, 'Can I help you with anything?' or 'Is there anything I can do for you?'"
         },
         {
-            "question": "How do you ask about the weather?",
-            "answer": "To ask about the weather, you can say, 'What’s the weather like today?' or 'How’s the weather?'"
+            "question": "How to ask about the weather?",
+            "answer": "Say, 'What’s the weather like today?' or 'How’s the weather?'"
         },
         {
-            "question": "How do you express understanding?",
-            "answer": "To express understanding, you can say, 'I understand' or 'That makes sense.'"
+            "question": "How to express understanding?",
+            "answer": "Say, 'I understand' or 'That makes sense.'"
         },
         {
-            "question": "How do you express a preference?",
-            "answer": "To express a preference, you can say, 'I prefer [option A] over [option B]' or 'I would rather [do something].'"
+            "question": "How to express a preference?",
+            "answer": "Say, 'I prefer [option A] over [option B]' or 'I would rather [do something].'"
         },
         {
-            "question": "How do you ask someone to repeat something?",
-            "answer": "You can ask someone to repeat something by saying, 'Could you repeat that, please?' or 'I’m sorry, I didn’t catch that. Could you say it again?'"
+            "question": "How to ask someone to repeat something?",
+            "answer": "Say, 'Could you repeat that, please?' or 'I’m sorry, I didn’t catch that. Could you say it again?'"
         },
         {
-            "question": "How do you ask for feedback?",
-            "answer": "To ask for feedback, you can say, 'Can you give me some feedback on [topic]?' or 'What are your thoughts on [issue]?'"
+            "question": "How to ask for feedback?",
+            "answer": "Say, 'Can you give me some feedback on [topic]?' or 'What are your thoughts on [issue]?'"
         },
         {
-            "question": "How do you politely decline an offer?",
-            "answer": "To politely decline, you can say, 'Thank you for the offer, but I’ll have to pass.' or 'I appreciate the offer, but I’m not interested.'"
+            "question": "How to politely decline an offer?",
+            "answer": "Say, 'Thank you for the offer, but I’ll have to pass.' or 'I appreciate the offer, but I’m not interested.'"
         },
         {
-            "question": "How do you make a request?",
-            "answer": "To make a request, you can say, 'Could you please [do something]?' or 'Would you mind [doing something]?'"
+            "question": "How to make a request?",
+            "answer": "Say, 'Could you please [do something]?' or 'Would you mind [doing something]?'"
         },
         {
-            "question": "How do you ask for someone's name again?",
-            "answer": "You can ask for someone’s name again by saying, 'I’m sorry, I forgot your name. Could you remind me?'"
+            "question": "How to ask for someone's name again?",
+            "answer": "Say, 'I’m sorry, I forgot your name. Could you remind me?'"
         },
         {
-            "question": "How do you say goodbye?",
-            "answer": "You can say goodbye by saying, 'Goodbye!' or 'See you later!'"
+            "question": "How to say goodbye?",
+            "answer": "Say, 'Goodbye!' or 'See you later!'"
         },
         {
-            "question": "How do you invite someone to an event?",
-            "answer": "To invite someone, you can say, 'Would you like to come to [event]?' or 'I’d like to invite you to [event].'"
+            "question": "How to invite someone to an event?",
+            "answer": "Say, 'Would you like to come to [event]?' or 'I’d like to invite you to [event].'"
         },
         {
-            "question": "How do you confirm receipt of information?",
-            "answer": "To confirm receipt, you can say, 'I received your message.' or 'I got the information, thank you.'"
+            "question": "How to confirm receipt of information?",
+            "answer": "Say, 'I received your message.' or 'I got the information, thank you.'"
         },
         {
-            "question": "How do you express enthusiasm?",
-            "answer": "To express enthusiasm, you can say, 'I’m really excited about this!' or 'This is great!'"
+            "question": "How to express enthusiasm?",
+            "answer": "Say, 'I’m really excited about this!' or 'This is great!'"
         },
         {
-            "question": "How do you ask about someone's day?",
-            "answer": "To ask about someone’s day, you can say, 'How was your day?' or 'Did you have a good day?'"
+            "question": "How to ask about someone's day?",
+            "answer": "Say, 'How was your day?' or 'Did you have a good day?'"
         },
         {
-            "question": "How do you inquire about availability?",
-            "answer": "To inquire about availability, you can say, 'Are you available [date/time]?' or 'When are you free?'"
+            "question": "How to inquire about availability?",
+            "answer": "Say, 'Are you available [date/time]?' or 'When are you free?'"
         },
         {
-            "question": "How do you ask for confirmation on details?",
-            "answer": "To ask for confirmation, you can say, 'Can you confirm the details of our meeting?' or 'Is this information correct?'"
+            "question": "How to ask for confirmation on details?",
+            "answer": "Say, 'Can you confirm the details of our meeting?' or 'Is this information correct?'"
         },
         {
-            "question": "How do you express gratitude for a favor?",
-            "answer": "To express gratitude, you can say, 'Thank you so much for your help!' or 'I really appreciate your assistance.'"
+            "question": "How to express gratitude for a favor?",
+            "answer": "Say, 'Thank you so much for your help!' or 'I really appreciate your assistance.'"
         },
         {
-            "question": "How do you ask for someone's opinion?",
-            "answer": "To ask for someone’s opinion, you can say, 'What’s your opinion on [topic]?' or 'What do you think about [issue]?'"
+            "question": "How to ask for someone's opinion?",
+            "answer": "Say, 'What’s your opinion on [topic]?' or 'What do you think about [issue]?'"
         },
         {
-            "question": "How do you express concern?",
-            "answer": "To express concern, you can say, 'I’m concerned about [issue].' or 'I’m worried about [situation].'"
+            "question": "How to express concern?",
+            "answer": "Say, 'I’m concerned about [issue].' or 'I’m worried about [situation].'"
         },
         {
-            "question": "How do you inquire about a problem?",
-            "answer": "To inquire about a problem, you can say, 'What seems to be the problem?' or 'Can you tell me more about the issue?'"
+            "question": "How to inquire about a problem?",
+            "answer": "Say, 'What seems to be the problem?' or 'Can you tell me more about the issue?'"
         },
         {
-            "question": "How do you request a meeting?",
-            "answer": "To request a meeting, you can say, 'Can we schedule a meeting to discuss [topic]?' or 'I’d like to arrange a meeting regarding [issue].'"
+            "question": "How to request a meeting?",
+            "answer": "Say, 'Can we schedule a meeting to discuss [topic]?' or 'I’d like to arrange a meeting regarding [issue].'"
         },
         {
-            "question": "How do you confirm an appointment time?",
-            "answer": "To confirm an appointment time, you can say, 'Just confirming our appointment for [date and time]. Is that correct?'"
+            "question": "How to confirm an appointment time?",
+            "answer": "Say, 'Just confirming our appointment for [date and time]. Is that correct?'"
         },
         {
-            "question": "How do you express surprise?",
-            "answer": "To express surprise, you can say, 'Wow, I didn’t expect that!' or 'I’m surprised to hear that.'"
+            "question": "How to express surprise?",
+            "answer": "Say, 'Wow, I didn’t expect that!' or 'I’m surprised to hear that.'"
         },
         {
-            "question": "How do you offer congratulations?",
-            "answer": "To offer congratulations, you can say, 'Congratulations on [achievement]!' or 'Well done on [success]!'"
+            "question": "How to offer congratulations?",
+            "answer": "Say, 'Congratulations on [achievement]!' or 'Well done on [success]!'"
         },
         {
-            "question": "How do you ask for directions to a specific location?",
-            "answer": "To ask for directions, you can say, 'Can you direct me to [specific location]?' or 'How do I get to [specific place]?'"
+            "question": "How to ask for directions?",
+            "answer": "Say, 'Can you direct me to [specific location]?' or 'How do I get to [specific place]?'"
         },
         {
-            "question": "How do you express regret?",
-            "answer": "To express regret, you can say, 'I regret not being able to [do something].' or 'I’m sorry for [what happened].'"
+            "question": "How to express regret?",
+            "answer": "Say, 'I regret not being able to [do something].' or 'I’m sorry for [what happened].'"
         },
         {
-            "question": "How do you request a change in plans?",
-            "answer": "To request a change, you can say, 'Can we change our plans to [new plan]?' or 'I need to adjust our schedule. Is that okay?'"
+            "question": "How to request a change in plans?",
+            "answer": "Say, 'Can we change our plans to [new plan]?' or 'I need to adjust our schedule. Is that okay?'"
         },
         {
-            "question": "How do you inquire about someone's well-being?",
-            "answer": "To inquire about someone’s well-being, you can say, 'How are you doing?' or 'Is everything okay with you?'"
+            "question": "How to inquire about well-being?",
+            "answer": "Say, 'How are you doing?' or 'Is everything okay with you?'"
         },
         {
-            "question": "How do you ask for assistance with a task?",
-            "answer": "To ask for assistance, you can say, 'Can you help me with [task]?' or 'I need some help with [task].'"
+            "question": "How to ask for task assistance?",
+            "answer": "Say, 'Can you help me with [task]?' or 'I need some help with [task].'"
         },
         {
-            "question": "How do you express a desire for more information?",
-            "answer": "To express a desire for more information, you can say, 'Can you provide more details about [topic]?' or 'I’d like to know more about [subject].'"
+            "question": "How to ask for more info?",
+            "answer": "Say, 'Can you provide more details about [topic]?' or 'I’d like to know more about [subject].'"
         },
         {
-            "question": "How do you make a polite request?",
-            "answer": "To make a polite request, you can say, 'Could you please [do something]?' or 'Would you mind [doing something]?'"
+            "question": "How to make a polite request?",
+            "answer": "Say, 'Could you please [do something]?' or 'Would you mind [doing something]?'"
         },
         {
-            "question": "How do you offer to help someone?",
-            "answer": "To offer help, you can say, 'Can I assist you with that?' or 'Would you like some help with [task]?'"
+            "question": "How to offer to help?",
+            "answer": "Say, 'Can I assist you with that?' or 'Would you like some help with [task]?'"
         },
         {
-            "question": "How do you ask about someone's interests?",
-            "answer": "To ask about someone’s interests, you can say, 'What are your interests?' or 'What do you enjoy doing in your free time?'"
+            "question": "How to ask about interests?",
+            "answer": "Say, 'What are your interests?' or 'What do you enjoy doing in your free time?'"
         },
         {
-            "question": "How do you express interest in a topic?",
-            "answer": "To express interest, you can say, 'I’m interested in learning more about [topic].' or 'I’d like to know more about [subject].'"
+            "question": "How to express interest in a topic?",
+            "answer": "Say, 'I’m interested in learning more about [topic].' or 'I’d like to know more about [subject].'"
         },
         {
-            "question": "How do you ask for an update?",
-            "answer": "To ask for an update, you can say, 'Can you give me an update on [issue]?' or 'What’s the latest on [topic]?'"
+            "question": "How to ask for an update?",
+            "answer": "Say, 'Can you give me an update on [issue]?' or 'What’s the latest on [topic]?'"
         },
         {
-            "question": "How do you inquire about someone's plans?",
-            "answer": "To inquire about plans, you can say, 'What are your plans for [day/weekend]?' or 'Do you have any plans for [event]?'"
+            "question": "How to inquire about plans?",
+            "answer": "Say, 'What are your plans for [day/weekend]?' or 'Do you have any plans for [event]?'"
         },
         {
-            "question": "How do you express relief?",
-            "answer": "To express relief, you can say, 'I’m relieved to hear that.' or 'It’s a relief that [situation] is resolved.'"
+            "question": "How to express relief?",
+            "answer": "Say, 'I’m relieved to hear that.' or 'It’s a relief that [situation] is resolved.'"
         },
         {
-            "question": "How do you ask for someone’s feedback on a project?",
-            "answer": "To ask for feedback, you can say, 'Can you give me your feedback on [project]?' or 'What do you think about the [project] so far?'"
+            "question": "How to ask for feedback on a project?",
+            "answer": "Say, 'Can you give me your feedback on [project]?' or 'What do you think about the [project] so far?'"
         },
         {
-            "question": "How do you request a summary of a discussion?",
-            "answer": "To request a summary, you can say, 'Can you summarize what we discussed?' or 'Could you give me a brief overview of [discussion]?'"
+            "question": "How to request a summary?",
+            "answer": "Say, 'Can you summarize what we discussed?' or 'Could you give me a brief overview of [discussion]?'"
         },
         {
-            "question": "How do you express your opinion on a subject?",
-            "answer": "To express your opinion, you can say, 'In my opinion, [opinion] about [subject].' or 'I believe that [opinion].'"
+            "question": "How to express your opinion?",
+            "answer": "Say, 'In my opinion, [opinion] about [subject].' or 'I believe that [opinion].'"
         },
         {
-            "question": "How do you confirm a booking?",
-            "answer": "To confirm a booking, you can say, 'Just confirming my booking for [date/time]. Is everything in order?'"
+            "question": "How to confirm a booking?",
+            "answer": "Say, 'Just confirming my booking for [date/time]. Is everything in order?'"
         },
         {
-            "question": "How do you express enthusiasm about a new opportunity?",
-            "answer": "To express enthusiasm, you can say, 'I’m excited about this opportunity!' or 'This sounds like a fantastic opportunity!'"
+            "question": "How to express enthusiasm about an opportunity?",
+            "answer": "Say, 'I’m excited about this opportunity!' or 'This sounds like a fantastic opportunity!'"
         },
         {
-            "question": "How do you ask about someone's experience with a service?",
-            "answer": "To ask about experience, you can say, 'How was your experience with [service]?' or 'Did you find [service] helpful?'"
+            "question": "How to ask about experience with a service?",
+            "answer": "Say, 'How was your experience with [service]?' or 'Did you find [service] helpful?'"
         },
         {
-            "question": "How do you inquire about the availability of a product?",
-            "answer": "To inquire about availability, you can say, 'Is [product] available?' or 'Do you have [product] in stock?'"
+            "question": "How to inquire about product availability?",
+            "answer": "Say, 'Is [product] available?' or 'Do you have [product] in stock?'"
         },
         {
-            "question": "How do you express that you are feeling unwell?",
-            "answer": "To express feeling unwell, you can say, 'I’m not feeling well today.' or 'I’m feeling under the weather.'"
+            "question": "How to express feeling unwell?",
+            "answer": "Say, 'I’m not feeling well today.' or 'I’m feeling under the weather.'"
         },
         {
-            "question": "How do you ask for the purpose of a meeting?",
-            "answer": "To ask for the purpose, you can say, 'What’s the purpose of this meeting?' or 'Can you tell me what we’re discussing today?'"
+            "question": "How to ask for meeting purpose?",
+            "answer": "Say, 'What’s the purpose of this meeting?' or 'Can you tell me what we’re discussing today?'"
         },
         {
-            "question": "How do you inquire about the results of an action?",
-            "answer": "To inquire about results, you can say, 'What were the results of [action]?' or 'Did we get the outcome we were expecting?'"
-        },
-        {
-            "question": "How do you express that you need more time?",
+            "question": "How to ask for more time?",
             "answer": "To express needing more time, you can say, 'I need a bit more time to finish this.' or 'Can I have an extension on this deadline?'"
         },
         {
-            "question": "How do you ask for details about an event?",
+            "question": "How to request event details?",
             "answer": "To ask for details, you can say, 'Can you provide more details about [event]?' or 'What are the specifics of [event]?'"
         },
         {
-            "question": "How do you ask for clarification on a complex topic?",
+            "question": "How to ask for topic clarification?",
             "answer": "To ask for clarification, you can say, 'Can you explain this topic in more detail?' or 'I need more information on [topic].'"
         },
         {
-            "question": "How do you express dissatisfaction with a product?",
+            "question": "How to express product dissatisfaction?",
             "answer": "To express dissatisfaction, you can say, 'I’m not happy with this product.' or 'This product didn’t meet my expectations.'"
         },
         {
-            "question": "How do you ask for confirmation of an event?",
+            "question": "How to confirm an event?",
             "answer": "To ask for confirmation, you can say, 'Can you confirm if [event] is happening on [date]?' or 'Is [event] still scheduled for [date]?'"
         },
         {
-            "question": "How do you express regret for missing an event?",
+            "question": "How to express regret for missing an event?",
             "answer": "To express regret, you can say, 'I’m sorry I missed [event].' or 'I regret not being able to attend [event].'"
         },
         {
-            "question": "How do you offer to take responsibility for a mistake?",
+            "question": "How to take responsibility for a mistake?",
             "answer": "To offer responsibility, you can say, 'I’ll take responsibility for the mistake.' or 'It was my fault, and I’ll fix it.'"
         },
         {
-            "question": "How do you ask for someone's contact details?",
+            "question": "How to ask for contact details?",
             "answer": "To ask for contact details, you can say, 'Could I have your phone number or email address?' or 'What’s the best way to contact you?'"
         },
         {
-            "question": "How do you request a meeting to discuss a concern?",
+            "question": "How to request a meeting about a concern?",
             "answer": "To request a meeting, you can say, 'Can we schedule a meeting to discuss [concern]?' or 'I’d like to arrange a meeting about [issue].'"
         },
         {
-            "question": "How do you express that you are interested in a job position?",
+            "question": "How to show interest in a job?",
             "answer": "To express interest, you can say, 'I’m very interested in the [job position].' or 'I would like to apply for the [job position].'"
         },
         {
-            "question": "How do you ask for a summary of a report?",
+            "question": "How to request a report summary?",
             "answer": "To ask for a summary, you can say, 'Can you give me a summary of the report?' or 'Could you provide a brief overview of the report?'"
         },
         {
-            "question": "How do you inquire about the status of a request?",
+            "question": "How to check request status?",
             "answer": "To inquire about status, you can say, 'What’s the status of my request?' or 'Can you update me on the progress of my request?'"
         },
         {
-            "question": "How do you express concern about a potential issue?",
+            "question": "How to express concern about an issue?",
             "answer": "To express concern, you can say, 'I’m concerned about [potential issue].' or 'Is there a problem with [issue] that we should address?'"
         },
         {
-            "question": "How do you offer feedback on a document?",
+            "question": "How to give document feedback?",
             "answer": "To offer feedback, you can say, 'Here’s my feedback on the document.' or 'I have some comments on the document that might help.'"
         },
         {
-            "question": "How do you ask for someone's opinion on a decision?",
+            "question": "How to ask for an opinion on a decision?",
             "answer": "To ask for an opinion, you can say, 'What’s your opinion on [decision]?' or 'How do you feel about [decision]?'"
         },
         {
-            "question": "How do you express gratitude for a favor?",
+            "question": "How to thank someone for a favor?",
             "answer": "To express gratitude, you can say, 'Thank you so much for your help.' or 'I really appreciate your assistance.'"
         },
         {
-            "question": "How do you ask for someone's availability?",
+            "question": "How to ask about availability?",
             "answer": "To ask for availability, you can say, 'When are you available?' or 'What’s your availability like this week?'"
         },
         {
-            "question": "How do you inquire about someone's preferences for a meeting?",
+            "question": "How to inquire about meeting preferences?",
             "answer": "To inquire about preferences, you can say, 'Do you have any preferences for the meeting time?' or 'What’s the best time for you to meet?'"
         },
         {
-            "question": "How do you request a meeting to go over a report?",
+            "question": "How to request a meeting to review a report?",
             "answer": "To request a meeting, you can say, 'Can we schedule a meeting to go over the report?' or 'I’d like to arrange a meeting to discuss the report.'"
         },
         {
-            "question": "How do you express disappointment with a service?",
+            "question": "How to express disappointment with service?",
             "answer": "To express disappointment, you can say, 'I’m disappointed with the service.' or 'The service didn’t meet my expectations.'"
         },
         {
@@ -2623,6 +2600,59 @@ export const questions = {
         {
             "question": "How can I improve my public speaking skills?",
             "answer": "To improve public speaking skills, practice regularly, know your material well, engage with your audience, work on your delivery and body language, and seek feedback to refine your approach."
+        },
+        {
+            "question": "How to merge a branch into my current branch?",
+            "answer": "`git merge <branch>` merges the specified branch into the current branch.",
+            "syntax": "git merge <branch>"
+        },
+        {
+            "question": "How to clone a repository?",
+            "answer": "`git clone <repository-url>` creates a copy of the specified repository in your local machine.",
+            "syntax": "git clone <repository-url>"
+        },
+        {
+            "question": "How to set a remote URL for my repository?",
+            "answer": "`git remote set-url <remote> <new-url>` changes the URL of the specified remote.",
+            "syntax": "git remote set-url <remote> <new-url>"
+        },
+        {
+            "question": "How to fetch changes from a remote repository?",
+            "answer": "`git fetch <remote>` retrieves changes from the specified remote repository without merging them into your current branch.",
+            "syntax": "git fetch <remote>"
+        },
+        {
+            "question": "How to create a new branch?",
+            "answer": "`git branch <branch-name>` creates a new branch with the specified name.",
+            "syntax": "git branch <branch-name>"
+        },
+        {
+            "question": "What can you help me with?",
+            "answer": "I can assist with various topics such as providing information on git commands, answering general queries, and offering guidance on specific tasks."
+        },
+        {
+            "question": "Can I help you?",
+            "answer": "Thank you for offering! If there's something specific you need assistance with or if you have any questions, just let me know."
+        },
+        {
+            "question": "What kind of help can you provide?",
+            "answer": "I can help with a range of topics including technical support, information about tools and technologies, and general advice. Let me know what you need assistance with!"
+        },
+        {
+            "question": "How can I assist you?",
+            "answer": "You can assist by asking about specific topics or tasks you need help with, or by providing details on what you’re looking to achieve."
+        },
+        {
+            "question": "What assistance do you need?",
+            "answer": "Please let me know what specific assistance you require. I can help with various topics such as troubleshooting issues, providing information, and offering guidance."
+        },
+        {
+            "question": "How can I be of help?",
+            "answer": "You can be of help by letting me know if you have any specific questions or tasks you need assistance with. Just describe what you need help with!"
+        },
+        {
+            "question": "Do you need any help?",
+            "answer": "Thank you for asking! If there's something specific you think I might need help with or if you have any questions, feel free to let me know."
         }
     ]
 };
