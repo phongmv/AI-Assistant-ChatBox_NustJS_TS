@@ -2884,5 +2884,246 @@ export const questions = {
             "question": "What is merging in Git?",
             "answer": "Merging in Git is the process of integrating changes from one branch into another. When developers complete work on a feature branch, they merge it into the main branch to incorporate the changes. Git uses a three-way merge algorithm to combine changes and resolve conflicts if the same parts of the code were modified in both branches."
         },
+        {
+            "question": "How are you?",
+            "answer": "A common greeting asking about someone's well-being."
+        },
+        {
+            "question": "Hello!",
+            "answer": "A simple and classic greeting used to acknowledge someone's presence."
+        },
+        {
+            "question": "Hi!",
+            "answer": "A short and casual form of 'hello'."
+        },
+        {
+            "question": "Good morning!",
+            "answer": "A greeting used in the morning to wish someone a good day."
+        },
+        {
+            "question": "Good afternoon!",
+            "answer": "A greeting used in the afternoon to wish someone well."
+        },
+        {
+            "question": "Good evening!",
+            "answer": "A greeting used in the evening, typically after sunset."
+        },
+        {
+            "question": "What's up?",
+            "answer": "A casual way of asking how someone is doing or what they're up to."
+        },
+        {
+            "question": "How’s it going?",
+            "answer": "A casual inquiry about how someone’s life or day is progressing."
+        },
+        {
+            "question": "How have you been?",
+            "answer": "A greeting asking about someone's well-being over a period of time."
+        },
+        {
+            "question": "Nice to meet you!",
+            "answer": "A polite greeting used when meeting someone for the first time."
+        },
+        {
+            "question": "Hey there!",
+            "answer": "A friendly and informal greeting."
+        },
+        {
+            "question": "Good to see you!",
+            "answer": "A warm greeting expressing happiness at seeing someone."
+        },
+        {
+            "question": "How’s everything?",
+            "answer": "A general greeting asking about someone’s overall situation."
+        },
+        {
+            "question": "What’s new?",
+            "answer": "A casual way of asking about recent events or updates in someone’s life."
+        },
+        {
+            "question": "How do you do?",
+            "answer": "A formal greeting often used in professional settings."
+        },
+        {
+            "question": "Pleased to meet you!",
+            "answer": "A polite and formal greeting when introduced to someone."
+        },
+        {
+            "question": "Long time no see!",
+            "answer": "A casual greeting used when you haven't seen someone in a while."
+        },
+        {
+            "question": "Yo!",
+            "answer": "A very informal and casual greeting, often used among friends."
+        },
+        {
+            "question": "How’s life?",
+            "answer": "A casual way of asking about someone's general well-being."
+        },
+        {
+            "question": "Greetings!",
+            "answer": "A formal and sometimes old-fashioned way of saying hello."
+        },
+        {
+            "question": "What’s going on?",
+            "answer": "A casual greeting inquiring about someone’s current activities."
+        },
+        {
+            "question": "How are things?",
+            "answer": "A casual greeting asking about someone's general situation."
+        },
+        {
+            "question": "Howdy!",
+            "answer": "A casual greeting, often associated with American Western culture."
+        },
+        {
+            "question": "Welcome!",
+            "answer": "A greeting used to show pleasure at someone's arrival."
+        },
+        {
+            "question": "How’s your day going?",
+            "answer": "A friendly inquiry about how someone's day has been so far."
+        },
+        {
+            "question": "How are you doing?",
+            "answer": "A casual way of asking about someone's well-being."
+        },
+        {
+            "question": "Hey!",
+            "answer": "A very casual and informal greeting."
+        },
+        {
+            "question": "What’s happening?",
+            "answer": "A casual way of asking about someone's current activities."
+        },
+        {
+            "question": "Nice to see you!",
+            "answer": "A friendly greeting expressing happiness at seeing someone."
+        },
+        {
+            "question": "All good?",
+            "answer": "A casual way of asking if everything is okay."
+        },
+        {
+            "question": "Goodbye!",
+            "answer": "A classic and simple way to say farewell."
+        },
+        {
+            "question": "Bye!",
+            "answer": "A short and casual form of 'goodbye'."
+        },
+        {
+            "question": "See you later!",
+            "answer": "A casual farewell suggesting you'll meet again later."
+        },
+        {
+            "question": "Take care!",
+            "answer": "A warm way of saying goodbye, wishing the other person well."
+        },
+        {
+            "question": "See you soon!",
+            "answer": "A farewell implying that you will meet again in the near future."
+        },
+        {
+            "question": "Catch you later!",
+            "answer": "An informal way of saying you'll see someone again later."
+        },
+        {
+            "question": "Have a good day!",
+            "answer": "A polite farewell wishing someone a pleasant day."
+        },
+        {
+            "question": "Farewell!",
+            "answer": "A formal way of saying goodbye, often used in written communication."
+        },
+        {
+            "question": "See you tomorrow!",
+            "answer": "A farewell used when you expect to see the person the next day."
+        },
+        {
+            "question": "Good night!",
+            "answer": "A farewell used in the evening or before going to bed."
+        },
+        {
+            "question": "Later!",
+            "answer": "A very casual and informal way of saying goodbye."
+        },
+        {
+            "question": "Take it easy!",
+            "answer": "A casual farewell suggesting the person should relax or take care."
+        },
+        {
+            "question": "I’ve got to go!",
+            "answer": "A farewell indicating that you need to leave."
+        },
+        {
+            "question": "So long!",
+            "answer": "An old-fashioned way of saying goodbye."
+        },
+        {
+            "question": "I’ll see you around!",
+            "answer": "A casual farewell implying that you’ll see the person again at some point."
+        },
+        {
+            "question": "I’m off!",
+            "answer": "An informal way of saying you are leaving."
+        },
+        {
+            "question": "Talk to you later!",
+            "answer": "A casual farewell used when you plan to speak with the person again soon."
+        },
+        {
+            "question": "Take care of yourself!",
+            "answer": "A caring way to say goodbye, wishing the person to stay safe."
+        },
+        {
+            "question": "Catch you soon!",
+            "answer": "A casual farewell implying you'll meet or talk again soon."
+        },
+        {
+            "question": "Until next time!",
+            "answer": "A friendly way to say goodbye until you meet again."
+        },
+        {
+            "question": "Bye for now!",
+            "answer": "A temporary farewell implying you’ll see the person again soon."
+        },
+        {
+            "question": "Keep in touch!",
+            "answer": "A farewell encouraging the person to stay in contact."
+        },
+        {
+            "question": "Have a good one!",
+            "answer": "An informal way of wishing someone well as you say goodbye."
+        },
+        {
+            "question": "Peace out!",
+            "answer": "A very casual and informal way of saying goodbye, often used among friends."
+        },
+        {
+            "question": "I’m out!",
+            "answer": "An informal way of saying you are leaving."
+        },
+        {
+            "question": "See you when I see you!",
+            "answer": "A casual farewell when you don't know when you will meet again."
+        },
+        {
+            "question": "Until we meet again!",
+            "answer": "A formal way to say goodbye, implying you will see each other in the future."
+        },
+        {
+            "question": "Stay safe!",
+            "answer": "A caring way of saying goodbye, wishing the person safety."
+        },
+        {
+            "question": "I’ll catch you later!",
+            "answer": "An informal way of saying you will see or talk to the person later."
+        },
+        {
+            "question": "Don’t be a stranger!",
+            "answer": "A casual farewell encouraging someone to stay in touch and not lose contact."
+        },
+
     ]
 };
