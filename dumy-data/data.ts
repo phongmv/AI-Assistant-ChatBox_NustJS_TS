@@ -3399,7 +3399,119 @@ export const questions = {
         {
             "question": "GitBucket integrations?",
             "answer": "GitBucket offers integrations through plugins for CI/CD, issue tracking, and notifications."
-        }
+        },
+        {
+            "question": "no",
+            "answer": "Could you please clarify or provide more context? I'm here to help!"
+        },
+        {
+            "question": "no problem",
+            "answer": "Glad to hear it! If you have any other questions or need assistance, just let me know."
+        },
+        {
+            "question": "Sorry",
+            "answer": "No problem! If there's anything specific you need help with, I'm here to assist."
+        },
+        {
+            "question": "Okay",
+            "answer": "Great! If you have any more questions or need further assistance, feel free to ask."
+        },
+        {
+            "question": "Sure",
+            "answer": "Sure thing! What would you like to know or discuss next?"
+        },
+        {
+            "question": "Maybe",
+            "answer": "If you're unsure, feel free to ask for more information or let me know how I can assist."
+        },
+        {
+            "question": "I don’t understand",
+            "answer": "No worries! Please let me know what you need help with, and I'll do my best to explain."
+        },
+        {
+            "question": "Can you help?",
+            "answer": "Absolutely! What do you need help with?"
+        },
+        {
+            "question": "I’m not sure",
+            "answer": "That's okay! If you need more information or have any questions, I'm here to help."
+        },
+        {
+            "question": "What do you mean?",
+            "answer": "I can clarify that for you. Please let me know what you're referring to."
+        },
+        {
+            "question": "I agree",
+            "answer": "Glad to hear we're on the same page! If there's more to discuss, let me know."
+        },
+        {
+            "question": "I disagree",
+            "answer": "I understand. If you'd like to discuss further or have a different perspective, I'm here to listen."
+        },
+        {
+            "question": "Help me",
+            "answer": "Of course! What specifically do you need help with?"
+        },
+        {
+            "question": "What’s next?",
+            "answer": "Let me know what you’d like to do or discuss next, and I’ll assist you."
+        },
+        {
+            "question": "I don’t know",
+            "answer": "That’s okay! If you need more information or want to explore something specific, just ask."
+        },
+        {
+            "question": "Sounds good",
+            "answer": "Great! If there's anything else you need, just let me know."
+        },
+        {
+            "question": "Is that okay?",
+            "answer": "If you have any concerns or need further clarification, feel free to ask."
+        },
+        {
+            "question": "What is this?",
+            "answer": "I’m here to assist with any questions or topics you have. Please provide more details so I can help."
+        },
+        {
+            "question": "Tell me more",
+            "answer": "Sure! What would you like to know more about? I'm here to provide information and assistance."
+        },
+        {
+            "question": "Can you explain?",
+            "answer": "Of course! Please specify what you need explained, and I'll do my best to provide a clear explanation."
+        },
+        {
+            "question": "Why?",
+            "answer": "Could you provide more context or details so I can give you a thorough answer?"
+        },
+        {
+            "question": "When?",
+            "answer": "Please let me know what event or situation you're referring to, and I'll provide the information you need."
+        },
+        {
+            "question": "Where?",
+            "answer": "Let me know what location or context you’re asking about, and I’ll help with the details."
+        },
+        {
+            "question": "How?",
+            "answer": "Please provide more context or specify what you’re asking about, and I’ll assist with an explanation."
+        },
+        {
+            "question": "Who?",
+            "answer": "If you could provide more details or context, I’ll be able to give you the information you’re looking for."
+        },
+        {
+            "question": "What’s the matter?",
+            "answer": "If something’s not right or if you have concerns, please let me know how I can help."
+        },
+        {
+            "question": "What’s up?",
+            "answer": "Not much! How can I assist you today?"
+        },
+        {
+            "question": "Let’s do it",
+            "answer": "Great! What would you like to start or work on?"
+        },
 
     ]
 };
