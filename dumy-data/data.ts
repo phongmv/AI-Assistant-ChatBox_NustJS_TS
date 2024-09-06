@@ -3319,6 +3319,86 @@ export const questions = {
         {
             "question": "Do you enjoy hiking?",
             "answer": "Yes, I find it very refreshing. Do you like hiking?"
+        },
+        {
+            "question": "Tell me about GitHub",
+            "answer": "GitHub is a web-based platform that uses Git for version control and collaboration. It allows developers to host repositories, track changes, manage issues, and collaborate on code with others. GitHub is widely used for open-source projects and provides features like pull requests, code reviews, and a social network for developers."
+        },
+        {
+            "question": "Tell me about GitLab",
+            "answer": "GitLab is a web-based DevOps lifecycle tool that provides a complete CI/CD pipeline. It integrates source code management with Git, issue tracking, continuous integration and deployment, and more. GitLab offers both a hosted cloud service and a self-managed option, making it suitable for various development needs."
+        },
+        {
+            "question": "Tell me about GitBucket",
+            "answer": "GitBucket is an open-source Git platform that provides Git repository hosting similar to GitHub. It offers features such as repository management, issue tracking, and a wiki. GitBucket is designed to be lightweight and easy to deploy on your own servers, making it a good option for those looking for a self-hosted Git service."
+        },
+        {
+            "question": "Compare GitBucket vs GitLab",
+            "answer": "GitBucket is a lightweight, self-hosted Git repository manager that focuses on core features like repository hosting and issue tracking. GitLab, on the other hand, provides a more comprehensive suite of DevOps tools including continuous integration, continuous deployment, and project management. GitLab is suitable for more complex workflows and larger teams, while GitBucket is simpler and easier to deploy."
+        },
+        {
+            "question": "Compare GitHub vs GitLab",
+            "answer": "GitHub is known for its strong community features, ease of use, and integration with a wide range of third-party tools. It is often favored for open-source projects and public repositories. GitLab offers a more integrated DevOps experience with built-in CI/CD, project management, and issue tracking. It is suitable for private repositories and enterprises looking for a comprehensive DevOps solution."
+        },
+        {
+            "question": "Compare GitBucket vs GitLab",
+            "answer": "GitBucket is a lightweight, self-hosted Git repository manager with basic features for repository hosting and issue tracking. GitLab offers a more feature-rich platform with an integrated CI/CD pipeline, project management tools, and a variety of DevOps features. GitLab is ideal for teams and organizations needing a full DevOps suite, while GitBucket is better for users seeking a simpler, self-hosted alternative."
+        },
+        {
+            "question": "What is GitHub?",
+            "answer": "GitHub is a platform for hosting and collaborating on Git repositories, featuring code reviews, issue tracking, and CI/CD with GitHub Actions."
+        },
+        {
+            "question": "What is GitLab?",
+            "answer": "GitLab is an integrated DevOps platform offering Git repository management, CI/CD, project management, and monitoring tools."
+        },
+        {
+            "question": "What is GitBucket?",
+            "answer": "GitBucket is a lightweight, self-hosted Git repository manager with features like issue tracking, pull requests, and a wiki."
+        },
+        {
+            "question": "GitBucket vs GitLab?",
+            "answer": "GitBucket is simpler and lighter, ideal for smaller teams, while GitLab offers a comprehensive DevOps suite with built-in CI/CD and advanced features."
+        },
+        {
+            "question": "GitHub vs GitLab?",
+            "answer": "GitHub excels in community features and integrations, while GitLab provides a full DevOps lifecycle solution with integrated CI/CD and project management."
+        },
+        {
+            "question": "GitBucket vs GitHub?",
+            "answer": "GitBucket is a lightweight alternative to GitHub, focusing on basic repository management, whereas GitHub offers a richer feature set including social networking and advanced integrations."
+        },
+        {
+            "question": "GitLab CI/CD?",
+            "answer": "GitLab CI/CD automates the testing and deployment of code through pipelines configured in a `.gitlab-ci.yml` file."
+        },
+        {
+            "question": "GitHub Actions?",
+            "answer": "GitHub Actions automates workflows for building, testing, and deploying code directly within GitHub using YAML files."
+        },
+        {
+            "question": "GitHub Pages?",
+            "answer": "GitHub Pages allows you to host static websites directly from your GitHub repository."
+        },
+        {
+            "question": "GitLab Auto DevOps?",
+            "answer": "GitLab Auto DevOps automates the entire DevOps lifecycle with pre-configured CI/CD pipelines."
+        },
+        {
+            "question": "Can GitBucket be extended?",
+            "answer": "Yes, GitBucket supports plugins for adding and customizing features."
+        },
+        {
+            "question": "What are GitLab Runners?",
+            "answer": "GitLab Runners are agents that execute CI/CD jobs defined in your pipelines."
+        },
+        {
+            "question": "GitHub’s social features?",
+            "answer": "GitHub includes features like following developers, starring repositories, and forking projects."
+        },
+        {
+            "question": "GitBucket integrations?",
+            "answer": "GitBucket offers integrations through plugins for CI/CD, issue tracking, and notifications."
         }
 
     ]
