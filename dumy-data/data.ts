@@ -2863,6 +2863,26 @@ export const questions = {
         {
             "question": "What problem does Git resolve?",
             "answer": "Git resolves several problems in software development, including managing multiple versions of code, enabling collaboration among developers, tracking changes and their history, and handling merges from different contributors. Its distributed nature also means that developers can work offline and have a full copy of the project’s history."
-        }
+        },
+        {
+            "question": "Tell me about Git?",
+            "answer": "Git is a distributed version control system used to track changes in source code during software development. It allows multiple developers to work on a project simultaneously, manage changes, and maintain a history of revisions."
+        },
+        {
+            "question": "How does Git handle version control?",
+            "answer": "Git handles version control by using a distributed model where each user has a complete copy of the repository, including its history. Changes are tracked through commits, which are snapshots of the repository at a specific point in time. Users can create branches to work on features or fixes independently and later merge those changes into the main project."
+        },
+        {
+            "question": "What are commits in Git?",
+            "answer": "Commits in Git are individual snapshots of changes made to the repository. Each commit is associated with a unique identifier (hash), a commit message, and metadata about the changes. Commits allow developers to track the history of changes, revert to previous states, and understand the evolution of the codebase."
+        },
+        {
+            "question": "What is branching in Git?",
+            "answer": "Branching in Git is a feature that allows developers to create separate lines of development within the same repository. Each branch represents an independent line of work, enabling developers to work on features, fixes, or experiments without affecting the main codebase. Branches can later be merged to integrate changes back into the main branch."
+        },
+        {
+            "question": "What is merging in Git?",
+            "answer": "Merging in Git is the process of integrating changes from one branch into another. When developers complete work on a feature branch, they merge it into the main branch to incorporate the changes. Git uses a three-way merge algorithm to combine changes and resolve conflicts if the same parts of the code were modified in both branches."
+        },
     ]
 };
