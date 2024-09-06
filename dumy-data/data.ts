@@ -2682,6 +2682,131 @@ export const questions = {
         {
             "question": "Tell me about yourself",
             "answer": "My name is Hana, and I am a Git chatbot assistant. I specialize in helping with Git commands, workflows, and anything related to version control. I love making version control easier for developers and assisting with all things Git-related!"
+        },
+        {
+            "question": "git stash?",
+            "answer": "`git stash` saves your local modifications to a new stash and reverts the working directory to match the HEAD commit.",
+            "syntax": "git stash"
+        },
+        {
+            "question": "git stash save?",
+            "answer": "`git stash save \"message\"` saves your local modifications with an optional message to identify the stash.",
+            "syntax": "git stash save \"message\""
+        },
+        {
+            "question": "git stash list?",
+            "answer": "`git stash list` lists all stashes saved in the repository.",
+            "syntax": "git stash list"
+        },
+        {
+            "question": "git stash show?",
+            "answer": "`git stash show` shows a summary of changes in the most recent stash.",
+            "syntax": "git stash show"
+        },
+        {
+            "question": "git stash show -p?",
+            "answer": "`git stash show -p` shows the patch (detailed diff) of the most recent stash.",
+            "syntax": "git stash show -p"
+        },
+        {
+            "question": "git stash apply?",
+            "answer": "`git stash apply` applies the changes from the most recent stash to your working directory.",
+            "syntax": "git stash apply"
+        },
+        {
+            "question": "git stash apply stash@{n}?",
+            "answer": "`git stash apply stash@{n}` applies the changes from a specific stash (identified by `n`) to your working directory.",
+            "syntax": "git stash apply stash@{n}"
+        },
+        {
+            "question": "git stash pop?",
+            "answer": "`git stash pop` applies the changes from the most recent stash to your working directory and removes it from the stash list.",
+            "syntax": "git stash pop"
+        },
+        {
+            "question": "git stash drop stash@{n}?",
+            "answer": "`git stash drop stash@{n}` removes a specific stash (identified by `n`) from the stash list.",
+            "syntax": "git stash drop stash@{n}"
+        },
+        {
+            "question": "git stash clear?",
+            "answer": "`git stash clear` removes all stashes from the stash list.",
+            "syntax": "git stash clear"
+        },
+        {
+            "question": "git stash branch <branchname>?",
+            "answer": "`git stash branch <branchname>` creates a new branch and applies the changes from the most recent stash to it.",
+            "syntax": "git stash branch <branchname>"
+        },
+        {
+            "question": "git config --global user.name \"name\"?",
+            "answer": "`git config --global user.name \"name\"` sets the global Git username for commits.",
+            "syntax": "git config --global user.name \"name\""
+        },
+        {
+            "question": "git config --global user.email \"email\"?",
+            "answer": "`git config --global user.email \"email\"` sets the global Git email for commits.",
+            "syntax": "git config --global user.email \"email\""
+        },
+        {
+            "question": "git config --global core.editor \"editor\"?",
+            "answer": "`git config --global core.editor \"editor\"` sets the default text editor for Git commands.",
+            "syntax": "git config --global core.editor \"editor\""
+        },
+        {
+            "question": "git config --global color.ui true?",
+            "answer": "`git config --global color.ui true` enables colored output in Git commands.",
+            "syntax": "git config --global color.ui true"
+        },
+        {
+            "question": "git config --global alias.st status?",
+            "answer": "`git config --global alias.st status` creates a shorthand alias for the `git status` command.",
+            "syntax": "git config --global alias.st status"
+        },
+        {
+            "question": "git config --list?",
+            "answer": "`git config --list` lists all the Git configuration settings for the current repository or globally.",
+            "syntax": "git config --list"
+        },
+        {
+            "question": "git config --global --edit?",
+            "answer": "`git config --global --edit` opens the global Git configuration file in the default editor for manual editing.",
+            "syntax": "git config --global --edit"
+        },
+        {
+            "question": "git config --system core.editor \"editor\"?",
+            "answer": "`git config --system core.editor \"editor\"` sets the default text editor for Git commands at the system level.",
+            "syntax": "git config --system core.editor \"editor\""
+        },
+        {
+            "question": "git config --local user.name \"name\"?",
+            "answer": "`git config --local user.name \"name\"` sets the Git username for commits in the local repository only.",
+            "syntax": "git config --local user.name \"name\""
+        },
+        {
+            "question": "git config --local user.email \"email\"?",
+            "answer": "`git config --local user.email \"email\"` sets the Git email for commits in the local repository only.",
+            "syntax": "git config --local user.email \"email\""
+        },
+        {
+            "question": "git config --global core.autocrlf true?",
+            "answer": "`git config --global core.autocrlf true` automatically handles line endings by converting CRLF to LF on commit and LF to CRLF on checkout.",
+            "syntax": "git config --global core.autocrlf true"
+        },
+        {
+            "question": "git config --global core.ignorecase false?",
+            "answer": "`git config --global core.ignorecase false` makes Git case-sensitive with respect to filenames.",
+            "syntax": "git config --global core.ignorecase false"
+        },
+        {
+            "question": "git config --global merge.tool toolname?",
+            "answer": "`git config --global merge.tool toolname` sets the default merge tool for resolving merge conflicts.",
+            "syntax": "git config --global merge.tool toolname"
+        },
+        {
+            "question": "git config --global fetch.prune true?",
+            "answer": "`git config --global fetch.prune true` automatically prunes deleted branches when fetching.",
+            "syntax": "git config --global fetch.prune true"
         }
 
     ]
