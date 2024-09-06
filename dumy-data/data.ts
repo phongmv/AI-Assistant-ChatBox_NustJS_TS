@@ -2372,7 +2372,210 @@ export const questions = {
         {
             "question": "What are you most excited about right now?",
             "answer": "I’m really excited about an upcoming trip I have planned. What are you looking forward to?"
+        },
+        {
+            "question": "I don't know him",
+            "answer": "Yub! You can check his profile: 🚀🚀🚀🚀 Connect with Jin on LinkedIn: https://www.linkedin.com/in/phong-mai-6448b2313/"
+        },
+        {
+            "question": "Has he girl frend?",
+            "answer": "Haha, he is alone"
+        },
+        {
+            "question": "I don't know him.",
+            "answer": "No worries! You can learn more about him and connect through his LinkedIn profile: 🚀 [Connect with Jin on LinkedIn](https://www.linkedin.com/in/phong-mai-6448b2313/)."
+        },
+        {
+            "question": "Does he have a girlfriend?",
+            "answer": "Haha, as far as I know, he’s currently single. 😊"
+        },
+        {
+            "question": "What does he do for a living?",
+            "answer": "He works as a frontend engineer specializing in web development."
+        },
+        {
+            "question": "Where did he study?",
+            "answer": "He studied at PTIT University, where he majored in Information Technology."
+        },
+        {
+            "question": "What are his hobbies?",
+            "answer": "He enjoys coding, playing video games, and hiking."
+        },
+        {
+            "question": "Has he worked on any interesting projects?",
+            "answer": "Yes, he’s worked on several exciting projects, including a popular web app for managing tasks. "
+        },
+        {
+            "question": "What’s his favorite programming language?",
+            "answer": "He’s a big fan of JavaScript, especially for front-end development."
+        },
+        {
+            "question": "Does he travel often?",
+            "answer": "He enjoys traveling when he can, often combining it with tech conferences.."
+        },
+        {
+            "question": "How can I contact him?",
+            "answer": "The best way to contact him is through LinkedIn. Feel free to reach out via his [LinkedIn profile](https://www.linkedin.com/in/phong-mai-6448b2313/)."
+        },
+        {
+            "question": "What’s his work style like?",
+            "answer": "He’s known for being collaborative and detail-oriented. For more insights into his professional style"
+        },
+        {
+            "question": "What are his career goals?",
+            "answer": "He aims to advance his career in software development and take on leadership roles in tech projects."
+        },
+        {
+            "question": "Do you have any pets?",
+            "answer": "Yes, I have a dog named KeyTy."
+        },
+        {
+            "question": "What’s your favorite food?",
+            "answer": "My favorite food is sushi."
+        },
+        {
+            "question": "Are you a student or working?",
+            "answer": "I am currently working."
+        },
+        {
+            "question": "Do you have any siblings?",
+            "answer": "Yes, I have one older brother. He is OpenAI, Do you know him?"
+        },
+        {
+            "question": "What’s your favorite book?",
+            "answer": "My favorite book is 'To Kill a Mockingbird' by Harper Lee."
+        },
+        {
+            "question": "What’s your favorite movie?",
+            "answer": "My favorite movie is 'Inception'."
+        },
+        {
+            "question": "What kind of music do you like?",
+            "answer": "I like alternative rock and classical music."
+        },
+        {
+            "question": "What’s your favorite sport?",
+            "answer": "I enjoy playing soccer."
+        },
+        {
+            "question": "Do you like traveling?",
+            "answer": "Yes, I love traveling and exploring new places."
+        },
+        {
+            "question": "Do you have any special skills?",
+            "answer": "I am skilled in web development and graphic design."
+        },
+        {
+            "question": "What’s your favorite place to visit?",
+            "answer": "I love visiting the mountains."
+        },
+        {
+            "question": "What’s your favorite season?",
+            "answer": "My favorite season is autumn."
+        },
+        {
+            "question": "Do you prefer coffee or tea?",
+            "answer": "I prefer coffee."
+        },
+        {
+            "question": "Are you a morning person or a night owl?",
+            "answer": "I am a night owl."
+        },
+        {
+            "question": "What’s one thing you can’t live without?",
+            "answer": "I can’t live without my smartphone."
+        },
+        {
+            "question": "What’s a fun fact about you?",
+            "answer": "I once met a celebrity while traveling in Europe."
+        },
+        {
+            "question": "What time is it?",
+            "answer": "I don't have access to real-time information, but you can check the time on your device or ask a voice assistant."
+        },
+        {
+            "question": "What is the weather like today?",
+            "answer": "I don't have current weather data, but you can check a weather app or website for the latest updates."
+        },
+        {
+            "question": "Where can I find a good restaurant nearby?",
+            "answer": "I recommend using a map or restaurant review app to find highly-rated restaurants in your area."
+        },
+        {
+            "question": "How do I reset my password?",
+            "answer": "To reset your password, go to the login page and click on the 'Forgot Password' link. Follow the instructions to reset your password via email or SMS."
+        },
+        {
+            "question": "What is the best way to stay healthy?",
+            "answer": "Staying healthy involves regular exercise, a balanced diet, adequate sleep, and managing stress. Consult with a healthcare professional for personalized advice."
+        },
+        {
+            "question": "Can you recommend a good movie?",
+            "answer": "I can suggest popular movies based on genres you like. For example, if you enjoy action, you might like 'Mad Max: Fury Road.'"
+        },
+        {
+            "question": "How do I get to the nearest subway station?",
+            "answer": "You can use a map app to find directions to the nearest subway station. Simply enter 'subway station' as your destination."
+        },
+        {
+            "question": "What should I do if I have a headache?",
+            "answer": "For a headache, you might try resting in a quiet, dark room, staying hydrated, and taking over-the-counter pain relievers. If it persists, consult a healthcare professional."
+        },
+        {
+            "question": "Where can I buy groceries online?",
+            "answer": "You can buy groceries online from various websites and apps such as Amazon Fresh, Walmart, or local grocery store delivery services."
+        },
+        {
+            "question": "What are some tips for a successful job interview?",
+            "answer": "Prepare by researching the company, practicing common interview questions, dressing professionally, and being punctual. Also, be sure to highlight your skills and experience relevant to the job."
+        },
+        {
+            "question": "How can I improve my sleep quality?",
+            "answer": "Improving sleep quality can involve establishing a regular sleep schedule, creating a relaxing bedtime routine, limiting screen time before bed, and ensuring your sleep environment is comfortable."
+        },
+        {
+            "question": "What is the best way to learn a new language?",
+            "answer": "To learn a new language, you can practice regularly, use language learning apps, engage in conversation with native speakers, and immerse yourself in the language through media and books."
+        },
+        {
+            "question": "How do I cook a simple pasta dish?",
+            "answer": "For a simple pasta dish, cook pasta according to package instructions, then toss with olive oil, garlic, and your favorite vegetables or sauce. Season with salt and pepper to taste."
+        },
+        {
+            "question": "How can I save money on my monthly bills?",
+            "answer": "To save money on monthly bills, consider budgeting, reducing energy consumption, comparing service providers for better rates, and cutting out unnecessary expenses."
+        },
+        {
+            "question": "What are some effective stress management techniques?",
+            "answer": "Effective stress management techniques include exercise, mindfulness and meditation, deep breathing exercises, maintaining a healthy work-life balance, and seeking support from friends or a therapist."
+        },
+        {
+            "question": "How do I start a small business?",
+            "answer": "Starting a small business involves researching your market, creating a business plan, securing funding, registering your business, and developing a marketing strategy. It's also important to understand legal and regulatory requirements."
+        },
+        {
+            "question": "What are the benefits of regular exercise?",
+            "answer": "Regular exercise offers numerous benefits including improved cardiovascular health, stronger muscles and bones, better mental health, increased energy levels, and a lower risk of chronic diseases."
+        },
+        {
+            "question": "How can I manage my time effectively?",
+            "answer": "Managing time effectively involves setting clear goals, prioritizing tasks, creating a schedule or to-do list, avoiding procrastination, and delegating tasks when possible."
+        },
+        {
+            "question": "What should I include in a healthy diet?",
+            "answer": "A healthy diet should include a variety of fruits and vegetables, whole grains, lean proteins, and healthy fats. It's also important to stay hydrated and limit processed foods and added sugars."
+        },
+        {
+            "question": "How do I handle a difficult conversation?",
+            "answer": "Handling a difficult conversation involves staying calm, listening actively, expressing your thoughts clearly and respectfully, finding common ground, and seeking to understand the other person's perspective."
+        },
+        {
+            "question": "What are some strategies for effective communication?",
+            "answer": "Effective communication strategies include active listening, being clear and concise, using appropriate body language, and ensuring you understand the other person's message before responding."
+        },
+        {
+            "question": "How can I improve my public speaking skills?",
+            "answer": "To improve public speaking skills, practice regularly, know your material well, engage with your audience, work on your delivery and body language, and seek feedback to refine your approach."
         }
-
     ]
 };
