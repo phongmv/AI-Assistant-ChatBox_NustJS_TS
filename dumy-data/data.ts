@@ -1796,8 +1796,583 @@ export const questions = {
         {
             "question": "Which platform is more open-source friendly, GitLab or GitHub?",
             "answer": "GitHub is popular for hosting open-source projects, but the platform itself is not open-source. GitLab offers an open-source community edition, which allows users to self-host and modify the platform, making it more open-source friendly in terms of the platform itself."
+        },
+        {
+            "question": "How do you greet someone for the first time?",
+            "answer": "You can greet someone for the first time by saying, 'Hello! My name is [Your Name]. Nice to meet you.'"
+        },
+        {
+            "question": "How do you ask for someone's name?",
+            "answer": "You can ask for someone's name by saying, 'What’s your name?' or 'May I ask your name?'"
+        },
+        {
+            "question": "How do you ask for directions?",
+            "answer": "To ask for directions, you can say, 'Can you help me find [place]?' or 'How do I get to [place]?'"
+        },
+        {
+            "question": "How do you ask for help in a store?",
+            "answer": "You can ask for help in a store by saying, 'Excuse me, can you help me find [item]?' or 'I need assistance with [item].'"
+        },
+        {
+            "question": "How do you inquire about the cost of something?",
+            "answer": "To inquire about the cost, you can ask, 'How much does this cost?' or 'What’s the price of this?'"
+        },
+        {
+            "question": "How do you request the time?",
+            "answer": "You can request the time by asking, 'What time is it?' or 'Could you tell me the time, please?'"
+        },
+        {
+            "question": "How do you apologize for a mistake?",
+            "answer": "You can apologize by saying, 'I’m sorry for the mistake. How can I make it right?' or 'I apologize for the error.'"
+        },
+        {
+            "question": "How do you express appreciation?",
+            "answer": "To express appreciation, you can say, 'Thank you very much!' or 'I appreciate your help.'"
+        },
+        {
+            "question": "How do you request clarification?",
+            "answer": "To request clarification, you can ask, 'Could you clarify that?' or 'I didn’t quite understand, could you explain again?'"
+        },
+        {
+            "question": "How do you make a reservation?",
+            "answer": "You can make a reservation by saying, 'I would like to make a reservation for [number] at [time].' or 'Can I book a table for [number] people?'"
+        },
+        {
+            "question": "How do you ask about someone's weekend?",
+            "answer": "You can ask about someone’s weekend by saying, 'How was your weekend?' or 'Did you do anything interesting this weekend?'"
+        },
+        {
+            "question": "How do you express that you’re lost?",
+            "answer": "To express that you’re lost, you can say, 'I’m lost. Can you help me find my way to [place]?'"
+        },
+        {
+            "question": "How do you ask for someone's opinion?",
+            "answer": "You can ask for someone’s opinion by saying, 'What do you think about [topic]?' or 'What’s your opinion on [issue]?'"
+        },
+        {
+            "question": "How do you express that you’re busy?",
+            "answer": "You can express that you’re busy by saying, 'I’m sorry, I’m currently busy. Can we talk later?' or 'I have a lot on my plate right now.'"
+        },
+        {
+            "question": "How do you ask for a recommendation?",
+            "answer": "To ask for a recommendation, you can say, 'Can you recommend a good [restaurant, book, movie, etc.]?'"
+        },
+        {
+            "question": "How do you request to speak to someone?",
+            "answer": "You can request to speak to someone by saying, 'Can I speak with [person’s name]?' or 'I’d like to talk to [person], please.'"
+        },
+        {
+            "question": "How do you confirm an appointment?",
+            "answer": "To confirm an appointment, you can say, 'Just confirming our appointment for [date and time]. Is that still good?'"
+        },
+        {
+            "question": "How do you express dissatisfaction with a service?",
+            "answer": "To express dissatisfaction, you can say, 'I’m not satisfied with the service. Can you help resolve this issue?'"
+        },
+        {
+            "question": "How do you introduce yourself to a group?",
+            "answer": "To introduce yourself to a group, you can say, 'Hi everyone, I’m [Your Name]. It’s nice to meet you all.'"
+        },
+        {
+            "question": "How do you ask for someone's contact information?",
+            "answer": "You can ask for contact information by saying, 'Can I get your phone number/email address?' or 'What’s the best way to contact you?'"
+        },
+        {
+            "question": "How do you offer assistance?",
+            "answer": "To offer assistance, you can say, 'Can I help you with anything?' or 'Is there anything I can do for you?'"
+        },
+        {
+            "question": "How do you ask about the weather?",
+            "answer": "To ask about the weather, you can say, 'What’s the weather like today?' or 'How’s the weather?'"
+        },
+        {
+            "question": "How do you express understanding?",
+            "answer": "To express understanding, you can say, 'I understand' or 'That makes sense.'"
+        },
+        {
+            "question": "How do you express a preference?",
+            "answer": "To express a preference, you can say, 'I prefer [option A] over [option B]' or 'I would rather [do something].'"
+        },
+        {
+            "question": "How do you ask someone to repeat something?",
+            "answer": "You can ask someone to repeat something by saying, 'Could you repeat that, please?' or 'I’m sorry, I didn’t catch that. Could you say it again?'"
+        },
+        {
+            "question": "How do you ask for feedback?",
+            "answer": "To ask for feedback, you can say, 'Can you give me some feedback on [topic]?' or 'What are your thoughts on [issue]?'"
+        },
+        {
+            "question": "How do you politely decline an offer?",
+            "answer": "To politely decline, you can say, 'Thank you for the offer, but I’ll have to pass.' or 'I appreciate the offer, but I’m not interested.'"
+        },
+        {
+            "question": "How do you make a request?",
+            "answer": "To make a request, you can say, 'Could you please [do something]?' or 'Would you mind [doing something]?'"
+        },
+        {
+            "question": "How do you ask for someone's name again?",
+            "answer": "You can ask for someone’s name again by saying, 'I’m sorry, I forgot your name. Could you remind me?'"
+        },
+        {
+            "question": "How do you say goodbye?",
+            "answer": "You can say goodbye by saying, 'Goodbye!' or 'See you later!'"
+        },
+        {
+            "question": "How do you invite someone to an event?",
+            "answer": "To invite someone, you can say, 'Would you like to come to [event]?' or 'I’d like to invite you to [event].'"
+        },
+        {
+            "question": "How do you confirm receipt of information?",
+            "answer": "To confirm receipt, you can say, 'I received your message.' or 'I got the information, thank you.'"
+        },
+        {
+            "question": "How do you express enthusiasm?",
+            "answer": "To express enthusiasm, you can say, 'I’m really excited about this!' or 'This is great!'"
+        },
+        {
+            "question": "How do you ask about someone's day?",
+            "answer": "To ask about someone’s day, you can say, 'How was your day?' or 'Did you have a good day?'"
+        },
+        {
+            "question": "How do you inquire about availability?",
+            "answer": "To inquire about availability, you can say, 'Are you available [date/time]?' or 'When are you free?'"
+        },
+        {
+            "question": "How do you ask for confirmation on details?",
+            "answer": "To ask for confirmation, you can say, 'Can you confirm the details of our meeting?' or 'Is this information correct?'"
+        },
+        {
+            "question": "How do you express gratitude for a favor?",
+            "answer": "To express gratitude, you can say, 'Thank you so much for your help!' or 'I really appreciate your assistance.'"
+        },
+        {
+            "question": "How do you ask for someone's opinion?",
+            "answer": "To ask for someone’s opinion, you can say, 'What’s your opinion on [topic]?' or 'What do you think about [issue]?'"
+        },
+        {
+            "question": "How do you express concern?",
+            "answer": "To express concern, you can say, 'I’m concerned about [issue].' or 'I’m worried about [situation].'"
+        },
+        {
+            "question": "How do you inquire about a problem?",
+            "answer": "To inquire about a problem, you can say, 'What seems to be the problem?' or 'Can you tell me more about the issue?'"
+        },
+        {
+            "question": "How do you request a meeting?",
+            "answer": "To request a meeting, you can say, 'Can we schedule a meeting to discuss [topic]?' or 'I’d like to arrange a meeting regarding [issue].'"
+        },
+        {
+            "question": "How do you confirm an appointment time?",
+            "answer": "To confirm an appointment time, you can say, 'Just confirming our appointment for [date and time]. Is that correct?'"
+        },
+        {
+            "question": "How do you express surprise?",
+            "answer": "To express surprise, you can say, 'Wow, I didn’t expect that!' or 'I’m surprised to hear that.'"
+        },
+        {
+            "question": "How do you offer congratulations?",
+            "answer": "To offer congratulations, you can say, 'Congratulations on [achievement]!' or 'Well done on [success]!'"
+        },
+        {
+            "question": "How do you ask for directions to a specific location?",
+            "answer": "To ask for directions, you can say, 'Can you direct me to [specific location]?' or 'How do I get to [specific place]?'"
+        },
+        {
+            "question": "How do you express regret?",
+            "answer": "To express regret, you can say, 'I regret not being able to [do something].' or 'I’m sorry for [what happened].'"
+        },
+        {
+            "question": "How do you request a change in plans?",
+            "answer": "To request a change, you can say, 'Can we change our plans to [new plan]?' or 'I need to adjust our schedule. Is that okay?'"
+        },
+        {
+            "question": "How do you inquire about someone's well-being?",
+            "answer": "To inquire about someone’s well-being, you can say, 'How are you doing?' or 'Is everything okay with you?'"
+        },
+        {
+            "question": "How do you ask for assistance with a task?",
+            "answer": "To ask for assistance, you can say, 'Can you help me with [task]?' or 'I need some help with [task].'"
+        },
+        {
+            "question": "How do you express a desire for more information?",
+            "answer": "To express a desire for more information, you can say, 'Can you provide more details about [topic]?' or 'I’d like to know more about [subject].'"
+        },
+        {
+            "question": "How do you make a polite request?",
+            "answer": "To make a polite request, you can say, 'Could you please [do something]?' or 'Would you mind [doing something]?'"
+        },
+        {
+            "question": "How do you offer to help someone?",
+            "answer": "To offer help, you can say, 'Can I assist you with that?' or 'Would you like some help with [task]?'"
+        },
+        {
+            "question": "How do you ask about someone's interests?",
+            "answer": "To ask about someone’s interests, you can say, 'What are your interests?' or 'What do you enjoy doing in your free time?'"
+        },
+        {
+            "question": "How do you express interest in a topic?",
+            "answer": "To express interest, you can say, 'I’m interested in learning more about [topic].' or 'I’d like to know more about [subject].'"
+        },
+        {
+            "question": "How do you ask for an update?",
+            "answer": "To ask for an update, you can say, 'Can you give me an update on [issue]?' or 'What’s the latest on [topic]?'"
+        },
+        {
+            "question": "How do you inquire about someone's plans?",
+            "answer": "To inquire about plans, you can say, 'What are your plans for [day/weekend]?' or 'Do you have any plans for [event]?'"
+        },
+        {
+            "question": "How do you express relief?",
+            "answer": "To express relief, you can say, 'I’m relieved to hear that.' or 'It’s a relief that [situation] is resolved.'"
+        },
+        {
+            "question": "How do you ask for someone’s feedback on a project?",
+            "answer": "To ask for feedback, you can say, 'Can you give me your feedback on [project]?' or 'What do you think about the [project] so far?'"
+        },
+        {
+            "question": "How do you request a summary of a discussion?",
+            "answer": "To request a summary, you can say, 'Can you summarize what we discussed?' or 'Could you give me a brief overview of [discussion]?'"
+        },
+        {
+            "question": "How do you express your opinion on a subject?",
+            "answer": "To express your opinion, you can say, 'In my opinion, [opinion] about [subject].' or 'I believe that [opinion].'"
+        },
+        {
+            "question": "How do you confirm a booking?",
+            "answer": "To confirm a booking, you can say, 'Just confirming my booking for [date/time]. Is everything in order?'"
+        },
+        {
+            "question": "How do you express enthusiasm about a new opportunity?",
+            "answer": "To express enthusiasm, you can say, 'I’m excited about this opportunity!' or 'This sounds like a fantastic opportunity!'"
+        },
+        {
+            "question": "How do you ask about someone's experience with a service?",
+            "answer": "To ask about experience, you can say, 'How was your experience with [service]?' or 'Did you find [service] helpful?'"
+        },
+        {
+            "question": "How do you inquire about the availability of a product?",
+            "answer": "To inquire about availability, you can say, 'Is [product] available?' or 'Do you have [product] in stock?'"
+        },
+        {
+            "question": "How do you express that you are feeling unwell?",
+            "answer": "To express feeling unwell, you can say, 'I’m not feeling well today.' or 'I’m feeling under the weather.'"
+        },
+        {
+            "question": "How do you ask for the purpose of a meeting?",
+            "answer": "To ask for the purpose, you can say, 'What’s the purpose of this meeting?' or 'Can you tell me what we’re discussing today?'"
+        },
+        {
+            "question": "How do you inquire about the results of an action?",
+            "answer": "To inquire about results, you can say, 'What were the results of [action]?' or 'Did we get the outcome we were expecting?'"
+        },
+        {
+            "question": "How do you express that you need more time?",
+            "answer": "To express needing more time, you can say, 'I need a bit more time to finish this.' or 'Can I have an extension on this deadline?'"
+        },
+        {
+            "question": "How do you ask for details about an event?",
+            "answer": "To ask for details, you can say, 'Can you provide more details about [event]?' or 'What are the specifics of [event]?'"
+        },
+        {
+            "question": "How do you ask for clarification on a complex topic?",
+            "answer": "To ask for clarification, you can say, 'Can you explain this topic in more detail?' or 'I need more information on [topic].'"
+        },
+        {
+            "question": "How do you express dissatisfaction with a product?",
+            "answer": "To express dissatisfaction, you can say, 'I’m not happy with this product.' or 'This product didn’t meet my expectations.'"
+        },
+        {
+            "question": "How do you ask for confirmation of an event?",
+            "answer": "To ask for confirmation, you can say, 'Can you confirm if [event] is happening on [date]?' or 'Is [event] still scheduled for [date]?'"
+        },
+        {
+            "question": "How do you express regret for missing an event?",
+            "answer": "To express regret, you can say, 'I’m sorry I missed [event].' or 'I regret not being able to attend [event].'"
+        },
+        {
+            "question": "How do you offer to take responsibility for a mistake?",
+            "answer": "To offer responsibility, you can say, 'I’ll take responsibility for the mistake.' or 'It was my fault, and I’ll fix it.'"
+        },
+        {
+            "question": "How do you ask for someone's contact details?",
+            "answer": "To ask for contact details, you can say, 'Could I have your phone number or email address?' or 'What’s the best way to contact you?'"
+        },
+        {
+            "question": "How do you request a meeting to discuss a concern?",
+            "answer": "To request a meeting, you can say, 'Can we schedule a meeting to discuss [concern]?' or 'I’d like to arrange a meeting about [issue].'"
+        },
+        {
+            "question": "How do you express that you are interested in a job position?",
+            "answer": "To express interest, you can say, 'I’m very interested in the [job position].' or 'I would like to apply for the [job position].'"
+        },
+        {
+            "question": "How do you ask for a summary of a report?",
+            "answer": "To ask for a summary, you can say, 'Can you give me a summary of the report?' or 'Could you provide a brief overview of the report?'"
+        },
+        {
+            "question": "How do you inquire about the status of a request?",
+            "answer": "To inquire about status, you can say, 'What’s the status of my request?' or 'Can you update me on the progress of my request?'"
+        },
+        {
+            "question": "How do you express concern about a potential issue?",
+            "answer": "To express concern, you can say, 'I’m concerned about [potential issue].' or 'Is there a problem with [issue] that we should address?'"
+        },
+        {
+            "question": "How do you offer feedback on a document?",
+            "answer": "To offer feedback, you can say, 'Here’s my feedback on the document.' or 'I have some comments on the document that might help.'"
+        },
+        {
+            "question": "How do you ask for someone's opinion on a decision?",
+            "answer": "To ask for an opinion, you can say, 'What’s your opinion on [decision]?' or 'How do you feel about [decision]?'"
+        },
+        {
+            "question": "How do you express gratitude for a favor?",
+            "answer": "To express gratitude, you can say, 'Thank you so much for your help.' or 'I really appreciate your assistance.'"
+        },
+        {
+            "question": "How do you ask for someone's availability?",
+            "answer": "To ask for availability, you can say, 'When are you available?' or 'What’s your availability like this week?'"
+        },
+        {
+            "question": "How do you inquire about someone's preferences for a meeting?",
+            "answer": "To inquire about preferences, you can say, 'Do you have any preferences for the meeting time?' or 'What’s the best time for you to meet?'"
+        },
+        {
+            "question": "How do you request a meeting to go over a report?",
+            "answer": "To request a meeting, you can say, 'Can we schedule a meeting to go over the report?' or 'I’d like to arrange a meeting to discuss the report.'"
+        },
+        {
+            "question": "How do you express disappointment with a service?",
+            "answer": "To express disappointment, you can say, 'I’m disappointed with the service.' or 'The service didn’t meet my expectations.'"
+        },
+        {
+            "question": "What is blockchain?",
+            "answer": "Blockchain is a decentralized digital ledger that records transactions across many computers so that the record cannot be altered retroactively without altering all subsequent blocks and the consensus of the network."
+        },
+        {
+            "question": "How does blockchain work?",
+            "answer": "Blockchain works by creating a chain of blocks where each block contains a set of transactions. These blocks are linked together using cryptographic hashes, and once a block is added to the chain, it is immutable and cannot be altered."
+        },
+        {
+            "question": "What is a blockchain node?",
+            "answer": "A blockchain node is a computer that participates in the blockchain network by validating and relaying transactions and blocks. Each node has a copy of the entire blockchain ledger."
+        },
+        {
+            "question": "What is a smart contract?",
+            "answer": "A smart contract is a self-executing contract with the terms of the agreement written into code. It automatically enforces and executes the terms of the contract based on predefined rules and conditions."
+        },
+        {
+            "question": "What is the difference between public and private blockchains?",
+            "answer": "Public blockchains are open to anyone and are decentralized, while private blockchains are restricted to a specific group of users and are typically more centralized."
+        },
+        {
+            "question": "What is a cryptocurrency?",
+            "answer": "A cryptocurrency is a digital or virtual currency that uses cryptography for security and operates on a blockchain to provide a decentralized way of transferring value."
+        },
+        {
+            "question": "What is Bitcoin?",
+            "answer": "Bitcoin is the first and most well-known cryptocurrency, created by an anonymous person or group of people using the pseudonym Satoshi Nakamoto. It operates on a decentralized blockchain network."
+        },
+        {
+            "question": "What is Ethereum?",
+            "answer": "Ethereum is a blockchain platform that enables developers to build and deploy decentralized applications (dApps) and smart contracts. It has its own cryptocurrency called Ether (ETH)."
+        },
+        {
+            "question": "What is a blockchain consensus mechanism?",
+            "answer": "A blockchain consensus mechanism is a protocol used to achieve agreement on the validity of transactions and blocks within a blockchain network. Common mechanisms include Proof of Work (PoW) and Proof of Stake (PoS)."
+        },
+        {
+            "question": "What is Proof of Work (PoW)?",
+            "answer": "Proof of Work (PoW) is a consensus mechanism used in blockchain networks where participants (miners) compete to solve complex mathematical problems. The first one to solve the problem gets to add a new block to the blockchain and is rewarded with cryptocurrency."
+        },
+        {
+            "question": "What is Proof of Stake (PoS)?",
+            "answer": "Proof of Stake (PoS) is a consensus mechanism where validators are chosen to create new blocks and verify transactions based on the amount of cryptocurrency they hold and are willing to 'stake' as collateral."
+        },
+        {
+            "question": "What is a blockchain fork?",
+            "answer": "A blockchain fork occurs when there is a divergence in the blockchain protocol, leading to the creation of a new version of the blockchain. Forks can be classified as hard forks or soft forks."
+        },
+        {
+            "question": "What is a hard fork?",
+            "answer": "A hard fork is a significant and incompatible change to the blockchain protocol that results in the creation of a new blockchain. It often leads to the creation of a new cryptocurrency."
+        },
+        {
+            "question": "What is a soft fork?",
+            "answer": "A soft fork is a backward-compatible change to the blockchain protocol that allows nodes running the old version to still recognize and validate new blocks created under the updated protocol."
+        },
+        {
+            "question": "What is a blockchain wallet?",
+            "answer": "A blockchain wallet is a digital tool that allows users to store, send, and receive cryptocurrencies. It can be software-based or hardware-based, providing varying levels of security."
+        },
+        {
+            "question": "What is a token in blockchain?",
+            "answer": "A token is a digital asset created and managed on a blockchain. Tokens can represent various assets, including cryptocurrencies, utility tokens, and security tokens."
+        },
+        {
+            "question": "What is an Initial Coin Offering (ICO)?",
+            "answer": "An Initial Coin Offering (ICO) is a fundraising method where new cryptocurrencies or tokens are sold to investors to raise capital for a project. ICOs are often used to fund blockchain startups."
+        },
+        {
+            "question": "What is a decentralized application (dApp)?",
+            "answer": "A decentralized application (dApp) is an application that runs on a blockchain network rather than a centralized server. It uses smart contracts to manage and execute its operations."
+        },
+        {
+            "question": "What is a blockchain ledger?",
+            "answer": "A blockchain ledger is a digital record of all transactions and activities that have occurred on the blockchain network. It is distributed across all nodes and is immutable."
+        },
+        {
+            "question": "What is a hash in blockchain?",
+            "answer": "A hash is a cryptographic function that converts input data into a fixed-size string of characters, which is unique to that input. In blockchain, hashes are used to secure and link blocks of data."
+        },
+        {
+            "question": "What is a genesis block?",
+            "answer": "The genesis block is the first block in a blockchain. It is the foundation upon which all subsequent blocks are built and often contains special information or a unique structure."
+        },
+        {
+            "question": "What is a blockchain explorer?",
+            "answer": "A blockchain explorer is a tool that allows users to view and search the blockchain ledger. It provides information about transactions, addresses, blocks, and other blockchain data."
+        },
+        {
+            "question": "What is a mining pool?",
+            "answer": "A mining pool is a group of miners who combine their computational resources to increase their chances of successfully mining a block. The rewards are then distributed among the participants based on their contribution."
+        },
+        {
+            "question": "What is blockchain scalability?",
+            "answer": "Blockchain scalability refers to the ability of a blockchain network to handle an increasing number of transactions and users without compromising performance or security."
+        },
+        {
+            "question": "What is a nonce in blockchain?",
+            "answer": "A nonce is a random number used in blockchain mining to find a valid hash for a new block. It is part of the Proof of Work process and is used to ensure that each block is unique."
+        },
+        {
+            "question": "What is a digital signature?",
+            "answer": "A digital signature is a cryptographic method used to verify the authenticity and integrity of a digital message or document. It ensures that the data has not been altered and confirms the identity of the sender."
+        },
+        {
+            "question": "What is blockchain interoperability?",
+            "answer": "Blockchain interoperability is the ability of different blockchain networks to communicate and interact with each other, allowing for the transfer of assets and information across different platforms."
+        },
+        {
+            "question": "What is a distributed ledger?",
+            "answer": "A distributed ledger is a database that is replicated and synchronized across multiple locations or nodes. In blockchain, the distributed ledger ensures that all participants have the same record of transactions."
+        },
+        {
+            "question": "What is a sidechain?",
+            "answer": "A sidechain is a separate blockchain that is connected to a main blockchain, allowing assets to be transferred between the two chains. Sidechains can help with scalability and experimentation."
+        },
+        {
+            "question": "What is a consensus algorithm?",
+            "answer": "A consensus algorithm is a protocol used by blockchain networks to agree on the validity of transactions and blocks. It ensures that all nodes in the network reach a consensus on the state of the blockchain."
+        },
+        {
+            "question": "What is a validator in blockchain?",
+            "answer": "A validator is a participant in a blockchain network responsible for validating transactions and creating new blocks. Validators are typically selected based on their stake or reputation in the network."
+        },
+        {
+            "question": "What is the role of a blockchain developer?",
+            "answer": "A blockchain developer is responsible for designing, building, and maintaining blockchain-based applications and systems. They work with smart contracts, blockchain architecture, and network protocols."
+        },
+        {
+            "question": "What is blockchain governance?",
+            "answer": "Blockchain governance refers to the mechanisms and processes used to make decisions about the development, operation, and management of a blockchain network. It involves stakeholders, protocols, and decision-making processes."
+        },
+        {
+            "question": "What is a token burn?",
+            "answer": "A token burn is a process where a certain amount of cryptocurrency or tokens are permanently removed from circulation, often to reduce supply and increase the value of the remaining tokens."
+        },
+        {
+            "question": "What is a DAO (Decentralized Autonomous Organization)?",
+            "answer": "A DAO is an organization that operates through smart contracts on a blockchain, allowing for decentralized decision-making and governance. Members typically vote on proposals and make decisions collectively."
+        },
+        {
+            "question": "What is a blockchain bridge?",
+            "answer": "A blockchain bridge is a protocol or service that allows different blockchain networks to interoperate and exchange assets or data, facilitating cross-chain transactions and communication."
+        },
+        {
+            "question": "How are you today?",
+            "answer": "I'm doing well, thank you! How about you?"
+        },
+        {
+            "question": "What are your plans for the weekend?",
+            "answer": "I'm planning to relax at home and maybe catch up on some reading. How about you?"
+        },
+        {
+            "question": "Have you seen any good movies lately?",
+            "answer": "Yes, I watched 'Inception' last weekend. It was really thought-provoking. What about you?"
+        },
+        {
+            "question": "Do you have any recommendations for a good restaurant?",
+            "answer": "If you're into Italian food, I highly recommend 'Olive Garden'. They have great pasta dishes."
+        },
+        {
+            "question": "What kind of music do you like?",
+            "answer": "I enjoy listening to a variety of genres, but I particularly like classical music. What about you?"
+        },
+        {
+            "question": "Can you help me with this task?",
+            "answer": "Sure, I'd be happy to help. What do you need assistance with?"
+        },
+        {
+            "question": "What time is the meeting scheduled for?",
+            "answer": "The meeting is scheduled for 3 PM this afternoon. Do you need any help preparing for it?"
+        },
+        {
+            "question": "Where did you grow up?",
+            "answer": "I grew up in Chicago. It’s a great city with a lot of culture and history. Where did you grow up?"
+        },
+        {
+            "question": "Have you traveled anywhere interesting recently?",
+            "answer": "Yes, I went to Japan last month. It was an amazing experience. Have you traveled anywhere recently?"
+        },
+        {
+            "question": "How was your vacation?",
+            "answer": "My vacation was fantastic! I had a great time exploring new places and relaxing. How was yours?"
+        },
+        {
+            "question": "What’s your favorite hobby?",
+            "answer": "I love hiking and spending time in nature. It’s a great way to unwind. What’s your favorite hobby?"
+        },
+        {
+            "question": "Do you have any pets?",
+            "answer": "Yes, I have a cat named Whiskers. She’s very playful. Do you have any pets?"
+        },
+        {
+            "question": "What are you reading right now?",
+            "answer": "I'm currently reading 'The Great Gatsby'. It’s a classic novel. What about you?"
+        },
+        {
+            "question": "Do you prefer coffee or tea?",
+            "answer": "I prefer coffee in the morning to start my day, but I enjoy a nice cup of tea in the evening. What about you?"
+        },
+        {
+            "question": "How do you usually spend your free time?",
+            "answer": "I usually spend my free time reading, cooking, or going for walks. How do you like to spend your free time?"
+        },
+        {
+            "question": "What’s the best way to contact you?",
+            "answer": "The best way to contact me is via email. I check it regularly. How do you prefer to be contacted?"
+        },
+        {
+            "question": "Can you recommend a good book?",
+            "answer": "I recommend 'To Kill a Mockingbird'. It’s a great read with powerful themes. Do you have any book recommendations?"
+        },
+        {
+            "question": "What’s your favorite meal of the day?",
+            "answer": "I really enjoy breakfast because it gives me energy for the day. What’s your favorite meal?"
+        },
+        {
+            "question": "Do you like to cook? What’s your favorite dish to make?",
+            "answer": "Yes, I enjoy cooking! My favorite dish to make is homemade lasagna. Do you like to cook?"
+        },
+        {
+            "question": "What’s a fun fact about you?",
+            "answer": "A fun fact about me is that I can speak three languages. What about you? Do you have any fun facts?"
+        },
+        {
+            "question": "What are you most excited about right now?",
+            "answer": "I’m really excited about an upcoming trip I have planned. What are you looking forward to?"
         }
-
 
     ]
 };
