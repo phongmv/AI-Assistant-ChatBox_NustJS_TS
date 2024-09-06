@@ -33,7 +33,6 @@
       >
         <!-- Profile Image -->
         <NuxtImg
-            v-tilt
             v-if="mes.isHana"
             alt="hana"
             class="block w-12 h-12 overflow-hidden rounded-full border-2 border-slate-200/70"

@@ -1,5 +1,3 @@
-// plugins/vue-tilt.js
-import { defineNuxtPlugin } from '#app'
 import VueTilt from 'vue-tilt.js'
 
 export default defineNuxtPlugin(nuxtApp => {
