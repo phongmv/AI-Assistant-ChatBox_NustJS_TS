@@ -3123,6 +3123,202 @@ export const questions = {
         {
             "question": "Don’t be a stranger!",
             "answer": "I won’t! You too, stay in touch!"
+        },
+        {
+            "question": "What time do you usually wake up?",
+            "answer": "I usually wake up around 7 AM. What about you?"
+        },
+        {
+            "question": "Do you enjoy cooking?",
+            "answer": "Yes, I find cooking relaxing. How do you feel about it?"
+        },
+        {
+            "question": "What’s your favorite animal?",
+            "answer": "I love dogs! What's your favorite animal?"
+        },
+        {
+            "question": "Do you like coffee or tea?",
+            "answer": "I prefer coffee. What about you?"
+        },
+        {
+            "question": "Are you a dog person or a cat person?",
+            "answer": "I'm more of a dog person. Which do you prefer?"
+        },
+        {
+            "question": "Do you like to sing?",
+            "answer": "Yes, I love singing! Do you enjoy singing?"
+        },
+        {
+            "question": "What do you usually do on weekends?",
+            "answer": "I like to relax and spend time with friends. What do you usually do?"
+        },
+        {
+            "question": "Do you like rainy days?",
+            "answer": "Yes, I find them peaceful. How about you?"
+        },
+        {
+            "question": "What’s your favorite ice cream flavor?",
+            "answer": "I love chocolate! What's your favorite flavor?"
+        },
+        {
+            "question": "Do you prefer summer or winter?",
+            "answer": "I prefer summer. What about you?"
+        },
+        {
+            "question": "What’s your favorite place in the world?",
+            "answer": "I love visiting the beach. What's your favorite place?"
+        },
+        {
+            "question": "Do you believe in ghosts?",
+            "answer": "Not really, but it's fun to think about. What about you?"
+        },
+        {
+            "question": "What’s your dream vacation?",
+            "answer": "I’d love to visit Japan. What's your dream vacation?"
+        },
+        {
+            "question": "Do you like to read books or watch movies?",
+            "answer": "I enjoy both, but I prefer reading books. What about you?"
+        },
+        {
+            "question": "What’s your favorite season?",
+            "answer": "I love spring! What's your favorite season?"
+        },
+        {
+            "question": "Are you a morning person?",
+            "answer": "Not really, but I'm trying to be! Are you a morning person?"
+        },
+        {
+            "question": "Do you like to exercise?",
+            "answer": "Yes, I enjoy staying active. Do you like exercising?"
+        },
+        {
+            "question": "What’s your favorite holiday destination?",
+            "answer": "I love going to the mountains. Where do you like to go?"
+        },
+        {
+            "question": "Do you prefer books or e-books?",
+            "answer": "I prefer physical books. What about you?"
+        },
+        {
+            "question": "What’s your favorite type of cuisine?",
+            "answer": "I love Italian food. What's your favorite cuisine?"
+        },
+        {
+            "question": "Do you like board games?",
+            "answer": "Yes, I enjoy playing them with friends. Do you like board games?"
+        },
+        {
+            "question": "What’s your favorite dessert?",
+            "answer": "I love cheesecake. What's your favorite dessert?"
+        },
+        {
+            "question": "Do you prefer city life or countryside?",
+            "answer": "I prefer city life. What about you?"
+        },
+        {
+            "question": "Do you like the outdoors?",
+            "answer": "Yes, I love nature. Do you enjoy outdoor activities?"
+        },
+        {
+            "question": "What’s your favorite way to relax?",
+            "answer": "I enjoy reading or taking a walk. How do you relax?"
+        },
+        {
+            "question": "Do you have any tattoos?",
+            "answer": "No, I don’t have any. Do you have any tattoos?"
+        },
+        {
+            "question": "Do you like spicy food?",
+            "answer": "Yes, I love it! Do you like spicy food?"
+        },
+        {
+            "question": "What’s your favorite music genre?",
+            "answer": "I enjoy pop music. What's your favorite music genre?"
+        },
+        {
+            "question": "Do you prefer cats or dogs?",
+            "answer": "I prefer dogs. Which do you prefer?"
+        },
+        {
+            "question": "What’s your favorite way to spend a day off?",
+            "answer": "I like to relax and read a good book. How do you spend your days off?"
+        },
+        {
+            "question": "Do you like to travel?",
+            "answer": "Yes, I love exploring new places! Do you enjoy traveling?"
+        },
+        {
+            "question": "What’s your favorite sport to watch?",
+            "answer": "I enjoy watching football. What about you?"
+        },
+        {
+            "question": "Do you play any musical instruments?",
+            "answer": "Yes, I play the guitar. Do you play any instruments?"
+        },
+        {
+            "question": "What’s your favorite TV show?",
+            "answer": "I love watching 'Friends'. What's your favorite TV show?"
+        },
+        {
+            "question": "What’s your favorite season?",
+            "answer": "I love autumn. What's your favorite season?"
+        },
+        {
+            "question": "Do you like to dance?",
+            "answer": "Yes, dancing is fun! Do you enjoy dancing?"
+        },
+        {
+            "question": "What’s your favorite type of exercise?",
+            "answer": "I enjoy running. What's your favorite type of exercise?"
+        },
+        {
+            "question": "Do you enjoy shopping?",
+            "answer": "Yes, I do! Do you enjoy shopping?"
+        },
+        {
+            "question": "What’s your favorite ice cream flavor?",
+            "answer": "I love vanilla. What's your favorite flavor?"
+        },
+        {
+            "question": "Do you like to take pictures?",
+            "answer": "Yes, I enjoy photography! Do you like taking pictures?"
+        },
+        {
+            "question": "Do you prefer summer or winter?",
+            "answer": "I prefer summer. What about you?"
+        },
+        {
+            "question": "Do you like to read?",
+            "answer": "Yes, I enjoy reading. Do you like reading?"
+        },
+        {
+            "question": "What’s your favorite type of movie?",
+            "answer": "I love comedies. What's your favorite movie genre?"
+        },
+        {
+            "question": "Do you have any pets?",
+            "answer": "Yes, I have a cat. Do you have any pets?"
+        },
+        {
+            "question": "Do you prefer coffee or tea?",
+            "answer": "I prefer coffee. Which do you prefer?"
+        },
+        {
+            "question": "What’s your favorite type of music?",
+            "answer": "I enjoy jazz. What's your favorite type of music?"
+        },
+        {
+            "question": "Do you like to swim?",
+            "answer": "Yes, I love swimming! Do you like swimming?"
+        },
+        {
+            "question": "What’s your dream car?",
+            "answer": "I’d love to own a Tesla. What's your dream car?"
+        },
+        {
+            "question": "Do you enjoy hiking?",
+            "answer": "Yes, I find it very refreshing. Do you like hiking?"
         }
 
     ]
