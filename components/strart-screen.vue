@@ -1,6 +1,6 @@
 <template>
   <section class="flex flex-col items-center gap-6">
-    <div v-tilt class="w-64 h-64 rounded-full overflow-hidden">
+    <div class="w-64 h-64 rounded-full overflow-hidden">
       <NuxtImg src="/hana.jpg" class="w-full h-full object-cover" />
     </div>
     <h1 class="text-center font-bold text-2xl">

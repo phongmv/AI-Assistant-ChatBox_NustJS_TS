@@ -7,7 +7,7 @@
           <NuxtImg src="/hana.jpg" />
         </div>
       </div>
-      <div v-tilt>
+      <div>
         <div class="font-medium truncate max-w-[9rem] md:max-w-none">
           Hana's Git Chatbot Assistance
         </div>
