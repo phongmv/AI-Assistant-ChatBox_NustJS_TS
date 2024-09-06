@@ -47,20 +47,20 @@
         </div>
         <!-- Main Content -->
         <div
-            class="w-3/4 flex flex-col gap-2 border px-4 pt-3 pb-4 rounded-xl bg-slate-50/80 border-slate-200/80"
+            class="w-3/4 flex flex-col gap-2 border px-4 pt-3 pb-3 rounded-xl bg-slate-50/80 border-slate-200/80"
         >
           <!-- Message Content -->
           <div v-if="mes.isHana" class="relative">
             <div class="text-sm break-words overflow-auto typing-text"  v-html="mes.message"></div>
             <button  @click="copyToClipboard(mes)"
-                     :class="{ 'text-green-500': isCopied[mes.id] }"
-                     class=" w-1 h-1 text-black text-xs p-3 mt-2 absolute bottom-[-26px] right-[24px] hover:text-slate-300">{{isCopied[mes.id] ? "Copied" : "Copy"}}</button>
+                     :class="{ 'text-green-800': isCopied[mes.id] }"
+                     class="flex justify-center items-center w-1 h-1 text-black text-xs p-3 mt-2 absolute bottom-[-28px] right-[4px] hover:text-slate-300">{{isCopied[mes.id] ? "Copied" : "Copy"}}</button>
           </div>
           <div class="text-sm break-words overflow-auto" v-else>
             {{ mes.message }}
           </div>
           <!-- Time -->
-          <div class="text-xs text-slate-500/70">{{ mes.timestamp }}</div>
+          <div class="text-[10px] text-slate-500/70">{{ mes.timestamp }}</div>
         </div>
       </div>
     </div>
@@ -83,11 +83,14 @@ const timeOutIds = ref<{[key: string]: any}>({})
 
 // Watch for changes in messages and scroll to the bottom
 function handleScrollToBottom (){
-  setTimeout(() => {
+  nextTick(() => {
     if (messagesContainer.value) {
-      messagesContainer.value.scrollTop = messagesContainer.value.scrollHeight;
+      messagesContainer.value.scrollTo({
+        top: messagesContainer.value.scrollHeight,
+        behavior: 'smooth',
+      });
     }
-  }, 200)
+  });
 }
 
 function copyToClipboard(mes: IMessage) {
@@ -120,7 +123,7 @@ watch(messages, () => {
   position: relative;
   word-break: break-word;
   color: #333; /* Text color */
-  animation: typing 1s steps(40, end);
+  animation: typing 1s steps(80, end);
   pointer-events: auto; /* Allow text selection */
 }
 

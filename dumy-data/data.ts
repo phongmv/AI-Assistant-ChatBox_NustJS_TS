@@ -157,167 +157,134 @@ export const questions = {
         {
             "question": "How do I initialize a new Git repository?",
             "answer": "To initialize a new Git repository, use the command `git init` in the directory where you want the repository to be created.",
-            "syntax": ""
         },
         {
             "question": "What is the command to check the status of your Git repository?",
             "answer": "Use the command `git status` to check the status of your Git repository.",
-            "syntax": ""
         },
         {
             "question": "How do I stage changes in Git?",
             "answer": "To stage changes, use the command `git add <file>` to add individual files or `git add .` to add all changes in the current directory.",
-            "syntax": ""
         },
         {
             "question": "How do I commit changes in Git?",
             "answer": "To commit changes, use the command `git commit -m 'your commit message'` where 'your commit message' describes the changes you made.",
-            "syntax": ""
         },
         {
             "question": "How can I view the commit history?",
             "answer": "Use the command `git log` to view the commit history. You can use additional options to format and limit the output.",
-            "syntax": ""
         },
         {
             "question": "How do I create a new branch?",
             "answer": "To create a new branch, use the command `git branch <branch-name>`. To switch to the new branch, use `git checkout <branch-name>` or `git switch <branch-name>`.",
-            "syntax": ""
         },
         {
             "question": "How can I merge a branch into the main branch?",
             "answer": "First, switch to the main branch using `git checkout main` or `git switch main`. Then use the command `git merge <branch-name>` to merge the specified branch into the main branch.",
-            "syntax": ""
         },
         {
             "question": "What does 'git pull' do?",
             "answer": "The command `git pull` fetches changes from the remote repository and merges them into your current branch.",
-            "syntax": ""
         },
         {
             "question": "How do I resolve merge conflicts?",
             "answer": "To resolve merge conflicts, open the conflicted files and manually edit the conflicts. After resolving, stage the resolved files using `git add <file>` and commit the changes with `git commit`.",
-            "syntax": ""
         },
         {
             "question": "How do I clone a Git repository?",
             "answer": "To clone a Git repository, use the command `git clone <repository-url>`, where `<repository-url>` is the URL of the repository you want to clone.",
-            "syntax": ""
         },
         {
             "question": "How do I revert a commit?",
             "answer": "To revert a commit, use the command `git revert <commit-hash>`. This will create a new commit that undoes the changes introduced by the specified commit.",
-            "syntax": ""
         },
         {
             "question": "What is the difference between 'git fetch' and 'git pull'?",
             "answer": "'git fetch' downloads changes from the remote repository but does not merge them into your current branch. 'git pull' does both fetching and merging the changes.",
-            "syntax": ""
         },
         {
             "question": "How do I delete a branch?",
             "answer": "To delete a local branch, use the command `git branch -d <branch-name>`. To delete a remote branch, use `git push origin --delete <branch-name>`.",
-            "syntax": ""
         },
         {
             "question": "How can I rename a branch in Git?",
             "answer": "To rename a branch, use the command `git branch -m <new-branch-name>`. This will rename the current branch to the new name.",
-            "syntax": ""
         },
         {
             "question": "How do I undo the last commit?",
             "answer": "To undo the last commit but keep the changes in the working directory, use `git reset --soft HEAD~1`. To undo the last commit and discard the changes, use `git reset --hard HEAD~1`.",
-            "syntax": ""
         },
         {
             "question": "How do I remove a file from Git without deleting it from the working directory?",
             "answer": "Use the command `git rm --cached <file>` to remove the file from Git's index without deleting it from your working directory.",
-            "syntax": ""
         },
         {
             "question": "What is a Git stash?",
             "answer": "Git stash allows you to save your current changes in a stack and revert to a clean working directory. You can later apply the stashed changes with `git stash apply`.",
-            "syntax": ""
         },
         {
             "question": "How can I list all stashes in Git?",
             "answer": "Use the command `git stash list` to see a list of all stashes stored in your repository.",
-            "syntax": ""
         },
         {
             "question": "How do I delete a stash in Git?",
             "answer": "To delete a stash, use the command `git stash drop <stash>` or `git stash clear` to remove all stashes.",
-            "syntax": ""
         },
         {
             "question": "How do I create a new tag in Git?",
             "answer": "To create a new tag, use the command `git tag <tag-name>` to create a lightweight tag or `git tag -a <tag-name> -m <message>` to create an annotated tag.",
-            "syntax": ""
         },
         {
             "question": "How do I push tags to a remote repository?",
             "answer": "To push tags to a remote repository, use the command `git push origin <tag-name>` or `git push origin --tags` to push all tags.",
-            "syntax": ""
         },
         {
             "question": "How can I delete a tag in Git?",
             "answer": "To delete a tag locally, use `git tag -d <tag-name>`. To delete a tag from a remote repository, use `git push origin --delete <tag-name>`.",
-            "syntax": ""
         },
         {
             "question": "How do I check out a specific commit in Git?",
             "answer": "Use the command `git checkout <commit-hash>` to switch to a specific commit. This puts your repository in a 'detached HEAD' state.",
-            "syntax": ""
         },
         {
             "question": "What is a Git submodule?",
             "answer": "A Git submodule is a repository embedded inside another repository. Use `git submodule add <repository-url>` to add a submodule.",
-            "syntax": ""
         },
         {
             "question": "How do I update a Git submodule?",
             "answer": "To update a submodule, use the command `git submodule update --remote` to fetch the latest changes from the submodule's remote repository.",
-            "syntax": ""
         },
         {
             "question": "How do I remove a Git submodule?",
             "answer": "To remove a submodule, delete the relevant section from the `.gitmodules` file, remove the submodule's entry from `.git/config`, and run `git rm --cached <submodule-path>`.",
-            "syntax": ""
         },
         {
             "question": "How do I list all branches in Git?",
             "answer": "Use the command `git branch` to list all local branches. To list remote branches, use `git branch -r`.",
-            "syntax": ""
         },
         {
             "question": "How can I set up a Git remote?",
             "answer": "To set up a Git remote, use the command `git remote add <name> <url>`, where `<name>` is the name of the remote and `<url>` is the remote repository's URL.",
-            "syntax": ""
         },
         {
             "question": "How do I remove a Git remote?",
             "answer": "To remove a Git remote, use the command `git remote remove <name>`, where `<name>` is the name of the remote.",
-            "syntax": ""
         },
         {
             "question": "What is Git rebase?",
             "answer": "Git rebase is a way to move or combine a series of commits onto a new base commit. Use `git rebase <branch>` to rebase your current branch onto another branch.",
-            "syntax": ""
         },
         {
             "question": "How can I abort a Git rebase?",
             "answer": "To abort an ongoing rebase, use the command `git rebase --abort`. This will return your repository to the state before the rebase started.",
-            "syntax": ""
         },
         {
             "question": "How do I squash commits in Git?",
             "answer": "To squash commits, use an interactive rebase with `git rebase -i <base-commit>`, then mark the commits you want to squash with 's' or 'squash'.",
-            "syntax": ""
         },
         {
             "question": "How do I initialize a new Git repository?",
             "answer": "To initialize a new Git repository, use the command `git init` in the directory where you want the repository to be created.",
-            "syntax": "git init"
         },
         {
             "question": "How do I configure the global username in Git?",
@@ -1188,8 +1155,7 @@ export const questions = {
         },
         {
             "question": "Who created you?",
-            "answer": "I was brought to life by a passionate Frontend engineer who goes by the nickname Jin. Always striving for innovation and creativity!",
-            "syntax": "🚀 Connect with Jin on LinkedIn: [Jin's LinkedIn Profile](https://www.linkedin.com/in/phong-mai-6448b2313/)"
+            "answer": "I was brought to life by a passionate Frontend engineer who goes by the nickname Jin. Always striving for innovation and creativity! 🚀🚀🚀🚀 Connect with Jin on LinkedIn: https://www.linkedin.com/in/phong-mai-6448b2313/",
         },
         {
             "question": "What does `git rebase` do?",
@@ -1254,6 +1220,386 @@ export const questions = {
             "question": "git tag?",
             "answer": "To create a tag, use `git tag [tag-name]`. Tags are often used to mark significant points in history, such as releases or milestones.",
             "syntax": "git tag [tag-name]"
+        },
+        {
+            "question": "git reset --soft HEAD~1?",
+            "answer": "`git reset --soft HEAD~1` resets the current branch's HEAD to the previous commit, keeping your changes staged (in the index).",
+            "syntax": "git reset --soft HEAD~1"
+        },
+        {
+            "question": "git reset --mixed HEAD~1?",
+            "answer": "`git reset --mixed HEAD~1` resets the current branch's HEAD to the previous commit and unstages the changes, leaving them in your working directory.",
+            "syntax": "git reset --mixed HEAD~1"
+        },
+        {
+            "question": "git reset --hard HEAD~1?",
+            "answer": "`git reset --hard HEAD~1` resets the current branch's HEAD to the previous commit, discarding all changes in the working directory and the index.",
+            "syntax": "git reset --hard HEAD~1"
+        },
+        {
+            "question": "git reset --soft <commit>?",
+            "answer": "`git reset --soft <commit>` resets the current branch's HEAD to the specified commit, keeping your changes staged (in the index).",
+            "syntax": "git reset --soft <commit>"
+        },
+        {
+            "question": "git reset --mixed <commit>?",
+            "answer": "`git reset --mixed <commit>` resets the current branch's HEAD to the specified commit and unstages the changes, leaving them in your working directory.",
+            "syntax": "git reset --mixed <commit>"
+        },
+        {
+            "question": "git reset --hard <commit>?",
+            "answer": "`git reset --hard <commit>` resets the current branch's HEAD to the specified commit, discarding all changes in the working directory and the index.",
+            "syntax": "git reset --hard <commit>"
+        },
+        {
+            "question": "git reset <file>?",
+            "answer": "`git reset <file>` removes the specified file from the staging area but leaves its changes in the working directory.",
+            "syntax": "git reset <file>"
+        },
+        {
+            "question": "git cherry-pick <commit>?",
+            "answer": "`git cherry-pick <commit>` applies the changes introduced by the specified commit to your current branch, creating a new commit for those changes.",
+            "syntax": "git cherry-pick <commit>"
+        },
+        {
+            "question": "git cherry-pick --no-commit <commit>?",
+            "answer": "`git cherry-pick --no-commit <commit>` applies the changes introduced by the specified commit to your working directory and index, but does not create a new commit. This allows you to review or modify the changes before committing.",
+            "syntax": "git cherry-pick --no-commit <commit>"
+        },
+        {
+            "question": "git cherry-pick --edit <commit>?",
+            "answer": "`git cherry-pick --edit <commit>` applies the changes from the specified commit and opens an editor to modify the commit message before creating a new commit.",
+            "syntax": "git cherry-pick --edit <commit>"
+        },
+        {
+            "question": "git cherry-pick --abort?",
+            "answer": "`git cherry-pick --abort` aborts the current cherry-pick operation and restores the branch to the state before the cherry-pick began.",
+            "syntax": "git cherry-pick --abort"
+        },
+        {
+            "question": "git cherry-pick --continue?",
+            "answer": "`git cherry-pick --continue` continues the cherry-pick operation after resolving any conflicts that occurred during the cherry-pick process.",
+            "syntax": "git cherry-pick --continue"
+        },
+        {
+            "question": "git cherry-pick --skip?",
+            "answer": "`git cherry-pick --skip` skips the current commit and continues with the next commit in the cherry-pick sequence. This is useful if a specific commit cannot be applied due to conflicts.",
+            "syntax": "git cherry-pick --skip"
+        },
+        {
+            "question": "git pull?",
+            "answer": "`git pull` fetches and integrates changes from a remote repository into your current branch. It performs a `git fetch` followed by a `git merge` by default.",
+            "syntax": "git pull"
+        },
+        {
+            "question": "git pull <remote>?",
+            "answer": "`git pull <remote>` fetches changes from the specified remote repository and merges them into your current branch.",
+            "syntax": "git pull <remote>"
+        },
+        {
+            "question": "git pull <remote> <branch>?",
+            "answer": "`git pull <remote> <branch>` fetches changes from the specified branch in the remote repository and merges them into your current branch.",
+            "syntax": "git pull <remote> <branch>"
+        },
+        {
+            "question": "git pull --rebase?",
+            "answer": "`git pull --rebase` fetches changes from the remote repository and rebases your current branch on top of the fetched changes, rather than merging them.",
+            "syntax": "git pull --rebase"
+        },
+        {
+            "question": "git pull --no-rebase?",
+            "answer": "`git pull --no-rebase` fetches changes from the remote repository and merges them into your current branch, even if the global or local configuration is set to rebase.",
+            "syntax": "git pull --no-rebase"
+        },
+        {
+            "question": "git pull --ff-only?",
+            "answer": "`git pull --ff-only` fetches changes from the remote repository and only performs the merge if it can be fast-forwarded. It will abort the merge if a fast-forward is not possible.",
+            "syntax": "git pull --ff-only"
+        },
+        {
+            "question": "git pull --depth=<depth>?",
+            "answer": "`git pull --depth=<depth>` fetches only the specified number of commits from the remote repository, creating a shallow clone. Useful for reducing the amount of data fetched.",
+            "syntax": "git pull --depth=<depth>"
+        },
+        {
+            "question": "git push?",
+            "answer": "`git push` uploads your local branch commits to a remote repository, making them available to others. It updates the remote branch to match your local branch.",
+            "syntax": "git push"
+        },
+        {
+            "question": "git push <remote>?",
+            "answer": "`git push <remote>` uploads your local branch commits to the specified remote repository.",
+            "syntax": "git push <remote>"
+        },
+        {
+            "question": "git push <remote> <branch>?",
+            "answer": "`git push <remote> <branch>` uploads your local branch commits to the specified branch on the remote repository.",
+            "syntax": "git push <remote> <branch>"
+        },
+        {
+            "question": "git push --force?",
+            "answer": "`git push --force` forcibly updates the remote branch to match your local branch, even if it results in a non-fast-forward update. Use this with caution as it can overwrite remote changes.",
+            "syntax": "git push --force"
+        },
+        {
+            "question": "git push --force-with-lease?",
+            "answer": "`git push --force-with-lease` updates the remote branch to match your local branch only if the remote branch has not been updated since you last fetched. It is safer than `--force` as it prevents overwriting others' changes.",
+            "syntax": "git push --force-with-lease"
+        },
+        {
+            "question": "git push --tags?",
+            "answer": "`git push --tags` uploads all tags from your local repository to the remote repository.",
+            "syntax": "git push --tags"
+        },
+        {
+            "question": "git push <remote> --delete <branch>?",
+            "answer": "`git push <remote> --delete <branch>` deletes the specified branch from the remote repository.",
+            "syntax": "git push <remote> --delete <branch>"
+        },
+        {
+            "question": "git push --set-upstream <remote> <branch>?",
+            "answer": "`git push --set-upstream <remote> <branch>` sets the specified remote branch as the upstream branch for the current local branch and pushes the changes.",
+            "syntax": "git push --set-upstream <remote> <branch>"
+        },
+        {
+            "question": "git push --all?",
+            "answer": "`git push --all` uploads all local branches to the remote repository.",
+            "syntax": "git push --all"
+        },
+        {
+            "question": "How do I push my local commits to a remote repository?",
+            "answer": "`git push` uploads your local branch commits to a remote repository, making them available to others. It updates the remote branch to match your local branch.",
+            "syntax": "git push"
+        },
+        {
+            "question": "How can I push my local commits to a specific remote repository?",
+            "answer": "`git push <remote>` uploads your local branch commits to the specified remote repository.",
+            "syntax": "git push <remote>"
+        },
+        {
+            "question": "How do I push a specific branch to a remote repository?",
+            "answer": "`git push <remote> <branch>` uploads your local branch commits to the specified branch on the remote repository.",
+            "syntax": "git push <remote> <branch>"
+        },
+        {
+            "question": "What if I need to overwrite the remote branch with my local branch?",
+            "answer": "`git push --force` forcibly updates the remote branch to match your local branch, even if it results in a non-fast-forward update. Use this with caution as it can overwrite remote changes.",
+            "syntax": "git push --force"
+        },
+        {
+            "question": "How can I safely update a remote branch without overwriting others' changes?",
+            "answer": "`git push --force-with-lease` updates the remote branch to match your local branch only if the remote branch has not been updated since you last fetched. It is safer than `--force` as it prevents overwriting others' changes.",
+            "syntax": "git push --force-with-lease"
+        },
+        {
+            "question": "How do I push all my tags to the remote repository?",
+            "answer": "`git push --tags` uploads all tags from your local repository to the remote repository.",
+            "syntax": "git push --tags"
+        },
+        {
+            "question": "How can I delete a branch from the remote repository?",
+            "answer": "`git push <remote> --delete <branch>` deletes the specified branch from the remote repository.",
+            "syntax": "git push <remote> --delete <branch>"
+        },
+        {
+            "question": "How do I set the upstream branch and push my changes?",
+            "answer": "`git push --set-upstream <remote> <branch>` sets the specified remote branch as the upstream branch for the current local branch and pushes the changes.",
+            "syntax": "git push --set-upstream <remote> <branch>"
+        },
+        {
+            "question": "How can I push all my local branches to the remote repository?",
+            "answer": "`git push --all` uploads all local branches to the remote repository.",
+            "syntax": "git push --all"
+        },
+        {
+            "question": "How do I fetch changes from a remote repository?",
+            "answer": "`git fetch` downloads changes from the remote repository into your local repository, but does not merge them into your working branch. It updates your remote-tracking branches.",
+            "syntax": "git fetch"
+        },
+        {
+            "question": "How can I fetch changes from a specific remote repository?",
+            "answer": "`git fetch <remote>` downloads changes from the specified remote repository into your local repository, updating your remote-tracking branches for that remote.",
+            "syntax": "git fetch <remote>"
+        },
+        {
+            "question": "How do I fetch changes from a specific branch of a remote repository?",
+            "answer": "`git fetch <remote> <branch>` downloads changes from the specified branch in the remote repository and updates the corresponding remote-tracking branch.",
+            "syntax": "git fetch <remote> <branch>"
+        },
+        {
+            "question": "How do I fetch changes from all remotes and branches?",
+            "answer": "`git fetch --all` downloads changes from all configured remote repositories and updates the remote-tracking branches for all of them.",
+            "syntax": "git fetch --all"
+        },
+        {
+            "question": "How can I fetch changes with a limited history depth?",
+            "answer": "`git fetch --depth=<depth>` downloads a limited number of commits from the remote repository, creating a shallow copy. This is useful for reducing the amount of data fetched.",
+            "syntax": "git fetch --depth=<depth>"
+        },
+        {
+            "question": "How do I fetch changes from a remote repository and prune deleted branches?",
+            "answer": "`git fetch --prune` downloads changes from the remote repository and removes any remote-tracking branches that no longer exist on the remote.",
+            "syntax": "git fetch --prune"
+        },
+        {
+            "question": "How can I fetch changes from a remote repository and perform a shallow fetch?",
+            "answer": "`git fetch --shallow-since=<date>` downloads changes from the remote repository that are newer than the specified date, creating a shallow copy of the repository.",
+            "syntax": "git fetch --shallow-since=<date>"
+        },
+        {
+            "question": "How do I fetch changes from a remote repository and include all tags?",
+            "answer": "`git fetch --tags` downloads all tags from the remote repository along with the changes to the remote-tracking branches.",
+            "syntax": "git fetch --tags"
+        },
+        {
+            "question": "git fetch?",
+            "answer": "`git fetch` downloads changes from the remote repository into your local repository, but does not merge them into your working branch. It updates your remote-tracking branches.",
+            "syntax": "git fetch"
+        },
+        {
+            "question": "git fetch <remote>?",
+            "answer": "`git fetch <remote>` downloads changes from the specified remote repository into your local repository, updating your remote-tracking branches for that remote.",
+            "syntax": "git fetch <remote>"
+        },
+        {
+            "question": "git fetch <remote> <branch>?",
+            "answer": "`git fetch <remote> <branch>` downloads changes from the specified branch in the remote repository and updates the corresponding remote-tracking branch.",
+            "syntax": "git fetch <remote> <branch>"
+        },
+        {
+            "question": "git fetch --all?",
+            "answer": "`git fetch --all` downloads changes from all configured remote repositories and updates the remote-tracking branches for all of them.",
+            "syntax": "git fetch --all"
+        },
+        {
+            "question": "git fetch --depth=<depth>?",
+            "answer": "`git fetch --depth=<depth>` downloads a limited number of commits from the remote repository, creating a shallow copy. This is useful for reducing the amount of data fetched.",
+            "syntax": "git fetch --depth=<depth>"
+        },
+        {
+            "question": "git fetch --prune?",
+            "answer": "`git fetch --prune` downloads changes from the remote repository and removes any remote-tracking branches that no longer exist on the remote.",
+            "syntax": "git fetch --prune"
+        },
+        {
+            "question": "git fetch --shallow-since=<date>?",
+            "answer": "`git fetch --shallow-since=<date>` downloads changes from the remote repository that are newer than the specified date, creating a shallow copy of the repository.",
+            "syntax": "git fetch --shallow-since=<date>"
+        },
+        {
+            "question": "git fetch --tags?",
+            "answer": "`git fetch --tags` downloads all tags from the remote repository along with the changes to the remote-tracking branches.",
+            "syntax": "git fetch --tags"
+        },
+        {
+            "question": "git rebase?",
+            "answer": "`git rebase` integrates changes from one branch into another by applying commits on top of another base branch. This is used to maintain a clean and linear project history.",
+            "syntax": "git rebase"
+        },
+        {
+            "question": "git rebase <branch>?",
+            "answer": "`git rebase <branch>` rebases the current branch onto the specified branch. It applies the commits from the current branch on top of the specified branch.",
+            "syntax": "git rebase <branch>"
+        },
+        {
+            "question": "git rebase --interactive?",
+            "answer": "`git rebase --interactive` allows you to edit, reorder, or squash commits during the rebase process. It opens an editor for you to manually modify commits.",
+            "syntax": "git rebase --interactive"
+        },
+        {
+            "question": "git rebase --continue?",
+            "answer": "`git rebase --continue` resumes the rebase process after resolving conflicts during an interactive rebase or after stopping due to conflicts.",
+            "syntax": "git rebase --continue"
+        },
+        {
+            "question": "git rebase --abort?",
+            "answer": "`git rebase --abort` stops the rebase process and returns the branch to its original state before the rebase started.",
+            "syntax": "git rebase --abort"
+        },
+        {
+            "question": "git rebase --skip?",
+            "answer": "`git rebase --skip` skips the current patch during a rebase process and continues with the next patch.",
+            "syntax": "git rebase --skip"
+        },
+        {
+            "question": "git revert?",
+            "answer": "`git revert` creates a new commit that undoes the changes made by a previous commit, preserving the commit history.",
+            "syntax": "git revert"
+        },
+        {
+            "question": "git revert <commit>?",
+            "answer": "`git revert <commit>` undoes the changes made by the specified commit and creates a new commit to apply the reversal.",
+            "syntax": "git revert <commit>"
+        },
+        {
+            "question": "git revert --no-edit?",
+            "answer": "`git revert --no-edit` reverts a commit without opening the commit message editor. It uses the default commit message.",
+            "syntax": "git revert --no-edit"
+        },
+        {
+            "question": "git revert --mainline <parent-number> <commit>?",
+            "answer": "`git revert --mainline <parent-number> <commit>` is used for reverting a merge commit. It specifies which parent commit to use for the revert.",
+            "syntax": "git revert --mainline <parent-number> <commit>"
+        },
+        {
+            "question": "git commit?",
+            "answer": "`git commit` records changes to the repository with a commit message, creating a new commit with the current changes staged in the index.",
+            "syntax": "git commit"
+        },
+        {
+            "question": "git commit -m \"message\"?",
+            "answer": "`git commit -m \"message\"` creates a new commit with the specified commit message. The message describes the changes made in the commit.",
+            "syntax": "git commit -m \"message\""
+        },
+        {
+            "question": "git commit --amend?",
+            "answer": "`git commit --amend` modifies the most recent commit by adding new changes or editing the commit message.",
+            "syntax": "git commit --amend"
+        },
+        {
+            "question": "git commit --allow-empty?",
+            "answer": "`git commit --allow-empty` creates a commit even if there are no changes in the staging area. This is useful for creating a commit with a message for documentation purposes.",
+            "syntax": "git commit --allow-empty"
+        },
+        {
+            "question": "git commit --no-edit?",
+            "answer": "`git commit --no-edit` commits changes using the existing commit message when amending a commit or performing a rebase.",
+            "syntax": "git commit --no-edit"
+        },
+        {
+            "question": "git branch?",
+            "answer": "`git branch` lists, creates, or deletes branches in the repository. It displays a list of branches and highlights the current branch.",
+            "syntax": "git branch"
+        },
+        {
+            "question": "git branch <branch-name>?",
+            "answer": "`git branch <branch-name>` creates a new branch with the specified name but does not switch to it.",
+            "syntax": "git branch <branch-name>"
+        },
+        {
+            "question": "git branch -d <branch-name>?",
+            "answer": "`git branch -d <branch-name>` deletes the specified branch. The branch must be fully merged to the current branch before it can be deleted.",
+            "syntax": "git branch -d <branch-name>"
+        },
+        {
+            "question": "git branch -D <branch-name>?",
+            "answer": "`git branch -D <branch-name>` forcefully deletes the specified branch, even if it is not fully merged.",
+            "syntax": "git branch -D <branch-name>"
+        },
+        {
+            "question": "git branch -a?",
+            "answer": "`git branch -a` lists all branches, both local and remote, in the repository.",
+            "syntax": "git branch -a"
+        },
+        {
+            "question": "git branch -r?",
+            "answer": "`git branch -r` lists all remote branches in the repository.",
+            "syntax": "git branch -r"
+        },
+        {
+            "question": "git branch --show-current?",
+            "answer": "`git branch --show-current` displays the name of the current branch you are on.",
+            "syntax": "git branch --show-current"
         }
     ]
 };

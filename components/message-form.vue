@@ -45,15 +45,14 @@ const questions = ref<IQuestionAnswers>({...await getQuestionsResponse()})
 const gitCommands = ref<IGitCommands>({...await getFakeAIResponse()})
 
 //init value
-onMounted(  () => {
+onMounted(() => {
   messages.value.push({
     name: "Hana",
-    message: `<p class="text-wrap text-sm"><strong>^^!</strong> Hi ${customerName.value}! I'm Hana 😍</p>` +
-        `<p class="text-wrap text-sm text-gray">My job is help answer about basic git commands, if you have any question, talkin me! </p>`,
+    message: `<p class="text-wrap text-sm">Hi ${customerName.value}! I'm Hana 😍</p>` +
+        `<p class="text-wrap text-sm text-gray">My job is help answer about <strong>Git<strong>, if you have any question, talkin me! </p>`,
     isHana: true,
-    timestamp: new Date().toLocaleString([],  {
-      timeStyle: "short"
-    })
+    timestamp: formatDate(),
+    id: Date.now()
   })
 })
 
@@ -62,7 +61,7 @@ import {SpecialKey} from "~/contants/special-key";
 
 function findBestMatch(question: string): string | null {
   const threshold = 0.49; // 50% similarity threshold
-  const { training_data } = questions.value;
+  const {training_data} = questions.value;
 
   // Normalize the input question
   const normalizedQuestion = question.toLowerCase();
@@ -85,19 +84,19 @@ function findBestMatch(question: string): string | null {
 
   // Provide feedback if no good match is found
   return bestMatch
-      ? `${bestMatch.answer} <br><strong>${bestMatch?.syntax || ""}</strong>`
+      ? `${bestMatch?.syntax ? '<strong>Syntax: </strong>' : ""}${bestMatch?.syntax || ""}${bestMatch?.syntax ? '<br><strong>Description: </strong>' : ''}${bestMatch.answer}`
       : "Sorry, I couldn't find a good match for your question. It's better to search using English keywords.";
 }
 
 
-async function getFakeAiResponse(keySearching: string){
+async function getFakeAiResponse(keySearching: string) {
   emits("onSubmit");
 
   const keyData = Object.keys(gitCommands.value);
   const keysFilter = replaceSpecialCharacters(keySearching).split(" ").filter(k => !!k);
 
   //handle multiple keywords
-  if(!keySearching.split(" ").some(i => SpecialKey.includes(i))) {
+  if (!keySearching.split(" ").some(i => SpecialKey.includes(i))) {
     let matchingKeys = keyData.filter(key =>
         keysFilter.some(filterKey => key === filterKey)
     );
@@ -117,26 +116,25 @@ async function getFakeAiResponse(keySearching: string){
 }
 
 
-
 async function handleSubmit() {
-    messages.value.push({
-      name: customerInitials.value,
-      message: newMessage.value,
-      isHana: false,
-      timestamp: formatDate(),
-      id: Date.now()
-    })
+  messages.value.push({
+    name: customerInitials.value,
+    message: newMessage.value,
+    isHana: false,
+    timestamp: formatDate(),
+    id: Date.now()
+  })
 
-    const commandNode = await getFakeAiResponse(newMessage.value) || ''
-    const parsedMessage = await marked.parse(dompurify.sanitize(commandNode))
-    newMessage.value = ""
+  const commandNode = await getFakeAiResponse(newMessage.value) || ''
+  const parsedMessage = await marked.parse(dompurify.sanitize(commandNode))
+  newMessage.value = ""
 
-    messages.value.push({
-      name: "Hana",
-      message: parsedMessage,
-      isHana: true,
-      timestamp: formatDate(),
-      id: Date.now()
-    })
-  }
+  messages.value.push({
+    name: "Hana",
+    message: parsedMessage,
+    isHana: true,
+    timestamp: formatDate(),
+    id: Date.now()
+  })
+}
 </script>
