@@ -1547,6 +1547,57 @@ export const questions = {
             "syntax": "git commit"
         },
         {
+            "question": "git switch",
+            "answer": "`git switch branch-name` switches to an existing branch specified by `branch-name`.",
+            "syntax": "git switch branch-name"
+        },
+        {
+            "question": "git switch -c",
+            "answer": "`git switch -c new-branch-name` creates a new branch with the name `new-branch-name` and switches to it.",
+            "syntax": "git switch -c new-branch-name"
+        },
+        {
+            "question": "git switch -t ",
+            "answer": "`git switch -t branch-name` switches to a branch that tracks the remote branch named `branch-name`.",
+            "syntax": "git switch -t branch-name"
+        },
+        {
+            "question": "git switch --detach",
+            "answer": "`git switch branch-name --detach` switches to the specified branch and puts the working directory in a detached HEAD state.",
+            "syntax": "git switch branch-name --detach"
+        },
+        {
+            "question": "git switch @{}",
+            "answer": "`git switch @{-1}` switches to the previously checked-out branch.",
+            "syntax": "git switch @{-1}"
+        },
+        {
+            "question": "What command switches to the default branch?",
+            "answer": "`git switch main` switches to the default branch, which is often named `main` or `master`.",
+            "syntax": "git switch main"
+        },
+        {
+            "question": "How can you switch to a branch with confirmation?",
+            "answer": "`git switch --confirm branch-name` switches to the specified branch with confirmation to ensure no uncommitted changes are lost.",
+            "syntax": "git switch --confirm branch-name"
+        },
+        {
+            "question": "git switch --track",
+            "answer": "`git switch --track remote/branch-name` creates a new branch that tracks the remote branch `branch-name` and switches to it.",
+            "syntax": "git switch --track remote/branch-name"
+        },
+        {
+            "question": "git switch branch-name",
+            "answer": "`git switch branch-name --force` switches to the specified branch and discards any local changes that are not committed.",
+            "syntax": "git switch branch-name --force"
+        },
+        {
+            "question": "How can you get help for the `git switch` command?",
+            "answer": "`git switch --help` displays help information about the `git switch` command.",
+            "syntax": "git switch --help"
+        },
+
+        {
             "question": "git commit -m \"message\"?",
             "answer": "`git commit -m \"message\"` creates a new commit with the specified commit message. The message describes the changes made in the commit.",
             "syntax": "git commit -m \"message\""
