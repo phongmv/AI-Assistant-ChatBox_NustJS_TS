@@ -60,7 +60,7 @@ import stringSimilarity from 'string-similarity';
 import {SpecialKey} from "~/contants/special-key";
 
 function findBestMatch(question: string): string | null {
-  const threshold = 0.6; // 60% similarity threshold
+  const threshold = 0.55; // 50% similarity threshold
   const {training_data} = questions.value;
 
   // Normalize the input question
