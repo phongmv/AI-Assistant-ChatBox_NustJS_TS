@@ -1251,6 +1251,10 @@ export const questions = {
             "answer": "Is there anything else I can help you with? Feel free to ask!"
         },
         {
+            "question": "Are you Okay",
+            "answer": "Haha I am GOOOOOOOD ^^!"
+        },
+        {
             "question": "No",
             "answer": "I am sorry, I made mistake"
         },
