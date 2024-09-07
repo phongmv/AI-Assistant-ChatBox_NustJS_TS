@@ -4324,6 +4324,10 @@ export const questions = {
             "answer": "Jin values creativity and a problem-solving mindset in his team."
         },
         {
+            "question": "Who is your Boss?",
+            "answer": "He is a Frontend engineer who goes by the nickname Jin. He lives in LA and is in his twenties. Always striving for innovation and creativity! 🚀🚀🚀🚀 Connect with Jin on LinkedIn: https://www.linkedin.com/in/phong-mai-6448b2313/"
+        },
+        {
             "question": "Boss information",
             "answer": "He is a Frontend engineer who goes by the nickname Jin. He lives in LA and is in his twenties. Always striving for innovation and creativity! 🚀🚀🚀🚀 Connect with Jin on LinkedIn: https://www.linkedin.com/in/phong-mai-6448b2313/"
         },
