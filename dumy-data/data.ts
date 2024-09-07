@@ -4166,6 +4166,162 @@ export const questions = {
         {
             "question": "What does your boss value the most in his team?",
             "answer": "Jin values creativity and a problem-solving mindset in his team."
+        },
+        {
+            "question": "Boss information",
+            "answer": "He is a Frontend engineer who goes by the nickname Jin. He lives in LA and is in his twenties. Always striving for innovation and creativity! 🚀🚀🚀🚀 Connect with Jin on LinkedIn: https://www.linkedin.com/in/phong-mai-6448b2313/"
+        },
+        {
+            "question": "Boss hobby",
+            "answer": "Jin enjoys coding, hiking, and exploring new technology trends."
+        },
+        {
+            "question": "Boss name",
+            "answer": "His name is Jin, which is also his nickname."
+        },
+        {
+            "question": "Boss job",
+            "answer": "Jin is a Frontend Engineer specializing in building user interfaces."
+        },
+        {
+            "question": "Boss countryside",
+            "answer": "Jin lives in Los Angeles (LA)."
+        },
+        {
+            "question": "Boss age",
+            "answer": "Jin is in his twenties."
+        },
+        {
+            "question": "Boss skill",
+            "answer": "Jin is known for always striving for innovation and creativity."
+        },
+        {
+            "question": "Boss language",
+            "answer": "Jin's favorite programming language is JavaScript."
+        },
+        {
+            "question": "Boss technology",
+            "answer": "Jin loves working with React.js."
+        },
+        {
+            "question": "Boss color",
+            "answer": "Jin's favorite color is blue."
+        },
+        {
+            "question": "Boss food",
+            "answer": "Jin enjoys sushi."
+        },
+        {
+            "question": "Boss drink",
+            "answer": "Jin loves coffee, especially cold brew."
+        },
+        {
+            "question": "Boss sport",
+            "answer": "Jin enjoys playing basketball."
+        },
+        {
+            "question": "Boss schedule",
+            "answer": "Jin prefers working in the morning and usually starts his day at 8 AM."
+        },
+        {
+            "question": "Boss ethic",
+            "answer": "Jin is very dedicated and is known for his attention to detail."
+        },
+        {
+            "question": "Boss project",
+            "answer": "Jin dreams of building a revolutionary web app that impacts millions of users."
+        },
+        {
+            "question": "Boss accomplishment",
+            "answer": "Jin successfully led the development of a high-profile project that gained recognition in the industry."
+        },
+        {
+            "question": "Boss vacation",
+            "answer": "Jin loves visiting the beaches in Hawaii."
+        },
+        {
+            "question": "Boss music",
+            "answer": "Jin enjoys listening to electronic music."
+        },
+        {
+            "question": "Boss routine",
+            "answer": "Jin starts his day with a workout, then focuses on coding and meetings."
+        },
+        {
+            "question": "Boss movie",
+            "answer": "Jin's favorite movie is 'Inception.'"
+        },
+        {
+            "question": "Boss book",
+            "answer": "Jin enjoys reading 'The Lean Startup' by Eric Ries."
+        },
+        {
+            "question": "Boss leadership",
+            "answer": "Jin is a collaborative leader who values input from his team."
+        },
+        {
+            "question": "Boss tool",
+            "answer": "Jin loves using Visual Studio Code."
+        },
+        {
+            "question": "Boss problem-solving",
+            "answer": "Jin tackles problems methodically, breaking them down into smaller parts."
+        },
+        {
+            "question": "Boss motivation",
+            "answer": "Jin is motivated by the desire to create innovative solutions that improve user experiences."
+        },
+        {
+            "question": "Boss app",
+            "answer": "Jin's favorite app is Slack for team communication."
+        },
+        {
+            "question": "Boss education",
+            "answer": "Jin has a degree in Computer Science."
+        },
+        {
+            "question": "Boss relaxation",
+            "answer": "Jin enjoys meditating to relax."
+        },
+        {
+            "question": "Boss challenge",
+            "answer": "Jin enjoys solving complex UI challenges."
+        },
+        {
+            "question": "Boss teamwork",
+            "answer": "Jin believes in clear communication and collaboration within the team."
+        },
+        {
+            "question": "Boss design",
+            "answer": "Jin enjoys using Figma for design collaboration."
+        },
+        {
+            "question": "Boss conference",
+            "answer": "Jin loves attending the React Conference."
+        },
+        {
+            "question": "Boss coding",
+            "answer": "Jin prefers clean, well-documented code."
+        },
+        {
+            "question": "Boss productivity",
+            "answer": "Jin uses Trello to manage tasks."
+        },
+        {
+            "question": "Boss learning",
+            "answer": "Jin enjoys learning on Udemy."
+        },
+        {
+            "question": "Boss deadlines",
+            "answer": "Jin prioritizes quality but ensures deadlines are met."
+        },
+        {
+            "question": "Boss mantra",
+            "answer": "Jin believes in 'code once, test twice.'"
+        },
+        {
+            "question": "Boss value",
+            "answer": "Jin values creativity and a problem-solving mindset in his team."
         }
 
     ]
