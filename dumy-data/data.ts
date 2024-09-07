@@ -5,9 +5,53 @@ export const gitCommands: IGitCommands = {
         command: "git config --global user.name 'Your Name'",
         description: "Configure the global username.",
     },
+    "grep": {
+        "command": "git grep",
+        "description": "Print lines matching a pattern in the repository, allowing you to search through files and commits."
+    },
     "init": {
         command: "git init",
         description: "Initialize a new Git repository.",
+    },
+    "shortlog": {
+        "command": "git shortlog",
+        "description": "Summarize the output of `git log` by grouping commits by author and providing a summary of their contributions."
+    },
+    "fsck": {
+        "command": "git fsck",
+        "description": "Verify the connectivity and validity of objects in the repository, ensuring that all objects are properly referenced and not corrupted."
+    },
+    "pack-refs": {
+        "command": "git pack-refs",
+        "description": "Pack heads and tags into a single file to optimize storage and performance when dealing with a large number of references."
+    },
+    "rev-parse": {
+        "command": "git rev-parse",
+        "description": "Parse revision (or other object) identifiers, converting them into their corresponding object names or other useful information."
+    },
+    "cat-file": {
+        "command": "git cat-file",
+        "description": "Display the content or type of an object (e.g., commit, tree, or blob) to examine its data or structure."
+    },
+    "describe": {
+        "command": "git describe",
+        "description": "Provide a human-readable name for a commit based on its most recent tag, showing a version-like description."
+    },
+    "filter-branch": {
+        "command": "git filter-branch",
+        "description": "Rewrite branches by applying filters to commits, useful for tasks like removing sensitive data or cleaning up history."
+    },
+    "ls-tree": {
+        "command": "git ls-tree",
+        "description": "List the contents of a tree object, showing files and directories in a specific commit or branch."
+    },
+    "update-index": {
+        "command": "git update-index",
+        "description": "Update the index with file contents, allowing you to modify the staging area without changing the working directory."
+    },
+    "bundle": {
+        "command": "git bundle",
+        "description": "Create and manipulate repository bundles, which are useful for transporting Git repositories as a single file."
     },
     "status": {
         command: "git status",
@@ -585,6 +629,10 @@ export const questions = {
             "question": "What does the `-f` flag do in the `git revert` command?",
             "answer": "The `-f` flag in `git revert` is used to force the creation of a new commit that undoes the changes introduced by a previous commit, even if it would create conflicts.",
             "syntax": "git revert -f [commit]"
+        },
+        {
+            "question": "git grep",
+            "answer": "Print lines matching a pattern in the repository, allowing you to search through files and commits."
         },
         {
             "question": "git push -f",
@@ -4322,7 +4370,273 @@ export const questions = {
         {
             "question": "Boss value",
             "answer": "Jin values creativity and a problem-solving mindset in his team."
+        },
+        {
+            "question": "give me some git command",
+            "answer": "Here are some Git commands: `git init`, `git add`, `git commit`, `git status`, `git push`."
+        },
+        {
+            "question": "give me some advance git command",
+            "answer": "Here are some advanced Git commands: `git rebase`, `git cherry-pick`, `git bisect`, `git stash`, `git reset --hard`."
+        },
+        {
+            "question": "give me some basic git command",
+            "answer": "Here are some basic Git commands: `git clone`, `git init`, `git add`, `git commit`, `git status`."
+        },
+        {
+            "question": "give me 10 git command",
+            "answer": "Here are some Git commands: `git init`, `git add`, `git commit`, `git push`, `git pull`."
+        },
+        {
+            "question": "tell me 15 git command",
+            "answer": "Here are some Git commands: `git init`, `git clone`, `git add`, `git commit`, `git status`, `git log`, `git branch`, `git checkout`, `git merge`, `git fetch`, `git pull`, `git push`, `git reset`, `git stash`, `git remote`."
+        },
+        {
+            "question": "show 20 git command",
+            "answer": "Here are some Git commands: `git init`, `git clone`, `git add`, `git commit`, `git status`, `git log`, `git branch`, `git checkout`, `git merge`, `git fetch`, `git pull`, `git push`, `git reset`, `git stash`, `git remote`, `git tag`, `git rebase`, `git cherry-pick`, `git bisect`, `git diff`."
+        },
+        {
+            "question": "give me all git command",
+            "answer": "Here is a list of Git commands: \n\n1. `git init` - Initialize a new Git repository.\n2. `git clone <repository>` - Clone an existing repository.\n3. `git add <file>` - Stage changes for commit.\n4. `git commit -m \"message\"` - Commit staged changes with a message.\n5. `git status` - Show the status of changes.\n6. `git log` - View commit history.\n7. `git branch` - List branches or create a new branch.\n8. `git checkout <branch>` - Switch to a different branch.\n9. `git merge <branch>` - Merge a branch into the current branch.\n10. `git fetch` - Fetch updates from a remote repository.\n11. `git pull` - Fetch and merge changes from a remote repository.\n12. `git push` - Push local changes to a remote repository.\n13. `git reset` - Reset current HEAD to a specific state.\n14. `git revert <commit>` - Revert a commit by creating a new commit.\n15. `git stash` - Temporarily save changes that are not yet ready to be committed.\n16. `git remote` - Manage remote repositories.\n17. `git tag` - Create, list, or delete tags.\n18. `git rebase` - Reapply commits on top of another base tip.\n19. `git cherry-pick <commit>` - Apply the changes introduced by some existing commits.\n20. `git bisect` - Use binary search to find the commit that introduced a bug.\n21. `git diff` - Show changes between commits, working directory, and index.\n22. `git config` - Get and set repository or global options.\n23. `git show <commit>` - Show details of a specific commit.\n24. `git archive` - Create an archive of files from a named tree.\n25. `git grep` - Print lines matching a pattern.\n26. `git apply` - Apply a patch to files.\n27. `git blame <file>` - Show what revision and author last modified each line of a file.\n28. `git reflog` - Show reference logs.\n29. `git clean` - Remove untracked files from the working directory.\n30. `git submodule` - Initialize, update, or inspect submodules.\n31. `git shortlog` - Summarize `git log` output.\n32. `git fsck` - Verify the connectivity and validity of objects.\n33. `git pack-refs` - Pack heads and tags for efficient reference storage.\n34. `git rev-parse` - Parse revision (or other object) identifiers.\n35. `git cat-file` - Provide content or type of object.\n36. `git describe` - Give an object a human-readable name.\n37. `git filter-branch` - Rewrite branches.\n38. `git ls-tree` - List the contents of a tree object.\n39. `git update-index` - Register file contents in the index.\n40. `git bundle` - Create and manipulate repository bundles."
+        },
+        {
+            "question": "tell me all git command",
+            "answer": "Here is a list of Git commands: \n\n1. `git init` - Initialize a new Git repository.\n2. `git clone <repository>` - Clone an existing repository.\n3. `git add <file>` - Stage changes for commit.\n4. `git commit -m \"message\"` - Commit staged changes with a message.\n5. `git status` - Show the status of changes.\n6. `git log` - View commit history.\n7. `git branch` - List branches or create a new branch.\n8. `git checkout <branch>` - Switch to a different branch.\n9. `git merge <branch>` - Merge a branch into the current branch.\n10. `git fetch` - Fetch updates from a remote repository.\n11. `git pull` - Fetch and merge changes from a remote repository.\n12. `git push` - Push local changes to a remote repository.\n13. `git reset` - Reset current HEAD to a specific state.\n14. `git revert <commit>` - Revert a commit by creating a new commit.\n15. `git stash` - Temporarily save changes that are not yet ready to be committed.\n16. `git remote` - Manage remote repositories.\n17. `git tag` - Create, list, or delete tags.\n18. `git rebase` - Reapply commits on top of another base tip.\n19. `git cherry-pick <commit>` - Apply the changes introduced by some existing commits.\n20. `git bisect` - Use binary search to find the commit that introduced a bug.\n21. `git diff` - Show changes between commits, working directory, and index.\n22. `git config` - Get and set repository or global options.\n23. `git show <commit>` - Show details of a specific commit.\n24. `git archive` - Create an archive of files from a named tree.\n25. `git grep` - Print lines matching a pattern.\n26. `git apply` - Apply a patch to files.\n27. `git blame <file>` - Show what revision and author last modified each line of a file.\n28. `git reflog` - Show reference logs.\n29. `git clean` - Remove untracked files from the working directory.\n30. `git submodule` - Initialize, update, or inspect submodules.\n31. `git shortlog` - Summarize `git log` output.\n32. `git fsck` - Verify the connectivity and validity of objects.\n33. `git pack-refs` - Pack heads and tags for efficient reference storage.\n34. `git rev-parse` - Parse revision (or other object) identifiers.\n35. `git cat-file` - Provide content or type of object.\n36. `git describe` - Give an object a human-readable name.\n37. `git filter-branch` - Rewrite branches.\n38. `git ls-tree` - List the contents of a tree object.\n39. `git update-index` - Register file contents in the index.\n40. `git bundle` - Create and manipulate repository bundles."
+        },
+        {
+            "question": "show all",
+            "answer": "Here is a list of Git commands: \n\n1. `git init` - Initialize a new Git repository.\n2. `git clone <repository>` - Clone an existing repository.\n3. `git add <file>` - Stage changes for commit.\n4. `git commit -m \"message\"` - Commit staged changes with a message.\n5. `git status` - Show the status of changes.\n6. `git log` - View commit history.\n7. `git branch` - List branches or create a new branch.\n8. `git checkout <branch>` - Switch to a different branch.\n9. `git merge <branch>` - Merge a branch into the current branch.\n10. `git fetch` - Fetch updates from a remote repository.\n11. `git pull` - Fetch and merge changes from a remote repository.\n12. `git push` - Push local changes to a remote repository.\n13. `git reset` - Reset current HEAD to a specific state.\n14. `git revert <commit>` - Revert a commit by creating a new commit.\n15. `git stash` - Temporarily save changes that are not yet ready to be committed.\n16. `git remote` - Manage remote repositories.\n17. `git tag` - Create, list, or delete tags.\n18. `git rebase` - Reapply commits on top of another base tip.\n19. `git cherry-pick <commit>` - Apply the changes introduced by some existing commits.\n20. `git bisect` - Use binary search to find the commit that introduced a bug.\n21. `git diff` - Show changes between commits, working directory, and index.\n22. `git config` - Get and set repository or global options.\n23. `git show <commit>` - Show details of a specific commit.\n24. `git archive` - Create an archive of files from a named tree.\n25. `git grep` - Print lines matching a pattern.\n26. `git apply` - Apply a patch to files.\n27. `git blame <file>` - Show what revision and author last modified each line of a file.\n28. `git reflog` - Show reference logs.\n29. `git clean` - Remove untracked files from the working directory.\n30. `git submodule` - Initialize, update, or inspect submodules.\n31. `git shortlog` - Summarize `git log` output.\n32. `git fsck` - Verify the connectivity and validity of objects.\n33. `git pack-refs` - Pack heads and tags for efficient reference storage.\n34. `git rev-parse` - Parse revision (or other object) identifiers.\n35. `git cat-file` - Provide content or type of object.\n36. `git describe` - Give an object a human-readable name.\n37. `git filter-branch` - Rewrite branches.\n38. `git ls-tree` - List the contents of a tree object.\n39. `git update-index` - Register file contents in the index.\n40. `git bundle` - Create and manipulate repository bundles."
+        },
+        {
+            "question": "show all git",
+            "answer": "Here is a list of Git commands: \n\n1. `git init` - Initialize a new Git repository.\n2. `git clone <repository>` - Clone an existing repository.\n3. `git add <file>` - Stage changes for commit.\n4. `git commit -m \"message\"` - Commit staged changes with a message.\n5. `git status` - Show the status of changes.\n6. `git log` - View commit history.\n7. `git branch` - List branches or create a new branch.\n8. `git checkout <branch>` - Switch to a different branch.\n9. `git merge <branch>` - Merge a branch into the current branch.\n10. `git fetch` - Fetch updates from a remote repository.\n11. `git pull` - Fetch and merge changes from a remote repository.\n12. `git push` - Push local changes to a remote repository.\n13. `git reset` - Reset current HEAD to a specific state.\n14. `git revert <commit>` - Revert a commit by creating a new commit.\n15. `git stash` - Temporarily save changes that are not yet ready to be committed.\n16. `git remote` - Manage remote repositories.\n17. `git tag` - Create, list, or delete tags.\n18. `git rebase` - Reapply commits on top of another base tip.\n19. `git cherry-pick <commit>` - Apply the changes introduced by some existing commits.\n20. `git bisect` - Use binary search to find the commit that introduced a bug.\n21. `git diff` - Show changes between commits, working directory, and index.\n22. `git config` - Get and set repository or global options.\n23. `git show <commit>` - Show details of a specific commit.\n24. `git archive` - Create an archive of files from a named tree.\n25. `git grep` - Print lines matching a pattern.\n26. `git apply` - Apply a patch to files.\n27. `git blame <file>` - Show what revision and author last modified each line of a file.\n28. `git reflog` - Show reference logs.\n29. `git clean` - Remove untracked files from the working directory.\n30. `git submodule` - Initialize, update, or inspect submodules.\n31. `git shortlog` - Summarize `git log` output.\n32. `git fsck` - Verify the connectivity and validity of objects.\n33. `git pack-refs` - Pack heads and tags for efficient reference storage.\n34. `git rev-parse` - Parse revision (or other object) identifiers.\n35. `git cat-file` - Provide content or type of object.\n36. `git describe` - Give an object a human-readable name.\n37. `git filter-branch` - Rewrite branches.\n38. `git ls-tree` - List the contents of a tree object.\n39. `git update-index` - Register file contents in the index.\n40. `git bundle` - Create and manipulate repository bundles."
+        },
+        {
+            "question": "all git",
+            "answer": "Here is a list of Git commands: \n\n1. `git init` - Initialize a new Git repository.\n2. `git clone <repository>` - Clone an existing repository.\n3. `git add <file>` - Stage changes for commit.\n4. `git commit -m \"message\"` - Commit staged changes with a message.\n5. `git status` - Show the status of changes.\n6. `git log` - View commit history.\n7. `git branch` - List branches or create a new branch.\n8. `git checkout <branch>` - Switch to a different branch.\n9. `git merge <branch>` - Merge a branch into the current branch.\n10. `git fetch` - Fetch updates from a remote repository.\n11. `git pull` - Fetch and merge changes from a remote repository.\n12. `git push` - Push local changes to a remote repository.\n13. `git reset` - Reset current HEAD to a specific state.\n14. `git revert <commit>` - Revert a commit by creating a new commit.\n15. `git stash` - Temporarily save changes that are not yet ready to be committed.\n16. `git remote` - Manage remote repositories.\n17. `git tag` - Create, list, or delete tags.\n18. `git rebase` - Reapply commits on top of another base tip.\n19. `git cherry-pick <commit>` - Apply the changes introduced by some existing commits.\n20. `git bisect` - Use binary search to find the commit that introduced a bug.\n21. `git diff` - Show changes between commits, working directory, and index.\n22. `git config` - Get and set repository or global options.\n23. `git show <commit>` - Show details of a specific commit.\n24. `git archive` - Create an archive of files from a named tree.\n25. `git grep` - Print lines matching a pattern.\n26. `git apply` - Apply a patch to files.\n27. `git blame <file>` - Show what revision and author last modified each line of a file.\n28. `git reflog` - Show reference logs.\n29. `git clean` - Remove untracked files from the working directory.\n30. `git submodule` - Initialize, update, or inspect submodules.\n31. `git shortlog` - Summarize `git log` output.\n32. `git fsck` - Verify the connectivity and validity of objects.\n33. `git pack-refs` - Pack heads and tags for efficient reference storage.\n34. `git rev-parse` - Parse revision (or other object) identifiers.\n35. `git cat-file` - Provide content or type of object.\n36. `git describe` - Give an object a human-readable name.\n37. `git filter-branch` - Rewrite branches.\n38. `git ls-tree` - List the contents of a tree object.\n39. `git update-index` - Register file contents in the index.\n40. `git bundle` - Create and manipulate repository bundles."
+        },
+        {
+            "question": "show all git command",
+            "answer": "Here is a list of Git commands: \n\n1. `git init` - Initialize a new Git repository.\n2. `git clone <repository>` - Clone an existing repository.\n3. `git add <file>` - Stage changes for commit.\n4. `git commit -m \"message\"` - Commit staged changes with a message.\n5. `git status` - Show the status of changes.\n6. `git log` - View commit history.\n7. `git branch` - List branches or create a new branch.\n8. `git checkout <branch>` - Switch to a different branch.\n9. `git merge <branch>` - Merge a branch into the current branch.\n10. `git fetch` - Fetch updates from a remote repository.\n11. `git pull` - Fetch and merge changes from a remote repository.\n12. `git push` - Push local changes to a remote repository.\n13. `git reset` - Reset current HEAD to a specific state.\n14. `git revert <commit>` - Revert a commit by creating a new commit.\n15. `git stash` - Temporarily save changes that are not yet ready to be committed.\n16. `git remote` - Manage remote repositories.\n17. `git tag` - Create, list, or delete tags.\n18. `git rebase` - Reapply commits on top of another base tip.\n19. `git cherry-pick <commit>` - Apply the changes introduced by some existing commits.\n20. `git bisect` - Use binary search to find the commit that introduced a bug.\n21. `git diff` - Show changes between commits, working directory, and index.\n22. `git config` - Get and set repository or global options.\n23. `git show <commit>` - Show details of a specific commit.\n24. `git archive` - Create an archive of files from a named tree.\n25. `git grep` - Print lines matching a pattern.\n26. `git apply` - Apply a patch to files.\n27. `git blame <file>` - Show what revision and author last modified each line of a file.\n28. `git reflog` - Show reference logs.\n29. `git clean` - Remove untracked files from the working directory.\n30. `git submodule` - Initialize, update, or inspect submodules.\n31. `git shortlog` - Summarize `git log` output.\n32. `git fsck` - Verify the connectivity and validity of objects.\n33. `git pack-refs` - Pack heads and tags for efficient reference storage.\n34. `git rev-parse` - Parse revision (or other object) identifiers.\n35. `git cat-file` - Provide content or type of object.\n36. `git describe` - Give an object a human-readable name.\n37. `git filter-branch` - Rewrite branches.\n38. `git ls-tree` - List the contents of a tree object.\n39. `git update-index` - Register file contents in the index.\n40. `git bundle` - Create and manipulate repository bundles."
+        },
+        {
+            "question": "give me all basic git command",
+            "answer": "Here are some basic Git commands:\n\n1. `git init` - Initialize a new Git repository.\n2. `git clone <repository>` - Clone an existing repository from a URL.\n3. `git add <file>` - Stage changes (add a file to the staging area).\n4. `git commit -m \"message\"` - Commit staged changes with a commit message.\n5. `git status` - Show the status of changes in the working directory and staging area.\n6. `git log` - View commit history.\n7. `git diff` - Show differences between working directory and index (staging area).\n8. `git branch` - List, create, or delete branches.\n9. `git checkout <branch>` - Switch to a different branch.\n10. `git merge <branch>` - Merge a branch into the current branch.\n11. `git pull` - Fetch changes from a remote repository and merge them.\n12. `git push` - Push local commits to a remote repository.\n13. `git remote` - Manage remote repositories (add, remove, list).\n14. `git tag` - Create, list, or delete tags."
+        },
+        {
+            "question": "all basic git command",
+            "answer": "Here are some basic Git commands:\n\n1. `git init` - Initialize a new Git repository.\n2. `git clone <repository>` - Clone an existing repository from a URL.\n3. `git add <file>` - Stage changes (add a file to the staging area).\n4. `git commit -m \"message\"` - Commit staged changes with a commit message.\n5. `git status` - Show the status of changes in the working directory and staging area.\n6. `git log` - View commit history.\n7. `git diff` - Show differences between working directory and index (staging area).\n8. `git branch` - List, create, or delete branches.\n9. `git checkout <branch>` - Switch to a different branch.\n10. `git merge <branch>` - Merge a branch into the current branch.\n11. `git pull` - Fetch changes from a remote repository and merge them.\n12. `git push` - Push local commits to a remote repository.\n13. `git remote` - Manage remote repositories (add, remove, list).\n14. `git tag` - Create, list, or delete tags."
+        },
+        {
+            "question": "give me all advanced git command",
+            "answer": "Here are some advanced Git commands:\n\n1. `git rebase` - Reapply commits on top of another base tip (useful for maintaining a clean project history).\n2. `git cherry-pick <commit>` - Apply the changes introduced by some existing commits.\n3. `git bisect` - Use binary search to find the commit that introduced a bug.\n4. `git stash` - Temporarily save changes that are not yet ready to be committed.\n5. `git reset --hard` - Reset the working directory and index to a specific state, discarding all changes.\n6. `git reflog` - Show reference logs (useful for recovering lost commits).\n7. `git filter-branch` - Rewrite branches (useful for removing sensitive data or modifying history).\n8. `git config --global` - Set or get configuration options at a global level.\n9. `git submodule` - Manage repositories nested inside another repository.\n10. `git bundle` - Create and manipulate repository bundles (for offline transport).\n11. `git archive` - Create an archive of files from a named tree.\n12. `git describe` - Give an object a human-readable name based on its most recent tag.\n13. `git cat-file` - Provide content or type of an object.\n14. `git ls-tree` - List the contents of a tree object.\n15. `git pack-refs` - Pack heads and tags for efficient reference storage."
+        },
+        {
+            "question": "all advanced git command",
+            "answer": "Here are some advanced Git commands:\n\n1. `git rebase` - Reapply commits on top of another base tip (useful for maintaining a clean project history).\n2. `git cherry-pick <commit>` - Apply the changes introduced by some existing commits.\n3. `git bisect` - Use binary search to find the commit that introduced a bug.\n4. `git stash` - Temporarily save changes that are not yet ready to be committed.\n5. `git reset --hard` - Reset the working directory and index to a specific state, discarding all changes.\n6. `git reflog` - Show reference logs (useful for recovering lost commits).\n7. `git filter-branch` - Rewrite branches (useful for removing sensitive data or modifying history).\n8. `git config --global` - Set or get configuration options at a global level.\n9. `git submodule` - Manage repositories nested inside another repository.\n10. `git bundle` - Create and manipulate repository bundles (for offline transport).\n11. `git archive` - Create an archive of files from a named tree.\n12. `git describe` - Give an object a human-readable name based on its most recent tag.\n13. `git cat-file` - Provide content or type of an object.\n14. `git ls-tree` - List the contents of a tree object.\n15. `git pack-refs` - Pack heads and tags for efficient reference storage."
+        },
+        {
+            "question": "git shortlog",
+            "answer": "Summarize the output of `git log` by grouping commits by author and providing a summary of their contributions."
+        },
+        {
+            "question": "git fsck",
+            "answer": "Verify the connectivity and validity of objects in the repository, ensuring that all objects are properly referenced and not corrupted."
+        },
+        {
+            "question": "git pack-refs",
+            "answer": "Pack heads and tags into a single file to optimize storage and performance when dealing with a large number of references."
+        },
+        {
+            "question": "git rev-parse",
+            "answer": "Parse revision (or other object) identifiers, converting them into their corresponding object names or other useful information."
+        },
+        {
+            "question": "git cat-file",
+            "answer": "Display the content or type of an object (e.g., commit, tree, or blob) to examine its data or structure."
+        },
+        {
+            "question": "git describe",
+            "answer": "Provide a human-readable name for a commit based on its most recent tag, showing a version-like description."
+        },
+        {
+            "question": "git filter-branch",
+            "answer": "Rewrite branches by applying filters to commits, useful for tasks like removing sensitive data or cleaning up history."
+        },
+        {
+            "question": "git ls-tree",
+            "answer": "List the contents of a tree object, showing files and directories in a specific commit or branch."
+        },
+        {
+            "question": "git update-index",
+            "answer": "Update the index with file contents, allowing you to modify the staging area without changing the working directory."
+        },
+        {
+            "question": "git bundle",
+            "answer": "Create and manipulate repository bundles, which are useful for transporting Git repositories as a single file."
+        },
+        {
+            "question": "all git init",
+            "answer": "**Initialize a new Git repository.**\n\nUsage:\n1. `git init [directory]` - Initialize a new repository in the specified directory.\n2. `git init --bare [directory]` - Initialize a bare repository, useful for remote repositories."
+        },
+        {
+            "question": "all git clone",
+            "answer": "**Clone an existing repository.**\n\nUsage:\n1. `git clone <repository> [directory]` - Clone the repository into the specified directory.\n2. `git clone --depth [number] <repository>` - Create a shallow clone with a history truncated to the specified number of commits.\n3. `git clone --branch <branch> <repository>` - Clone a specific branch."
+        },
+        {
+            "question": "all git add",
+            "answer": "**Stage changes for commit.**\n\nUsage:\n1. `git add [file]` - Stage a specific file.\n2. `git add .` - Stage all changes in the current directory.\n3. `git add -p` - Stage changes interactively, allowing you to select chunks to add."
+        },
+        {
+            "question": "all git commit -m \"message\"",
+            "answer": "**Commit staged changes with a message.**\n\nUsage:\n1. `git commit -m \"message\"` - Commit with a descriptive message.\n2. `git commit -a -m \"message\"` - Commit all modified files (except new files).\n3. `git commit --amend` - Amend the previous commit with a new message or changes."
+        },
+        {
+            "question": "all git status",
+            "answer": "**Show the status of changes.**\n\nUsage:\n1. `git status` - Show the status of changes in the working directory.\n2. `git status -s` - Show the status in a short format.\n3. `git status --ignored` - Show ignored files as well."
+        },
+        {
+            "question": "all git log",
+            "answer": "**View commit history.**\n\nUsage:\n1. `git log` - Show the commit history.\n2. `git log --oneline` - Show the commit history in a condensed format.\n3. `git log --graph` - Show the commit history as a graph.\n4. `git log --author=<name>` - Filter commits by author.\n5. `git log --since=<date>` - Show commits since a specific date."
+        },
+        {
+            "question": "all git branch",
+            "answer": "**List branches or create a new branch.**\n\nUsage:\n1. `git branch` - List all local branches.\n2. `git branch <name>` - Create a new branch.\n3. `git branch -d <name>` - Delete a branch.\n4. `git branch -m <old-name> <new-name>` - Rename a branch."
+        },
+        {
+            "question": "all git checkout",
+            "answer": "**Switch to a different branch or restore files.**\n\nUsage:\n1. `git checkout <branch>` - Switch to the specified branch.\n2. `git checkout <file>` - Restore a specific file from the index.\n3. `git checkout -b <new-branch>` - Create and switch to a new branch.\n4. `git checkout --orphan <branch>` - Create a new branch with no previous commit history."
+        },
+        {
+            "question": "all git merge",
+            "answer": "**Merge a branch into the current branch.**\n\nUsage:\n1. `git merge <branch>` - Merge the specified branch into the current branch.\n2. `git merge --no-ff <branch>` - Perform a merge with a merge commit even if the merge could be resolved with a fast-forward.\n3. `git merge --squash <branch>` - Squash the changes from the branch into a single commit."
+        },
+        {
+            "question": "all git fetch",
+            "answer": "**Fetch updates from a remote repository.**\n\nUsage:\n1. `git fetch` - Fetch changes from the default remote repository.\n2. `git fetch <remote>` - Fetch changes from the specified remote repository.\n3. `git fetch --all` - Fetch changes from all configured remotes."
+        },
+        {
+            "question": "all git pull",
+            "answer": "**Fetch and merge changes from a remote repository.**\n\nUsage:\n1. `git pull` - Fetch and merge changes from the default remote branch.\n2. `git pull <remote> <branch>` - Fetch and merge changes from a specific remote and branch.\n3. `git pull --rebase` - Fetch changes and rebase the current branch on top of the fetched branch."
+        },
+        {
+            "question": "all git push",
+            "answer": "**Push local changes to a remote repository.**\n\nUsage:\n1. `git push` - Push changes to the default remote branch.\n2. `git push <remote> <branch>` - Push changes to a specific remote branch.\n3. `git push --force` - Force push changes, which can overwrite remote history.\n4. `git push --tags` - Push all tags to the remote repository."
+        },
+        {
+            "question": "all git reset",
+            "answer": "**Reset current HEAD to a specific state.**\n\nUsage:\n1. `git reset` - Reset the index but not the working directory.\n2. `git reset --soft <commit>` - Reset HEAD to a specific commit and keep changes staged.\n3. `git reset --hard <commit>` - Reset HEAD to a specific commit and discard all changes in the working directory."
+        },
+        {
+            "question": "all git revert",
+            "answer": "**Revert a commit by creating a new commit.**\n\nUsage:\n1. `git revert <commit>` - Revert a specific commit and create a new commit.\n2. `git revert --no-commit <commit>` - Revert a commit but do not create a new commit automatically."
+        },
+        {
+            "question": "all git stash",
+            "answer": "**Temporarily save changes that are not yet ready to be committed.**\n\nUsage:\n1. `git stash` - Save the current changes and revert the working directory to the last commit.\n2. `git stash pop` - Apply the most recent stash and remove it from the stash list.\n3. `git stash list` - List all stashes.\n4. `git stash apply <stash>` - Apply a specific stash without removing it from the stash list."
+        },
+        {
+            "question": "all git remote",
+            "answer": "**Manage remote repositories.**\n\nUsage:\n1. `git remote` - List all remote repositories.\n2. `git remote add <name> <url>` - Add a new remote repository.\n3. `git remote remove <name>` - Remove a remote repository.\n4. `git remote set-url <name> <url>` - Change the URL of an existing remote repository."
+        },
+        {
+            "question": "all git tag",
+            "answer": "**Create, list, or delete tags.**\n\nUsage:\n1. `git tag` - List all tags.\n2. `git tag <name>` - Create a new tag.\n3. `git tag -d <name>` - Delete a tag.\n4. `git tag -a <name> -m \"message\"` - Create an annotated tag with a message."
+        },
+        {
+            "question": "all git rebase",
+            "answer": "**Reapply commits on top of another base tip.**\n\nUsage:\n1. `git rebase <branch>` - Reapply commits on top of the specified branch.\n2. `git rebase -i <commit>` - Reapply commits interactively to modify commits.\n3. `git rebase --onto <new-base> <old-base> <branch>` - Rebase commits onto a new base."
+        },
+        {
+            "question": "all git cherry-pick",
+            "answer": "**Apply the changes introduced by some existing commits.**\n\nUsage:\n1. `git cherry-pick <commit>` - Apply the changes from a specific commit.\n2. `git cherry-pick --no-commit <commit>` - Apply the changes from a commit without creating a new commit."
+        },
+        {
+            "question": "all git bisect",
+            "answer": "**Use binary search to find the commit that introduced a bug.**\n\nUsage:\n1. `git bisect start` - Start a new bisect session.\n2. `git bisect bad` - Mark the current commit as bad.\n3. `git bisect good <commit>` - Mark a commit as good.\n4. `git bisect reset` - End the bisect session and return to the original branch."
+        },
+        {
+            "question": "all git diff",
+            "answer": "**Show changes between commits, working directory, and index.**\n\nUsage:\n1. `git diff` - Show changes in the working directory relative to the index.\n2. `git diff <commit> <commit>` - Show changes between two commits.\n3. `git diff --staged` - Show changes between the index and the last commit."
+        },
+        {
+            "question": "all git config",
+            "answer": "**Get and set repository or global options.**\n\nUsage:\n1. `git config --global <key> <value>` - Set a global configuration option.\n2. `git config --local <key> <value>` - Set a local configuration option for the repository.\n3. `git config --list` - List all configuration settings."
+        },
+        {
+            "question": "all git show",
+            "answer": "**Show details of a specific commit.**\n\nUsage:\n1. `git show <commit>` - Show detailed information about a commit.\n2. `git show <tag>` - Show details of a tag.\n3. `git show --stat <commit>` - Show commit details with a summary of changes."
+        },
+        {
+            "question": "all git archive",
+            "answer": "**Create an archive of files from a named tree.**\n\nUsage:\n1. `git archive <branch>` - Create an archive from the specified branch.\n2. `git archive --format=zip <branch>` - Create a ZIP archive from the specified branch."
+        },
+        {
+            "question": "all git grep",
+            "answer": "**Print lines matching a pattern.**\n\nUsage:\n1. `git grep <pattern>` - Search for a pattern in the repository.\n2. `git grep -i <pattern>` - Search for a pattern case-insensitively.\n3. `git grep --cached <pattern>` - Search for a pattern in the index."
+        },
+        {
+            "question": "all git apply",
+            "answer": "**Apply a patch to files.**\n\nUsage:\n1. `git apply <patch>` - Apply a patch file to the working directory.\n2. `git apply --index <patch>` - Apply a patch and stage the changes."
+        },
+        {
+            "question": "all git blame",
+            "answer": "**Show what revision and author last modified each line of a file.**\n\nUsage:\n1. `git blame <file>` - Show who last modified each line of a file.\n2. `git blame -L <start>,<end> <file>` - Show blame information for a specific range of lines."
+        },
+        {
+            "question": "all git reflog",
+            "answer": "**Show reference logs.**\n\nUsage:\n1. `git reflog` - Show the reflog for the current branch.\n2. `git reflog expire` - Expire old reflog entries."
+        },
+        {
+            "question": "all git clean",
+            "answer": "**Remove untracked files from the working directory.**\n\nUsage:\n1. `git clean -f` - Remove untracked files.\n2. `git clean -fd` - Remove untracked files and directories.\n3. `git clean -n` - Show which files would be removed."
+        },
+        {
+            "question": "all git submodule",
+            "answer": "**Initialize, update, or inspect submodules.**\n\nUsage:\n1. `git submodule init` - Initialize submodules for the repository.\n2. `git submodule update` - Update the submodules to match the commit in the superproject.\n3. `git submodule status` - Show the status of submodules."
+        },
+        {
+            "question": "all git shortlog",
+            "answer": "**Summarize `git log` output.**\n\nUsage:\n1. `git shortlog` - Summarize the log output by author.\n2. `git shortlog -s` - Show only the number of commits per author.\n3. `git shortlog -n` - Sort by the number of commits."
+        },
+        {
+            "question": "all git fsck",
+            "answer": "**Verify the connectivity and validity of objects.**\n\nUsage:\n1. `git fsck` - Check the integrity of the Git database.\n2. `git fsck --full` - Perform a more thorough check."
+        },
+        {
+            "question": "all git pack-refs",
+            "answer": "**Pack heads and tags for efficient reference storage.**\n\nUsage:\n1. `git pack-refs` - Pack all references into a single file.\n2. `git pack-refs --all` - Pack all references, including tags and heads."
+        },
+        {
+            "question": "all git rev-parse",
+            "answer": "**Parse revision (or other object) identifiers.**\n\nUsage:\n1. `git rev-parse <revision>` - Parse a revision or other object identifier.\n2. `git rev-parse --abbrev-ref HEAD` - Show the name of the current branch."
+        },
+        {
+            "question": "all git cat-file",
+            "answer": "**Provide content or type of object.**\n\nUsage:\n1. `git cat-file -t <object>` - Show the type of an object.\n2. `git cat-file -p <object>` - Show the content of an object."
+        },
+        {
+            "question": "all git describe",
+            "answer": "**Give an object a human-readable name.**\n\nUsage:\n1. `git describe` - Show the most recent tag reachable from the current commit.\n2. `git describe --tags` - Describe the object using the nearest tag."
+        },
+        {
+            "question": "all git filter-branch",
+            "answer": "**Rewrite branches.**\n\nUsage:\n1. `git filter-branch --tree-filter <command> <branch>` - Rewrite the branch history with a tree filter.\n2. `git filter-branch --env-filter <command>` - Rewrite history with an environment filter."
+        },
+        {
+            "question": "all git ls-tree",
+            "answer": "**List the contents of a tree object.**\n\nUsage:\n1. `git ls-tree <tree>` - List the contents of the specified tree object.\n2. `git ls-tree -r <tree>` - Recursively list contents of the tree object."
+        },
+        {
+            "question": "all git update-index",
+            "answer": "**Register file contents in the index.**\n\nUsage:\n1. `git update-index --add <file>` - Add a file to the index.\n2. `git update-index --assume-unchanged <file>` - Mark a file as unchanged."
+        },
+        {
+            "question": "all git bundle",
+            "answer": "**Create and manipulate repository bundles.**\n\nUsage:\n1. `git bundle create <file> <ref>` - Create a bundle file containing a repository’s history.\n2. `git bundle verify <file>` - Verify the integrity of a bundle file."
         }
+
 
     ]
 };
+
