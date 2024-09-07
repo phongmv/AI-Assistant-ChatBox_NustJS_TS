@@ -804,46 +804,6 @@ export const questions = {
             "answer": "In the next decade, AI is expected to evolve with advancements in general artificial intelligence (AGI), increased integration into daily life through smart devices, more sophisticated AI ethics and regulations, and enhanced capabilities in areas such as autonomous vehicles and personalized AI-driven experiences."
         },
         {
-            "question": "How to you declare a variable in JavaScript?",
-            "syntax": "let variableName = value;",
-            "answer": "You use `let` to declare a variable that can be reassigned, and `const` to declare a variable that cannot be reassigned. For example: `let age = 25;` or `const name = 'John';`."
-        },
-        {
-            "question": "How to you define a function in JavaScript?",
-            "syntax": "function functionName(parameters) { /* function body */ }",
-            "answer": "You define a function using the `function` keyword. For example: `function greet(name) { return 'Hello ' + name; }`."
-        },
-        {
-            "question": "How to you create an object in JavaScript?",
-            "syntax": "let objectName = { key1: value1, key2: value2 };",
-            "answer": "You create an object using curly braces with key-value pairs. For example: `let person = { name: 'Alice', age: 30 };`."
-        },
-        {
-            "question": "How to you handle errors in JavaScript?",
-            "syntax": "try { /* code */ } catch (error) { /* error handling code */ }",
-            "answer": "You use `try...catch` to handle errors. For example: `try { riskyOperation(); } catch (error) { console.error(error); }`."
-        },
-        {
-            "question": "How to you create an array in JavaScript?",
-            "syntax": "let arrayName = [item1, item2, item3];",
-            "answer": "You create an array using square brackets with items separated by commas. For example: `let numbers = [1, 2, 3];`."
-        },
-        {
-            "question": "How to you add an element to an array in JavaScript?",
-            "syntax": "arrayName.push(element);",
-            "answer": "You use the `push` method to add an element to the end of an array. For example: `numbers.push(4);`."
-        },
-        {
-            "question": "How to remove an element from an array in JavaScript?",
-            "syntax": "arrayName.pop();",
-            "answer": "Use the `pop` method to remove the last element from an array. For example: `numbers.pop();`."
-        },
-        {
-            "question": "How to iterate over an array in JavaScript?",
-            "syntax": "arrayName.forEach(element => { /* code */ });",
-            "answer": "Use the `forEach` method to iterate over each element of the array. For example: `numbers.forEach(number => console.log(number));`."
-        },
-        {
             "question": "How to declare a variable in Python?",
             "syntax": "variable_name = value",
             "answer": "Assign a value to a variable name. For example: `age = 25` or `name = 'John'`."
@@ -882,76 +842,6 @@ export const questions = {
             "question": "How to create a dictionary in Python?",
             "syntax": "dict_name = {key1: value1, key2: value2}",
             "answer": "Use curly braces with key-value pairs. For example: `person = {'name': 'Alice', 'age': 30}`."
-        },
-        {
-            "question": "How to declare a variable in C/C++?",
-            "syntax": "type variableName = value;",
-            "answer": "Declare a variable with a type, name, and value. For example: `int age = 25;` or `char name[] = 'John';`."
-        },
-        {
-            "question": "How to define a function in C/C++?",
-            "syntax": "returnType functionName(parameters) { /* function body */ }",
-            "answer": "Define with a return type, name, and parameters. For example: `int add(int a, int b) { return a + b; }`."
-        },
-        {
-            "question": "How to create an array in C/C++?",
-            "syntax": "type arrayName[size] = {value1, value2, value3};",
-            "answer": "Create with a type, name, size, and values. For example: `int numbers[3] = {1, 2, 3};`."
-        },
-        {
-            "question": "How to handle exceptions in C++?",
-            "syntax": "try {\n    // code\n} catch (ExceptionType& e) {\n    // handle exception\n}",
-            "answer": "Use `try...catch` blocks. For example: `try { riskyOperation(); } catch (const std::exception& e) { std::cerr << e.what(); }`."
-        },
-        {
-            "question": "How to print output in C/C++?",
-            "syntax": "printf(\"format string\", variables); // C\ncout << variables; // C++",
-            "answer": "In C, use `printf`. In C++, use `cout`. For example: `printf(\"%d\", age);` in C or `cout << age;` in C++."
-        },
-        {
-            "question": "How to allocate memory dynamically in C/C++?",
-            "syntax": "pointer = (type*)malloc(size); // C\npointer = new type; // C++",
-            "answer": "In C, use `malloc`. In C++, use `new`. For example: `int* ptr = (int*)malloc(sizeof(int));` in C or `int* ptr = new int;` in C++."
-        },
-        {
-            "question": "How to free memory in C/C++?",
-            "syntax": "free(pointer); // C\ndelete pointer; // C++",
-            "answer": "In C, use `free`. In C++, use `delete`. For example: `free(ptr);` in C or `delete ptr;` in C++."
-        },
-        {
-            "question": "How to declare a variable in Java?",
-            "syntax": "type variableName = value;",
-            "answer": "Declare with a type, name, and value. For example: `int age = 25;` or `String name = 'John';`."
-        },
-        {
-            "question": "How to define a method in Java?",
-            "syntax": "returnType methodName(parameters) { /* method body */ }",
-            "answer": "Define with a return type, name, and parameters. For example: `int add(int a, int b) { return a + b; }`."
-        },
-        {
-            "question": "How to create an array in Java?",
-            "syntax": "type[] arrayName = new type[size];",
-            "answer": "Create with a type, name, and size. For example: `int[] numbers = new int[3];`."
-        },
-        {
-            "question": "How to handle exceptions in Java?",
-            "syntax": "try {\n    // code\n} catch (ExceptionType e) {\n    // handle exception\n}",
-            "answer": "Use `try...catch` blocks. For example: `try { riskyOperation(); } catch (Exception e) { e.printStackTrace(); }`."
-        },
-        {
-            "question": "How to print output in Java?",
-            "syntax": "System.out.println(\"message\");",
-            "answer": "Use `System.out.println`. For example: `System.out.println(\"Hello, world!\");`."
-        },
-        {
-            "question": "How to create a class in Java?",
-            "syntax": "class ClassName {\n    // fields and methods\n}",
-            "answer": "Create with the `class` keyword. For example: `class Person {\n    String name;\n    int age;\n}`."
-        },
-        {
-            "question": "How to create an object in Java?",
-            "syntax": "ClassName objectName = new ClassName();",
-            "answer": "Create with `new` keyword and class constructor. For example: `Person person = new Person();`."
         },
         {
             "question": "What is the weather like today?",
@@ -4266,10 +4156,6 @@ export const questions = {
         {
             "question": "Boss skill",
             "answer": "Jin is known for always striving for innovation and creativity."
-        },
-        {
-            "question": "Boss language",
-            "answer": "Jin's favorite programming language is JavaScript."
         },
         {
             "question": "Boss technology",
