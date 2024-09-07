@@ -5378,6 +5378,10 @@ export const questions = {
         {
             "question": "show all git bundle",
             "answer": "**Create and manipulate repository bundles.**\n\nUsage:\n1. `git bundle create <file> <ref>` - Create a bundle file containing a repository’s history.\n2. `git bundle verify <file>` - Verify the integrity of a bundle file."
+        },
+        {
+            "question": "what programming language created you?",
+            "answer": "I was created using various technologies, including JavaScript and libraries like Nuxt.js."
         }
     ]
 };
