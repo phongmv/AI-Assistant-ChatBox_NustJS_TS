@@ -3512,6 +3512,497 @@ export const questions = {
             "question": "Let’s do it",
             "answer": "Great! What would you like to start or work on?"
         },
-
+        {
+            "question": "git rebase vs Git merge?",
+            "answer": "Git rebase and Git merge are both used to integrate changes from one branch into another. Rebase rewrites commit history by applying commits from one branch onto another, creating a linear history. Merge, on the other hand, combines the histories of two branches without altering their original commits, resulting in a merge commit. Rebase is useful for maintaining a clean, linear project history, while merge is better for preserving the context of feature branches."
+        },
+        {
+            "question": "rebase vs merge?",
+            "answer": "Rebase applies commits from one branch onto another, creating a linear history, whereas merge combines the branches' histories, resulting in a merge commit. Rebase is ideal for clean, linear histories, while merge preserves the context of branch development."
+        },
+        {
+            "question": "git init vs git clone?",
+            "answer": "`git init` initializes a new Git repository in a directory, while `git clone` creates a copy of an existing repository from a remote source."
+        },
+        {
+            "question": "git pull vs git fetch?",
+            "answer": "`git pull` fetches changes from a remote repository and merges them into the current branch, while `git fetch` only retrieves changes without merging."
+        },
+        {
+            "question": "git add vs git commit?",
+            "answer": "`git add` stages changes to be committed, whereas `git commit` creates a snapshot of the staged changes and adds it to the repository history."
+        },
+        {
+            "question": "git status vs git diff?",
+            "answer": "`git status` shows the current state of the working directory and staging area, including changes to be committed, while `git diff` shows the differences between the working directory and the staging area or between commits."
+        },
+        {
+            "question": "git reset vs git revert?",
+            "answer": "`git reset` undoes changes by moving the branch pointer and optionally modifying the working directory, while `git revert` creates a new commit that undoes changes made by a previous commit."
+        },
+        {
+            "question": "git log vs git reflog?",
+            "answer": "`git log` displays the commit history, whereas `git reflog` shows the history of all actions that changed the branch tips, including commits, checkouts, and resets."
+        },
+        {
+            "question": "git branch vs git checkout?",
+            "answer": "`git branch` manages branches in the repository, such as creating or deleting them, while `git checkout` switches between branches or restores files to a specific state."
+        },
+        {
+            "question": "git merge vs git rebase?",
+            "answer": "`git merge` combines changes from different branches and creates a merge commit, while `git rebase` applies commits from one branch onto another, creating a linear history."
+        },
+        {
+            "question": "git stash vs git stash pop?",
+            "answer": "`git stash` saves uncommitted changes temporarily, while `git stash pop` applies the stashed changes and removes them from the stash list."
+        },
+        {
+            "question": "git cherry-pick vs git rebase?",
+            "answer": "`git cherry-pick` applies changes from a specific commit to the current branch, while `git rebase` moves or replays a series of commits onto another branch."
+        },
+        {
+            "question": "git tag vs git branch?",
+            "answer": "`git tag` creates references to specific commits for marking releases, while `git branch` manages separate lines of development within a repository."
+        },
+        {
+            "question": "git remote vs git push?",
+            "answer": "`git remote` manages remote repository references, while `git push` uploads local branch commits to a remote repository."
+        },
+        {
+            "question": "git rm vs git restore?",
+            "answer": "`git rm` removes files from the working directory and staging area, while `git restore` can be used to discard changes or restore files from a commit or stash."
+        },
+        {
+            "question": "git log --oneline vs git log?",
+            "answer": "`git log --oneline` displays a simplified, one-line-per-commit view of the commit history, while `git log` provides detailed commit information."
+        },
+        {
+            "question": "git diff vs git diff --cached?",
+            "answer": "`git diff` shows differences between the working directory and the index (staging area), while `git diff --cached` shows differences between the index and the last commit."
+        },
+        {
+            "question": "git log --graph vs git log?",
+            "answer": "`git log --graph` displays a visual representation of the commit history with branching and merging, while `git log` shows a linear list of commits."
+        },
+        {
+            "question": "git rebase --interactive vs git rebase?",
+            "answer": "`git rebase --interactive` allows for interactive editing of commits during a rebase, while `git rebase` performs a non-interactive rebase by default."
+        },
+        {
+            "question": "git clean vs git reset?",
+            "answer": "`git clean` removes untracked files from the working directory, while `git reset` changes the branch pointer and can optionally modify the working directory."
+        },
+        {
+            "question": "git status vs git diff --name-only?",
+            "answer": "`git status` shows the state of the working directory and staging area, while `git diff --name-only` lists only the names of changed files."
+        },
+        {
+            "question": "git merge --no-ff vs git merge?",
+            "answer": "`git merge --no-ff` forces the creation of a merge commit even if the merge could be fast-forwarded, while `git merge` performs a merge that might fast-forward if possible."
+        },
+        {
+            "question": "git log --author vs git log?",
+            "answer": "`git log --author` filters commits by a specific author, while `git log` displays all commits without filtering by author."
+        },
+        {
+            "question": "git rebase --onto vs git rebase?",
+            "answer": "`git rebase --onto` allows you to specify a new base commit for a series of commits, while `git rebase` uses the upstream commit as the base by default."
+        },
+        {
+            "question": "git fetch vs git pull?",
+            "answer": "`git fetch` retrieves changes from a remote repository without merging, while `git pull` fetches changes and merges them into the current branch."
+        },
+        {
+            "question": "git push --force vs git push?",
+            "answer": "`git push --force` overwrites remote branch history, potentially causing loss of commits, while `git push` updates the remote branch with local commits without overwriting."
+        },
+        {
+            "question": "git reflog vs git log?",
+            "answer": "`git reflog` shows a log of all actions that modified branch tips, including resets and checkouts, while `git log` shows the commit history of the branch."
+        },
+        {
+            "question": "git log --since vs git log?",
+            "answer": "`git log --since` filters commits by a starting date, showing commits after that date, while `git log` shows the full commit history."
+        },
+        {
+            "question": "git branch -a vs git branch?",
+            "answer": "`git branch -a` lists all branches, including remote branches, while `git branch` lists only local branches."
+        },
+        {
+            "question": "git show vs git log?",
+            "answer": "`git show` displays detailed information about a specific commit, including changes and metadata, while `git log` shows the commit history."
+        },
+        {
+            "question": "git diff --stat vs git diff?",
+            "answer": "`git diff --stat` provides a summary of changes with file names and the number of changes, while `git diff` shows detailed line-by-line differences."
+        },
+        {
+            "question": "git tag -d vs git tag?",
+            "answer": "`git tag -d` deletes a tag from the local repository, while `git tag` lists or creates tags."
+        },
+        {
+            "question": "git reset --hard vs git reset --soft?",
+            "answer": "`git reset --hard` discards changes in the working directory and staging area, while `git reset --soft` keeps changes in the working directory and stages them."
+        },
+        {
+            "question": "git stash drop vs git stash pop?",
+            "answer": "`git stash drop` removes a specific stash entry, while `git stash pop` applies the most recent stash and removes it from the stash list."
+        },
+        {
+            "question": "git config --global vs git config?",
+            "answer": "`git config --global` sets configuration options for all repositories for the current user, while `git config` sets options for the current repository only."
+        },
+        {
+            "question": "git remote -v vs git remote?",
+            "answer": "`git remote -v` lists remote repositories with their URLs, while `git remote` shows the names of remote repositories."
+        },
+        {
+            "question": "git cherry-pick --abort vs git cherry-pick?",
+            "answer": "`git cherry-pick --abort` cancels an ongoing cherry-pick operation, while `git cherry-pick` applies the changes from a specific commit to the current branch."
+        },
+        {
+            "question": "git diff HEAD vs git diff?",
+            "answer": "`git diff HEAD` shows the differences between the working directory and the latest commit, while `git diff` compares the working directory to the staging area."
+        },
+        {
+            "question": "git add -p vs git add?",
+            "answer": "`git add -p` allows you to interactively select changes to be staged, while `git add` stages all changes in the specified files."
+        },
+        {
+            "question": "git ls-files vs git status?",
+            "answer": "`git ls-files` lists all files tracked by Git, while `git status` shows changes to tracked files and untracked files."
+        },
+        {
+            "question": "git rm --cached vs git rm?",
+            "answer": "`git rm --cached` removes files from the staging area but keeps them in the working directory, while `git rm` removes files from both the staging area and the working directory."
+        },
+        {
+            "question": "git pull --rebase vs git pull?",
+            "answer": "`git pull --rebase` fetches changes and applies them on top of your local commits, while `git pull` fetches changes and merges them into your local branch."
+        },
+        {
+            "question": "git archive vs git clone?",
+            "answer": "`git archive` creates a zip or tar archive of the repository's contents, while `git clone` creates a local copy of a remote repository."
+        },
+        {
+            "question": "git commit --amend vs git commit?",
+            "answer": "`git commit --amend` modifies the most recent commit, allowing you to edit the commit message or add changes, while `git commit` creates a new commit with staged changes."
+        },
+        {
+            "question": "git branch --merged vs git branch?",
+            "answer": "`git branch --merged` lists branches that have been merged into the current branch, while `git branch` lists all branches."
+        },
+        {
+            "question": "git reflog expire vs git reflog?",
+            "answer": "`git reflog expire` removes entries from the reflog based on specified criteria, while `git reflog` shows the history of all actions that modified branch tips."
+        },
+        {
+            "question": "git log --patch vs git log?",
+            "answer": "`git log --patch` shows commit logs along with the changes introduced by each commit, while `git log` only shows commit messages and metadata."
+        },
+        {
+            "question": "git remote prune vs git remote?",
+            "answer": "`git remote prune` cleans up stale references to remote branches, while `git remote` manages remote repository references."
+        },
+        {
+            "question": "git diff --word-diff vs git diff?",
+            "answer": "`git diff --word-diff` shows changes at the word level rather than the line level, while `git diff` shows changes at the line level."
+        },
+        {
+            "question": "git reset --merge vs git reset?",
+            "answer": "`git reset --merge` resets the current branch to a specified commit while keeping the working directory changes, while `git reset` can modify the working directory depending on the option used."
+        },
+        {
+            "question": "git submodule vs git clone?",
+            "answer": "`git submodule` manages sub-repositories within a Git repository, while `git clone` creates a local copy of a remote repository."
+        },
+        {
+            "question": "git show --name-only vs git show?",
+            "answer": "`git show --name-only` displays commit details along with the names of modified files, while `git show` provides detailed information about a specific commit."
+        },
+        {
+            "question": "git stash list vs git stash?",
+            "answer": "`git stash list` lists all stashes, while `git stash` saves changes to a new stash."
+        },
+        {
+            "question": "git log --decorate vs git log?",
+            "answer": "`git log --decorate` shows branch and tag names along with commit logs, while `git log` shows only the commit history."
+        },
+        {
+            "question": "git branch -r vs git branch?",
+            "answer": "`git branch -r` lists remote-tracking branches, while `git branch` lists local branches."
+        },
+        {
+            "question": "git blame vs git log?",
+            "answer": "`git blame` shows who last modified each line of a file, while `git log` displays the commit history of a branch."
+        },
+        {
+            "question": "git diff --color vs git diff?",
+            "answer": "`git diff --color` highlights changes with colors for better readability, while `git diff` shows changes without color by default."
+        },
+        {
+            "question": "git status -s vs git status?",
+            "answer": "`git status -s` provides a shorter, more compact view of the working directory status, while `git status` gives a more detailed description."
+        },
+        {
+            "question": "git config --list vs git config?",
+            "answer": "`git config --list` lists all Git configuration settings, while `git config` allows you to set or get specific configuration options."
+        },
+        {
+            "question": "git reflog show vs git reflog?",
+            "answer": "`git reflog show` provides detailed information about reflog entries, while `git reflog` displays a simple log of actions modifying branch tips."
+        },
+        {
+            "question": "git commit -m vs git commit?",
+            "answer": "`git commit -m` allows you to specify a commit message directly on the command line, while `git commit` opens an editor for writing a commit message."
+        },
+        {
+            "question": "git archive --format vs git archive?",
+            "answer": "`git archive --format` specifies the format of the archive (e.g., zip, tar), while `git archive` creates an archive of the repository's contents."
+        },
+        {
+            "question": "git merge --squash vs git merge?",
+            "answer": "`git merge --squash` combines all changes from a branch into a single commit, while `git merge` creates a merge commit with the combined history."
+        },
+        {
+            "question": "git diff --name-status vs git diff?",
+            "answer": "`git diff --name-status` shows changes with status codes (e.g., added, modified), while `git diff` shows detailed line-by-line differences."
+        },
+        {
+            "question": "git fetch --all vs git fetch?",
+            "answer": "`git fetch --all` retrieves updates from all remote repositories, while `git fetch` fetches updates from the default remote repository."
+        },
+        {
+            "question": "git rebase -i vs git rebase?",
+            "answer": "`git rebase -i` allows for interactive rebase, enabling editing and reordering of commits, while `git rebase` performs a standard rebase."
+        },
+        {
+            "question": "git show --pretty vs git show?",
+            "answer": "`git show --pretty` formats the commit output according to specified options, while `git show` provides default commit details."
+        },
+        {
+            "question": "git submodule update vs git submodule?",
+            "answer": "`git submodule update` updates submodules to match the version specified in the superproject, while `git submodule` manages submodules in a repository."
+        },
+        {
+            "question": "git status -uno vs git status?",
+            "answer": "`git status -uno` omits untracked files from the status output, while `git status` includes all files, including untracked ones."
+        },
+        {
+            "question": "git commit --allow-empty vs git commit?",
+            "answer": "`git commit --allow-empty` creates a commit even if there are no changes, while `git commit` requires changes to be staged."
+        },
+        {
+            "question": "git log --oneline vs git log?",
+            "answer": "`git log --oneline` shows a simplified view of commit history with one line per commit, while `git log` provides detailed commit information."
+        },
+        {
+            "question": "git diff --staged vs git diff?",
+            "answer": "`git diff --staged` shows changes between the index and the last commit, while `git diff` shows changes between the working directory and the index."
+        },
+        {
+            "question": "git reflog expire --expire vs git reflog?",
+            "answer": "`git reflog expire --expire` removes entries older than a specified date, while `git reflog` shows all reflog entries."
+        },
+        {
+            "question": "git submodule status vs git submodule?",
+            "answer": "`git submodule status` displays the current state of submodules, while `git submodule` manages submodules in a repository."
+        },
+        {
+            "question": "git diff --name-only vs git diff?",
+            "answer": "`git diff --name-only` lists only the names of changed files, while `git diff` shows the detailed differences."
+        },
+        {
+            "question": "git log --pretty=format vs git log?",
+            "answer": "`git log --pretty=format` allows custom formatting of log output, while `git log` provides default commit history formatting."
+        },
+        {
+            "question": "git tag -a vs git tag?",
+            "answer": "`git tag -a` creates an annotated tag with a message, while `git tag` creates a lightweight tag."
+        },
+        {
+            "question": "git rm -r vs git rm?",
+            "answer": "`git rm -r` removes files and directories recursively, while `git rm` removes files without recursion."
+        },
+        {
+            "question": "git commit --no-verify vs git commit?",
+            "answer": "`git commit --no-verify` bypasses pre-commit hooks, while `git commit` runs pre-commit hooks as defined in the repository."
+        },
+        {
+            "question": "git stash apply vs git stash pop?",
+            "answer": "`git stash apply` reapplies the changes from the most recent stash without removing it, while `git stash pop` reapplies and removes the stash."
+        },
+        {
+            "question": "git log --since vs git log?",
+            "answer": "`git log --since` filters commits by a starting date, showing commits after that date, while `git log` shows all commits."
+        },
+        {
+            "question": "git commit --dry-run vs git commit?",
+            "answer": "`git commit --dry-run` simulates a commit without making any changes, while `git commit` creates a commit with staged changes."
+        },
+        {
+            "question": "git branch -m vs git branch?",
+            "answer": "`git branch -m` renames a branch, while `git branch` lists, creates, or deletes branches."
+        },
+        {
+            "question": "git stash clear vs git stash?",
+            "answer": "`git stash clear` removes all stashes, while `git stash` saves changes to a new stash."
+        },
+        {
+            "question": "git checkout -b vs git branch?",
+            "answer": "`git checkout -b` creates and switches to a new branch, while `git branch` only creates or lists branches."
+        },
+        {
+            "question": "git fetch --tags vs git fetch?",
+            "answer": "`git fetch --tags` retrieves tags from a remote repository, while `git fetch` retrieves all changes from the remote repository."
+        },
+        {
+            "question": "git reflog expire --expire vs git reflog?",
+            "answer": "`git reflog expire --expire` removes entries older than a specified date, while `git reflog` shows all reflog entries."
+        },
+        {
+            "question": "git merge --abort vs git merge?",
+            "answer": "`git merge --abort` cancels an ongoing merge process and restores the working directory, while `git merge` combines changes from different branches."
+        },
+        {
+            "question": "git log --no-merges vs git log?",
+            "answer": "`git log --no-merges` filters out merge commits from the log, while `git log` shows all commits including merges."
+        },
+        {
+            "question": "git commit --author vs git commit?",
+            "answer": "`git commit --author` sets a specific author for the commit, while `git commit` uses the default author set in the Git configuration."
+        },
+        {
+            "question": "git remote set-url vs git remote?",
+            "answer": "`git remote set-url` changes the URL of a remote repository, while `git remote` manages remote repository references."
+        },
+        {
+            "question": "git cherry-pick --no-commit vs git cherry-pick?",
+            "answer": "`git cherry-pick --no-commit` applies changes from a commit without creating a new commit, while `git cherry-pick` creates a new commit with the changes."
+        },
+        {
+            "question": "git config --global core.editor vs git config?",
+            "answer": "`git config --global core.editor` sets the default editor for commit messages globally, while `git config` sets or gets various Git configuration options."
+        },
+        {
+            "question": "git log --graph --decorate vs git log?",
+            "answer": "`git log --graph --decorate` shows a visual representation of the commit history with branch and tag names, while `git log` shows a linear list of commits."
+        },
+        {
+            "question": "git commit --quiet vs git commit?",
+            "answer": "`git commit --quiet` suppresses the commit summary output, while `git commit` displays information about the commit process."
+        },
+        {
+            "question": "git revert --no-edit vs git revert?",
+            "answer": "`git revert --no-edit` reverts a commit without opening an editor to modify the commit message, while `git revert` opens an editor for the commit message."
+        },
+        {
+            "question": "git remote add vs git remote?",
+            "answer": "`git remote add` adds a new remote repository, while `git remote` manages existing remote repository references."
+        },
+        {
+            "question": "git branch --contains vs git branch?",
+            "answer": "`git branch --contains` shows branches that contain a specific commit, while `git branch` lists all branches."
+        },
+        {
+            "question": "git stash show vs git stash?",
+            "answer": "`git stash show` displays a summary of changes in the most recent stash, while `git stash` saves changes to a new stash."
+        },
+        {
+            "question": "git log --abbrev-commit vs git log?",
+            "answer": "`git log --abbrev-commit` shows abbreviated commit hashes, while `git log` displays the full commit hashes."
+        },
+        {
+            "question": "git remote rename vs git remote?",
+            "answer": "`git remote rename` changes the name of a remote repository reference, while `git remote` manages remote repository references."
+        },
+        {
+            "question": "git diff --ignore-space-change vs git diff?",
+            "answer": "`git diff --ignore-space-change` ignores changes in whitespace when comparing, while `git diff` considers all changes including whitespace."
+        },
+        {
+            "question": "git tag -l vs git tag?",
+            "answer": "`git tag -l` lists all tags in the repository, while `git tag` creates, lists, or deletes tags."
+        },
+        {
+            "question": "git commit --no-gpg-sign vs git commit?",
+            "answer": "`git commit --no-gpg-sign` commits without signing the commit with GPG, while `git commit` signs commits if GPG signing is enabled."
+        },
+        {
+            "question": "git branch --contains vs git log?",
+            "answer": "`git branch --contains` shows branches that contain a specific commit, while `git log` shows the commit history."
+        },
+        {
+            "question": "git reset --soft vs git reset?",
+            "answer": "`git reset --soft` moves the branch pointer but leaves changes in the working directory and staging area, while `git reset` can alter the working directory depending on the option used."
+        },
+        {
+            "question": "git stash apply --index vs git stash apply?",
+            "answer": "`git stash apply --index` restores changes to the index (staging area) as well as the working directory, while `git stash apply` restores changes only to the working directory."
+        },
+        {
+            "question": "git push --tags vs git push?",
+            "answer": "`git push --tags` pushes all tags to the remote repository, while `git push` updates the remote repository with commits from local branches."
+        },
+        {
+            "question": "git log --pretty=short vs git log?",
+            "answer": "`git log --pretty=short` shows a condensed view of the commit logs, while `git log` provides detailed commit information."
+        },
+        {
+            "question": "git submodule sync vs git submodule?",
+            "answer": "`git submodule sync` updates the URL of submodules in the `.gitmodules` file, while `git submodule` manages submodules in a repository."
+        },
+        {
+            "question": "git remote remove vs git remote?",
+            "answer": "`git remote remove` deletes a remote repository reference, while `git remote` manages remote repository references."
+        },
+        {
+            "question": "git commit --verbose vs git commit?",
+            "answer": "`git commit --verbose` shows the diff of changes being committed along with the commit message, while `git commit` only shows the commit message editor."
+        },
+        {
+            "question": "git log --pretty=format:%h vs git log?",
+            "answer": "`git log --pretty=format:%h` shows abbreviated commit hashes according to a custom format, while `git log` provides default commit information."
+        },
+        {
+            "question": "git stash pop --index vs git stash pop?",
+            "answer": "`git stash pop --index` restores changes to both the working directory and the index, while `git stash pop` restores changes only to the working directory."
+        },
+        {
+            "question": "git rebase --exec vs git rebase?",
+            "answer": "`git rebase --exec` runs a specified command after each commit during the rebase, while `git rebase` performs a standard rebase without additional commands."
+        },
+        {
+            "question": "git tag -f vs git tag?",
+            "answer": "`git tag -f` forces the creation or update of a tag, overwriting any existing tag with the same name, while `git tag` creates or lists tags without overwriting."
+        },
+        {
+            "question": "git diff --check vs git diff?",
+            "answer": "`git diff --check` shows lines with whitespace errors or formatting issues, while `git diff` shows all changes between commits or working directory."
+        },
+        {
+            "question": "git stash branch vs git stash?",
+            "answer": "`git stash branch` creates a new branch from the stash and applies the stash, while `git stash` saves changes to a stash."
+        },
+        {
+            "question": "git diff --ignore-all-space vs git diff?",
+            "answer": "`git diff --ignore-all-space` ignores all whitespace changes when comparing, while `git diff` considers all changes including whitespace."
+        },
+        {
+            "question": "git log --pretty=format:%s vs git log?",
+            "answer": "`git log --pretty=format:%s` shows only commit messages according to a custom format, while `git log` provides detailed commit information."
+        },
+        {
+            "question": "git status --porcelain vs git status?",
+            "answer": "`git status --porcelain` provides a simple, machine-readable output of the status, while `git status` provides a more detailed description."
+        },
+        {
+            "question": "git commit --reset-author vs git commit?",
+            "answer": "`git commit --reset-author` sets the author of the commit to the current user, while `git commit` uses the default author set in the Git configuration."
+        },
+        {
+            "question": "git push --force vs git push?",
+            "answer": "`git push --force` forces the update of the remote branch even if it rewrites history, while `git push` updates the remote branch without overwriting history."
+        }
     ]
 };
