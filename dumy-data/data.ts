@@ -3417,6 +3417,10 @@ export const questions = {
             "answer": "Great! If you have any more questions or need further assistance, feel free to ask."
         },
         {
+            "question": "Ok",
+            "answer": "Great! If you have any more questions or need further assistance, feel free to ask."
+        },
+        {
             "question": "Sure",
             "answer": "Sure thing! What would you like to know or discuss next?"
         },
@@ -4003,6 +4007,7 @@ export const questions = {
         {
             "question": "git push --force vs git push?",
             "answer": "`git push --force` forces the update of the remote branch even if it rewrites history, while `git push` updates the remote branch without overwriting history."
-        }
+        },
+
     ]
 };
