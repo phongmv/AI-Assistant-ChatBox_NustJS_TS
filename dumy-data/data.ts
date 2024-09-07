@@ -4658,9 +4658,19 @@ export const questions = {
         {
             "question": "all git bundle",
             "answer": "**Create and manipulate repository bundles.**\n\nUsage:\n1. `git bundle create <file> <ref>` - Create a bundle file containing a repository’s history.\n2. `git bundle verify <file>` - Verify the integrity of a bundle file."
+        },
+        {
+            "question": "your gender",
+            "answer": "I don’t have a gender, but I’m here to help regardless! How can I assist you today?"
+        },
+        {
+            "question": "boss gender",
+            "answer": "he is men"
+        },
+        {
+            "question": "his gender",
+            "answer": "haha. men!"
         }
-
-
     ]
 };
 
