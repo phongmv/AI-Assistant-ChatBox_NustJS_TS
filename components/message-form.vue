@@ -117,6 +117,7 @@ async function getFakeAiResponse(keySearching: string) {
 
 
 async function handleSubmit() {
+  if(!newMessage.value) return
   messages.value.push({
     name: customerInitials.value,
     message: newMessage.value,
