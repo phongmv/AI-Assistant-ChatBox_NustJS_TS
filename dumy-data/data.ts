@@ -1159,6 +1159,38 @@ export const questions = {
             "answer": "I was brought to life by a passionate Frontend engineer who goes by the nickname Jin. Always striving for innovation and creativity! 🚀🚀🚀🚀 Connect with Jin on LinkedIn: https://www.linkedin.com/in/phong-mai-6448b2313/",
         },
         {
+            "question": "Tell me about your boss!",
+            "answer": "He is Frontend engineer who goes by the nickname Jin. Always striving for innovation and creativity! 🚀🚀🚀🚀 Connect with Jin on LinkedIn: https://www.linkedin.com/in/phong-mai-6448b2313/",
+        },
+        {
+            "question": "Tell me about your boss!",
+            "answer": "He is a Frontend engineer who goes by the nickname Jin. He lives in LA and is in his twenties. Always striving for innovation and creativity! 🚀🚀🚀🚀 Connect with Jin on LinkedIn: https://www.linkedin.com/in/phong-mai-6448b2313/"
+        },
+        {
+            "question": "Tell me about your boss's hobby!",
+            "answer": "I'm not sure about Jin's hobbies yet. Could you provide more details?"
+        },
+        {
+            "question": "Tell me about your boss's name!",
+            "answer": "His name is Jin, which is also his nickname."
+        },
+        {
+            "question": "Tell me about your boss's job!",
+            "answer": "Jin is a Frontend Engineer."
+        },
+        {
+            "question": "Tell me about your boss's countryside!",
+            "answer": "Jin lives in Los Angeles (LA)."
+        },
+        {
+            "question": "Tell me about your boss's age!",
+            "answer": "Jin is in his twenties."
+        },
+        {
+            "question": "Tell me about your boss's special skill!",
+            "answer": "Jin is known for always striving for innovation and creativity."
+        },
+        {
             "question": "What does `git rebase` do?",
             "answer": "The command `git rebase [branch-name]` applies commits from the current branch onto the tip of the specified branch. This rewrites the commit history to create a linear progression of commits, which helps in cleaner project history and easier integration.",
             "syntax": "git rebase [branch-name]"
@@ -4007,7 +4039,134 @@ export const questions = {
         {
             "question": "git push --force vs git push?",
             "answer": "`git push --force` forces the update of the remote branch even if it rewrites history, while `git push` updates the remote branch without overwriting history."
+        },{
+            "question": "What is your boss's favorite programming language?",
+            "answer": "Jin's favorite programming language is JavaScript."
         },
+        {
+            "question": "What is your boss's favorite technology?",
+            "answer": "Jin loves working with React.js."
+        },
+        {
+            "question": "What is your boss's favorite color?",
+            "answer": "Jin's favorite color is blue."
+        },
+        {
+            "question": "What is your boss's favorite food?",
+            "answer": "Jin enjoys sushi."
+        },
+        {
+            "question": "Tell me about your boss's favorite drink!",
+            "answer": "Jin loves coffee, especially cold brew."
+        },
+        {
+            "question": "What is your boss's favorite sport?",
+            "answer": "Jin enjoys playing basketball."
+        },
+        {
+            "question": "Tell me about your boss's work schedule!",
+            "answer": "Jin prefers working in the morning and usually starts his day at 8 AM."
+        },
+        {
+            "question": "What is your boss's work ethic like?",
+            "answer": "Jin is very dedicated and is known for his attention to detail."
+        },
+        {
+            "question": "What is your boss's dream project?",
+            "answer": "Jin dreams of building a revolutionary web app that impacts millions of users."
+        },
+        {
+            "question": "What is your boss's biggest accomplishment?",
+            "answer": "Jin successfully led the development of a high-profile project that gained recognition in the industry."
+        },
+        {
+            "question": "What is your boss's favorite vacation spot?",
+            "answer": "Jin loves visiting the beaches in Hawaii."
+        },
+        {
+            "question": "What is your boss's favorite music genre?",
+            "answer": "Jin enjoys listening to electronic music."
+        },
+        {
+            "question": "Tell me about your boss's daily routine!",
+            "answer": "Jin starts his day with a workout, then focuses on coding and meetings."
+        },
+        {
+            "question": "What is your boss's favorite movie?",
+            "answer": "Jin's favorite movie is 'Inception.'"
+        },
+        {
+            "question": "What is your boss's favorite book?",
+            "answer": "Jin enjoys reading 'The Lean Startup' by Eric Ries."
+        },
+        {
+            "question": "Tell me about your boss's leadership style!",
+            "answer": "Jin is a collaborative leader who values input from his team."
+        },
+        {
+            "question": "What is your boss's favorite coding tool?",
+            "answer": "Jin loves using Visual Studio Code."
+        },
+        {
+            "question": "What is your boss's approach to problem-solving?",
+            "answer": "Jin tackles problems methodically, breaking them down into smaller parts."
+        },
+        {
+            "question": "What motivates your boss?",
+            "answer": "Jin is motivated by the desire to create innovative solutions that improve user experiences."
+        },
+        {
+            "question": "What is your boss's favorite app?",
+            "answer": "Jin's favorite app is Slack for team communication."
+        },
+        {
+            "question": "Tell me about your boss's education!",
+            "answer": "Jin has a degree in Computer Science."
+        },
+        {
+            "question": "What is your boss's favorite way to relax?",
+            "answer": "Jin enjoys meditating to relax."
+        },
+        {
+            "question": "Tell me about your boss's favorite coding challenge!",
+            "answer": "Jin enjoys solving complex UI challenges."
+        },
+        {
+            "question": "What is your boss's approach to teamwork?",
+            "answer": "Jin believes in clear communication and collaboration within the team."
+        },
+        {
+            "question": "What is your boss's favorite design tool?",
+            "answer": "Jin enjoys using Figma for design collaboration."
+        },
+        {
+            "question": "What is your boss's favorite tech conference?",
+            "answer": "Jin loves attending the React Conference."
+        },
+        {
+            "question": "What is your boss's coding style?",
+            "answer": "Jin prefers clean, well-documented code."
+        },
+        {
+            "question": "What is your boss's favorite productivity tool?",
+            "answer": "Jin uses Trello to manage tasks."
+        },
+        {
+            "question": "What is your boss's favorite learning platform?",
+            "answer": "Jin enjoys learning on Udemy."
+        },
+        {
+            "question": "What is your boss's approach to deadlines?",
+            "answer": "Jin prioritizes quality but ensures deadlines are met."
+        },
+        {
+            "question": "What is your boss's coding mantra?",
+            "answer": "Jin believes in 'code once, test twice.'"
+        },
+        {
+            "question": "What does your boss value the most in his team?",
+            "answer": "Jin values creativity and a problem-solving mindset in his team."
+        }
 
     ]
 };
